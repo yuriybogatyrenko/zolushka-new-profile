@@ -1103,27 +1103,60 @@
 
 
 <script>
-    var vievPopup = function () {
 
-        $('.button_view_photo').click(function () {
-            $('.overlay').css('display', 'block');
-        });
+    $( document ).ready(function() {
+        var viewPopup = function () {
 
-        $('.closePhotoPopup').click(function () {
-            $('.overlay').css('display', 'none');
-        });
+            $('.button_view_photo').click(function () {
+                $('.overlay').css('display', 'block');
+            });
 
-    };
+            $('.closePhotoPopup').click(function () {
+                $('.overlay').css('display', 'none');
+            });
 
-    $('.check_img').click(function () {
-        if($(this).is(":checked")) {
-            $(this).parent().parent().addClass('photoOverlay_active');
-            $('.deleteImages').css('display', 'block');
-        } else {
-            $(this).parent().parent().removeClass('photoOverlay_active');
-        }
+        };
+
+
+        var checkboxFunction = function () {
+
+            var i = 0;
+
+            function add(){
+                i++;
+            }
+
+            function remove(){
+                i--;
+            }
+
+            function button(){
+                if(i == 0 ){
+                    $('.deleteImages').hide();
+                }else if(i>0){
+                    $('.deleteImages').show();
+                }
+            }
+
+            $('.check_img').click(function () {
+                if($(this).is(":checked"))  {
+                    add();
+                    $(this).parent().parent().addClass('photoOverlay_active');
+
+                } else {
+                    remove();
+                    $(this).parent().parent().removeClass('photoOverlay_active');
+
+                }
+                button();
+            });
+        };
+
+
+        checkboxFunction();
+        viewPopup();
+
     });
 
-    vievPopup();
 </script></body>
 </html>

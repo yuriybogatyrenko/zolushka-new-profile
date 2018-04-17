@@ -30,6 +30,7 @@
     "gulp-watch": "^4.3.5"
   },
   "dependencies": {
+    "bower": "^1.8.4",
     "gulp-twig": "^1.2.0",
     "mustache": "^2.3.0",
     "twig": "^1.11.0"

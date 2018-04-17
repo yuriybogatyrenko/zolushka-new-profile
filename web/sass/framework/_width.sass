@@ -1,0 +1,19 @@
+.fw-max-width-percent-100
+  max-width: 100%
+
+.fw-width-auto
+  width: auto
+
+.fw-min-width-20
+  min-width: 20px !important
+
+@each $value in $width
+  .fw-width-#{$value}
+    width: #{$value}px
+
+  .fw-max-width-#{$value}
+    max-width: #{$value}px
+
+@each $value in $width_grid
+  .fw-width-#{nth($value, 1)}-#{nth($value, 2)}
+    width: nth($value,1) / nth($value,2) * 100%

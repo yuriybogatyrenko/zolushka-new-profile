@@ -1,0 +1,32 @@
+.fw-clearfix
+  &::after
+    display: block
+    content: ''
+    clear: both
+
+@each $value in left, right
+  .fw-float-#{$value}
+    float: $value
+
+@each $value in capitalize, lowercase, uppercase
+  .fw-text-#{$value}
+    text-transform: $value
+
+.fw-text-decoration-none
+  text-decoration: none
+      
+@each $value in underline, line-through, dashed
+  .fw-text-#{$value}
+    text-decoration: $value
+
+  .fw-text-#{$value}-hover
+    text-decoration: none
+    &:hover
+      text-decoration: $value
+
+@each $value in center, left, right
+  .fw-text-#{$value}
+    text-align: $value
+
+.fw-text-capitalize
+  text-transform: capitalize

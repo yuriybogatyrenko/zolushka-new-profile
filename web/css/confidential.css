@@ -1,0 +1,37 @@
+.privacy__block {
+    background: #000;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 8px;
+    vertical-align: middle;
+    margin-right: 20px;
+    border: solid 1px #a6a6a6;
+}
+
+.privacy__big-text {
+    font-size: 11px;
+}
+
+.icon-privacy__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 20px;
+    height: 24px;
+    background: url(../images/privacy__icon@2x.png) no-repeat center center;
+    background-size: contain;
+    position: relative;
+    top: -1px;
+}
+
+.selected-block.privacy__selected-block h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 0;
+}
+
+.selected-block.privacy__selected-block .border-box {
+    background: none;
+    padding: 20px;
+}

@@ -1,0 +1,44 @@
+.round-green-btn {
+    background: #37d19a;
+    border-radius: 20px;
+    line-height: 28px;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.round-green-btn:hover {
+    background: #01aa6d;
+}
+
+.round-green-btn.empty {
+    background: #fff;
+    color: #37d19a;
+    border-color: #37d19a;
+}
+
+.round-green-btn.empty:hover {
+    background: #37d19a;
+    color: #fff;
+}
+
+.popup_men2, .popup_men {
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.purple-link {
+    color: #898ebd;
+    text-decoration: none;
+}
+
+.purple-link:hover {
+    text-decoration: underline;
+}

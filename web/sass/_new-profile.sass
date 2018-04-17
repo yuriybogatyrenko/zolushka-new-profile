@@ -1,0 +1,242 @@
+.icomoon-profile-moderation-pending
+  position: relative
+
+  .path2
+    position: absolute
+    left: 50%
+    top: 50%
+    margin: 0
+    transform: translate(-50%, -50%)
+
+    &:before
+      margin: 0
+
+.circle-status
+  width: 8px
+  height: 8px
+  display: inline-block
+  vertical-align: middle
+  border-radius: 20px
+  background-color: #ccc
+  
+  &.online
+    background-color: #7ed321
+
+.new-profile
+  display: flex
+
+  &__left
+    width: 276px
+    flex-shrink: 0
+
+  &__image-menu
+    position: absolute
+    bottom: -20px
+    z-index: 2
+    left: 0
+    right: 0
+    background-color: rgba(#000, 0.5)
+    border-radius: 0 0 10px 10px
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s ease
+
+    &-link
+      padding: 8px 20px
+
+      &:hover
+        color: $colorPurple
+
+  &__image-wrapper
+    font-size: 0
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+
+    &:hover
+      .new-profile__image-menu
+        opacity: 1
+        visibility: visible
+        bottom: 0
+
+    &--placeholder
+      background-color: #e1e1e1
+      border-radius: 10px
+      display: flex
+      align-items: center
+      justify-content: center
+
+      &:after
+        content: ''
+        padding-bottom: 100%
+        display: block
+        width: 1px
+
+  &__avatar
+    border-radius: 10px
+    vertical-align: middle
+
+  &__image-notify
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 40px
+    font-size: 12px
+    position: absolute
+    bottom: 10px
+    left: 10px
+    right: 10px
+    padding-right: 30px
+    
+    &--blue
+      background-color: rgba(#48abff, 0.5)
+      color: #fff
+      padding-left: 20px
+      padding-top: 8px
+      padding-bottom: 8px
+
+    [class*="icomoon-"]
+      position: absolute
+      right: 0
+      bottom: 0
+      font-size: 30px
+
+  &__parameters
+    padding: 15px 0
+    display: flex
+
+  &__appearance
+    line-height: 1.5
+    padding-bottom: 10px
+
+  &__actions
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px 10px
+    border-bottom: solid 1px rgba(151, 151, 151, 0.2)
+
+    &-separator
+      border-left: solid 1px rgba(151, 151, 151, 0.2)
+      height: 20px
+
+  &__invisible
+    border-top: 1px solid #cccccc
+    border-bottom: 1px solid #cccccc
+
+    &-question
+      width: 20px
+      line-height: 20px
+      height: 20px
+      background-color: #eaeaea
+      text-align: center
+      border-radius: 100%
+      color: #fff
+
+      &:hover
+        box-shadow: 0 0 0 1000px rgba(#000, 0.1) inset
+
+  &__about
+    flex-grow: 1
+    margin-left: 40px
+    margin-right: 40px
+    flex-basis: 0
+
+    &-comment
+      background-color: rgba(#af71b4, 0.1)
+      padding: 20px
+      border-radius: 0 5px 5px
+      position: relative
+
+      &:after
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        right: 100%
+        border: 12px solid transparent
+        border-top: 12px solid rgba(#af71b4, 0.1)
+        border-right: 12px solid rgba(#af71b4, 0.1)
+
+
+  &__name
+    font-size: 18px
+
+  &__city
+    margin-top: 10px
+
+  &__album
+    flex-grow: 1
+    flex-basis: 0
+
+    &-item-hover
+      opacity: 0
+      transition: all 0.3s ease
+      background-color: rgba(#000, 0.5)
+
+      &:hover
+        opacity: 1
+
+    &-item-input
+      background-color: #f8f8f8
+      border-radius: 5px
+      font-size: 53px
+      cursor: pointer
+      transition: all 0.3s ease
+
+      &:hover
+        box-shadow: 0 0 0 1000px rgba(#000, 0.1) inset
+
+    &-item-notify
+      position: absolute
+      bottom: 10px
+      right: 10px
+
+    &-item-image
+      border-radius: 5px
+
+    &-item-checkbox
+      position: absolute
+      top: 10px
+      right: 10px
+
+      &-detector
+        width: 14px
+        height: 14px
+        border-radius: 100%
+        border: 2px solid $colorPurple
+        display: inline-block
+        position: relative
+        vertical-align: middle
+
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) rotate(-45deg)
+          width: 8px
+          height: 4px
+          opacity: 0
+          border-bottom: 2px solid $colorWhite
+          border-left: 2px solid $colorWhite
+
+    input[type="checkbox"]
+      &:checked + .new-profile__album-item-checkbox-detector
+        background-color: $colorPurple
+        &:after
+          opacity: 1
+
+
+    &-more
+      border-bottom: 1px solid #ccc
+
+.color-light
+  color: #969696
+
+.color-red
+  color: #ff666f
+
+.fz20
+  font-size: 20px

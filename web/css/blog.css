@@ -1,0 +1,111 @@
+.post-text ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.post-text ol {
+    margin-left: 20px;
+}
+
+.post-text h3, .post-text h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-shadow: 0 1px #000000;
+    letter-spacing: 0.2px;
+    font-size: 21px;
+}
+
+.post-text h2 {
+    margin-bottom: 15px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.read-and-more .no-list a:hover {
+    text-decoration: none;
+}
+
+.nav-post a:hover span {
+    text-decoration: none;
+}
+
+.back-to-posts:hover span {
+    text-decoration: none;
+}
+
+.meta-data a:hover {
+    text-decoration: none;
+}
+
+.post-text ul li {
+    margin-bottom: 10px;
+}
+
+.post-text a {
+    text-decoration: none;
+}
+
+.post-text a:hover {
+    text-decoration: underline;
+}
+
+.blog .read-and-more p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blog .read-and-more li {
+    font-size: 16px;
+    padding: 6px 50px 5px 20px;
+}
+
+.blog .pull-right {
+    font-size: 16px;
+}
+
+.blog .pull-left {
+    font-size: 16px;
+}
+
+.comments .name:hover {
+    text-decoration: underline;
+}
+
+.blog-main-info:hover h2 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.blog-main-info:hover img {
+    opacity: 0.9;
+    transition-duration: 0s;
+}
+
+.youtube-image {
+    position: relative;
+    width: 100%;
+    height: 444px;
+}
+
+.youtube-image:hover {
+    cursor: pointer;
+}
+
+.youtube-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 84px;
+    height: 59px;
+    margin-left: -42px;
+    margin-top: -30px;
+    text-indent: -9999px;
+    background: transparent url('../images/youtube.png') no-repeat;
+    border: none;
+}
+
+.youtube-image iframe {
+    width: 100%;
+    height: 100%;
+}

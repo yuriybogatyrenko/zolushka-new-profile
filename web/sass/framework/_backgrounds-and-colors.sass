@@ -1,0 +1,21 @@
+@each $color in $colors
+  $key: inspect(nth($color, 1))
+  $value: nth($color, 2)
+
+  .fw-bg-color-#{$key}
+    background-color: $value
+
+  .fw-color-#{$key}
+    color: $value
+
+.fw-bg-cover
+  background-size: cover
+
+.fw-bg-no-repeat
+  background-repeat: no-repeat
+
+.fw-bg-center
+  background-position: center center
+
+.fw-bg-fixed
+  background-attachment: fixed

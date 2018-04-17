@@ -1,0 +1,84 @@
+@media screen and (max-width:1100px){
+	.data_units .label_wrap {
+		margin: 0 45px;
+	}
+	.main_reg_screen .descr_bl {
+        width: 570px;
+    }
+	.prof_setting_header .score {
+		margin-right: 5px;
+	}
+	.prof_nav {
+		font-size: 15px;
+	}
+	.main_prof_info .m_title {
+		font-size: 22px;
+	}
+	.info_item {
+		font-size: 20px;
+	}
+	.profile_page .descr_area {
+		margin-top: 15px;
+	}
+	.data_units .data_drop.appearance .bl_it {
+		margin: 0 25px;
+	}
+	.data_units .data_drop .data_select .blue_select {
+		margin: 0 8px;
+	}
+	.drop_block.add_city {
+		width: 400px;
+		margin-left: -200px;
+	}
+	.prof_link .drop_block {
+		width: 500px;
+		margin-left: -250px;
+	}
+	.main_photo .drop_block {
+		width: 440px;
+		left: 50%;
+		margin-left: -220px;
+	}
+	.search_filters .select_wrap {
+		margin-right: 15px;
+	}
+	.search_filters .additional_submit_btn {
+		margin-left: 20px;
+	}
+
+	.exclusive textarea {
+		width:100%;
+	}
+
+	.prof_nav li {
+		padding:0 5px;
+	}
+
+	.wallet_content.add_contact {
+		padding-right:0;
+	}
+
+	.who_online .descr_txt {
+		margin-right:0;
+		padding-right:80px;
+	}
+
+	.wallet_content.buy_premium .premium_advantages {
+		margin-right:0;
+		padding-right:55px;
+	}
+
+	.send_block_wrap .w33 {
+		width:43%;
+	}
+
+	.send_block_wrap .w66 {
+		width:56%;
+	}
+
+	.main_popup.message_popup {
+		width:1000px;
+		margin-left: -500px;
+	}
+
+}

@@ -1,0 +1,76 @@
+.fw-border-none
+  border: none
+
+@each $value in 1, 2, 3, 4, 5
+  .fw-border-width-#{$value}
+    border-width: #{$value}px
+
+@each $value in 3, 5, 7, 10, 20, 50, 60
+  .fw-border-radius-#{$value}
+    border-radius: #{$value}px
+
+  .fw-border-radius-percent-#{$value}
+    border-radius: unquote("#{$value}%")
+
+@each $color in $colors
+  $key: inspect(nth($color, 1))
+  $value: nth($color, 2)
+
+  .fw-border-color-#{$key}
+    border-color: $value
+
+.fw-border-radius-bottom-none-10
+  border-radius: 10px 10px 0 0
+
+.fw-border-radius-top-none-10
+  border-radius: 0 0 10px 10px
+
+.fw-border-style-solid
+  border-style: solid
+
+.fw-border-style-solid-top
+  border-style: solid none none none
+
+.fw-border-style-solid-right
+  border-style: none solid none none
+
+.fw-border-style-solid-bottom
+  border-style: none none solid none
+
+.fw-border-style-solid-left
+  border-style: none none none solid
+
+.fw-border-style-dashed
+  border-style: dashed
+
+.fw-border-style-dashed-top
+  border-style: dashed none none none
+
+.fw-border-style-dashed-right
+  border-style: none dashed none none
+
+.fw-border-style-dashed-bottom
+  border-style: none none dashed none
+
+.fw-border-style-dashed-left
+  border-style: none none none dashed
+
+.fw-border-style-dotted
+  border-style: dotted
+
+.fw-border-style-dotted-top
+  border-style: dotted none none none
+
+.fw-border-style-dotted-right
+  border-style: none dotted none none
+
+.fw-border-style-dotted-bottom
+  border-style: none none dotted none
+
+.fw-border-style-dotted-left
+  border-style: none none none dotted
+
+.fw-border-box
+  box-sizing: border-box
+
+

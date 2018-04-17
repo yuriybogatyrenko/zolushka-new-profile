@@ -1,0 +1,69 @@
+.fw-flex
+  display: flex
+
+  > *
+    min-width: 0
+
+  &.fw-flex-column
+    flex-direction: column
+
+  &.fw-flex-row
+    flex-direction: row
+
+  &.fw-flex-wrap
+    flex-wrap: wrap
+
+  &.fw-flex-wrap-no
+    flex-wrap: nowrap
+
+  &.fw-flex-middle
+    align-items: center
+
+  &.fw-flex-top
+    align-items: flex-start
+
+  &.fw-flex-bottom
+    align-items: flex-end
+
+  &.fw-flex-center
+    justify-content: center
+
+  &.fw-flex-left
+    justify-content: flex-start
+
+  &.fw-flex-right
+    justify-content: flex-end
+
+  &.fw-flex-space-between
+    justify-content: space-between
+
+  &.fw-flex-space-around
+    justify-content: space-around
+
+  @each $value in 1, 2, 3, 4, 5
+    .fw-flex-shrink-#{$value}
+      flex-shrink: $value
+
+    .fw-flex-grow-#{$value}
+      flex-grow: $value
+
+  .fw-flex-shrink-no
+    flex-shrink: 0
+
+  .fw-flex-grow-no
+    flex-grow: 0
+
+.fw-flex-inline
+  display: inline-flex
+
+.fw-flex-basis-0
+  flex-basis: 0
+
+.fw-flex-self-end
+  align-self: flex-end
+
+.fw-flex-self-center
+  align-self: center
+
+.fw-flex-self-middle
+  justify-self: center

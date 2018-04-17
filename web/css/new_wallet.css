@@ -1,0 +1,114 @@
+.b-wallet--table {
+	width: 100%;
+    border-collapse: separate; /* Способ отображения границы */ 
+    width: 100%; /* Ширина таблицы */ 
+    border-spacing: 0 10px; /* Расстояние между ячейками */ 
+}
+
+.b-wallet--table img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.b-wallet--add--funds {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.b-wallet--current--money {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.b-wallet--table th, .b-wallet--table td {
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+.b-wallet--table td {
+	background: #eee;
+}
+
+.b-wallet--table th:first-child, .b-wallet--table td:first-child {
+	text-align: left;
+}
+
+.b-wallet--table .b-wallet--payment--meth {
+	background: #fff;
+	padding: 15px 0 0;
+}
+
+.b-wallet--table .b-wallet--payment--meth.no--padding {
+	padding-top: 0;
+}
+
+.b-wallet--table .b-wallet--payment--meth--inner {
+	background: #8e93c0;
+	padding: 10px;
+	color: #fff;
+}
+
+.wallet_content .unlocking .b-wallet--table .main_red_btn {
+	margin-bottom: 0;
+}
+
+.icon--payment--type {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon--payment--type img {
+	vertical-align: middle;
+}
+
+.b-wallet--table--payment_name {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.b-wallet--table .input_border_gray {
+	width: 100px;
+	margin-right: 15px;
+}
+
+.b-wallet--table .min-payment-text {
+    color: #ff2750;
+}
+
+.radio--detector:checked + .wallet--currency--name {
+	background: #6dc100;
+	color: #fff;
+}
+
+.b-wallet--currency--chose {
+	margin-right: 20px;
+}
+
+.wallet--currency--name {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	background: #ccc;
+	float: left;
+	padding: 0 15px;
+}
+
+.b-wallet--currency--chose label:first-child .wallet--currency--name {
+	border-radius: 5px 0 0 5px;
+}
+
+.b-wallet--currency--chose label:last-child .wallet--currency--name {
+	border-radius: 0 5px 5px 0;
+}
+
+.b-wallet--payment-notification {
+	color: #666;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.provider-image {
+	width: 30px;
+}

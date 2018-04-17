@@ -1,0 +1,1239 @@
+.new-popup-registration, .new-popup-registration__wrapper
+  //position: static
+  //top: 50%
+  //left: 50%
+  //+transform(translateY(-50%))
+  width: 610px
+  margin: 0 auto
+  //margin-left: -305px
+  font-family: TruthCYR-r
+  font-size: 14px
+  padding: 0 15px
+  box-sizing: content-box
+
+  &:not(.is-reg-page)
+    border-radius: 10px
+    background-color: #ffffff
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+    padding: 15px 20px
+
+  &.premium-registration
+    width: 900px
+    box-sizing: border-box
+
+.new-popup-registration__wrapper
+  width: 950px
+
+  &.is-reg-page
+    padding-top: 30px
+
+  &.has-skip-link
+    padding-bottom: 50px
+
+  &.new-popup-registration__styles
+    .bottom-skip-button
+      bottom: 15px
+
+.new-popup-registration
+  .w40
+    width: 40%
+
+.new-popup-registration__for-activation-opacity-text
+  opacity: 0
+
+  &.remove-opacity
+    opacity: 1
+
+.new-popup-registration__step-title
+  color: #a9a9a9
+  font-size: 14px
+  margin-bottom: 10px
+
+.new-popup-registration__title
+  font-size: 19px
+  color: #000
+  line-height: 1.55
+  margin-bottom: 5px
+
+  &.lhn
+    line-height: normal
+
+  &.mb20
+    margin-bottom: 20px
+
+.new-popup-registration__sub-title
+  margin-bottom: 15px
+  line-height: 1.36
+
+.new-popup-registration__photo-requirements-title
+  color: #b978bf
+  cursor: pointer
+
+.ff-bold
+  font-family: TruthCYR-M
+
+.fz12
+  font-size: 12px
+
+.fz16
+  font-size: 16px
+
+.new-popup-registration__photo-requirements-content-title
+  margin-bottom: 10px
+  color: #3a3a3a
+
+.new-popup-registration__photo-requirements-content
+  color: #666
+  padding-top: 15px
+  line-height: 1.58
+
+.mr5
+  margin-right: 5px
+
+.mr10
+  margin-right: 10px
+
+.mb5
+  margin-bottom: 5px
+
+.mb10
+  margin-bottom: 10px
+
+.mb30
+  margin-bottom: 30px
+
+.mb45
+  margin-bottom: 45px
+
+.mb60
+  margin-bottom: 60px
+
+.new-popup-registration__dotted-listing
+  padding-left: 25px
+
+.new-popup-registration__mask-container
+  margin-left: -20px
+  margin-right: -20px
+  border-top: 2px dashed #8890bd
+  border-bottom: 2px dashed #8890bd
+  background: #f8f8f8
+  padding: 20px
+  position: relative
+  font-size: 0
+  line-height: 0
+  min-height: 270px
+
+  .icon-mask-crop, .icon-mask-delete
+    position: absolute
+    top: -10px
+    left: -10px
+    opacity: 0
+    cursor: pointer
+    +transition
+
+  .icon-mask-delete
+    left: auto
+    right: -10px
+
+  &:hover
+    .new-popup-registration__mask-item__added-photo--bottom-text-icon
+      color: #5E70CC
+
+    .icon-reg-camera
+      +sprite(icon-reg-camera-hover)
+
+.news-popup-registration__mask-input
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  left: 0
+  opacity: 0
+  z-index: 10
+  display: block
+  cursor: pointer
+
+.confirm-single-photo__container
+  display: flex
+  align-items: center
+  justify-content: center
+
+.new-popup-registration__mask-container-units
+  margin-bottom: -20px
+
+  &.confirm-single-photo
+    width: 100%
+    margin-bottom: 0
+
+    .icon-mask-delete
+      top: 50%
+      left: 50%
+      right: auto
+      +transform(translate3d(-50%, -50%, 0))
+
+    .icon-mask-crop
+      display: none
+
+    .new-popup-registration__mask-item__added-photo
+      margin: 0
+
+
+.new-popup-registration__mask-item
+  &:not(:last-child)
+    margin-right: 5px
+
+.new-popup-registration__mask-container
+  cursor: pointer
+  &.dragfile-drag
+    .new-popup-registration__mask-item__added-photo
+      z-index: 1
+
+.new-popup-registration__mask-item__added-photo
+  width: 18%
+  display: inline-block
+  position: relative
+  border-radius: 8px
+  margin-bottom: 20px
+  vertical-align: top
+  +transition
+
+  &:not(.add-button)
+    z-index: 11
+
+  &:hover
+    .icon-mask-crop, .icon-mask-delete
+      opacity: 1
+
+  &:after
+    display: block
+    content: ''
+    margin-top: 106px
+
+  &:not(:nth-child(5n))
+    margin-right: 2.5%
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
+    border-radius: 8px
+
+  &.add-button
+    background: #fff
+    color: #6d83ec
+    font-size: 12px
+    line-height: normal
+
+    .new-popup-registration__mask-item__added-photo--top-icon,
+    .new-popup-registration__mask-item__added-photo--bottom-text-icon
+      position: absolute
+      top: 20px
+      left: 0
+      text-align: center
+      width: 100%
+
+    .new-popup-registration__mask-item__added-photo--bottom-text-icon
+      top: auto
+      bottom: 10px
+
+  .icon-photo-mask-moderation
+    position: absolute
+    bottom: 8px
+    cursor: pointer
+    right: 8px
+    margin-right: 5px
+
+.new-popup-registration__mask-item__added-photo--bottom-text-icon
+  color: #6d83ec
+
+.new-popup-registration__back-link--style
+  color: #8e94be
+  display: inline-block
+  cursor: pointer
+
+  &:hover
+    text-decoration: underline
+
+.new-popup-registration__skip-link
+  color: #dedede
+  +transition()
+  cursor: pointer
+
+  &:hover
+    color: #666
+
+.new-popup-registration, .new-popup-registration__styles
+  line-height: 1.36
+
+  .selectbox
+    .select
+      border-radius: 3px
+      //background-color: #f4f4f4
+      font-size: 14px
+      line-height: 38px
+
+  .get_in_top .selectbox .trigger
+    border: 4px solid transparent
+    border-top: 6px solid #a7a7a7
+
+  .select_wrap
+    background: #f4f4f4
+    font-size: 0
+
+  .form-line
+    margin-bottom: 15px
+
+  .grey-color
+    color: #666666
+  input[type="text"], input[type="number"], input[type="email"], input[type="password"], textarea
+    border: 1px solid #9e9e9e !important
+    background: #f4f4f4
+    display: block
+    width: 100%
+    box-sizing: border-box
+    height: 40px
+    border-radius: 3px
+    color: #808080
+    text-align: left
+    padding: 0 10px
+    box-shadow: none
+    font-family: TruthCYR
+    font-size: 14px
+
+    &.parsley-error
+      border: 1px solid red !important
+    &.error-input
+      border-color: #ff0000
+
+    &:focus
+      border-color: #b263b8 !important
+      box-shadow: 0 0 0 1px #b263b8
+
+    &.small-input
+      width: 130px
+
+  textarea
+    padding: 10px
+    height: 120px
+
+  .violet_btn
+    &.db
+      display: block
+      width: 100%
+
+  .light-text
+    font-family: TruthCYR
+
+  .bottom-skip-button
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+
+.violet_btn
+  &:disabled, &.disabled
+    background: linear-gradient(to bottom, #c1c1c1, #a2a2a2)
+
+.js-multiselect__label.parsley-error
+  span
+    border: none !important
+
+.new-popup-registration__step2__form-overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  background: #fff
+  opacity: 0.8
+  z-index: 500
+
+.new-popup-registration__step-container
+  position: relative
+  font-family: TruthCYR-R
+  &:not(.no-pb)
+    padding-bottom: 50px
+  &:not(.no-min-height)
+    min-height: calc(100vh - 90px)
+  //height: 720px
+
+  &:before
+    z-index: -100
+    content: ''
+    display: block
+    right: -20px
+    left: -20px
+    top: -15px
+    bottom: -15px
+    position: absolute
+    background: rgba(215, 215, 215, .7)
+    border-radius: 10px
+    opacity: 0
+    +transition()
+
+  &.show-mask-notice
+    &:before
+      z-index: 199
+      opacity: 1
+
+    .new-popup-registration__notice
+      opacity: 1
+      z-index: 200
+
+.new-popup-registration__step1-container-inner
+  max-width: 500px
+
+.new-popup-registration__thx
+  padding: 35px 0
+
+@keyframes spin
+  0%, 100%
+    +transform(rotate(0deg))
+
+  50%
+    +transform(rotate(180deg))
+
+  100%
+    +transform(rotate(360deg))
+
+.new-popup-registration__step2__form--send
+  color: #666
+
+.curp
+  cursor: pointer
+
+.form--error-notification
+  position: absolute
+  top: 50%
+  line-height: 40px
+  padding: 0 15px
+  font-size: 12px
+  color: #ff0000
+  border: 1px solid #ff0000
+  background: #fff
+  margin-top: -21px
+  border-radius: 3px
+  left: 0
+  +transform(translateX(-100%))
+  margin-left: -10px
+
+  &:after, &:before
+    position: absolute
+    display: block
+    left: 100%
+    top: 50%
+    content: ''
+    border: 6px solid transparent
+    border-left: 6px solid #ff0000
+    margin-top: -6px
+
+  &:after
+    border-left: 6px solid #fff
+    margin-left: -1px
+
+.form--success-notification
+  position: absolute
+  top: 50%
+  line-height: 40px
+  padding: 0 15px
+  font-size: 12px
+  color: green
+  border: 1px solid green
+  background: #fff
+  margin-top: -21px
+  border-radius: 3px
+  left: 0
+  +transform(translateX(-100%))
+  margin-left: -10px
+
+  &:after, &:before
+    position: absolute
+    display: block
+    left: 100%
+    top: 50%
+    content: ''
+    border: 6px solid transparent
+    border-left: 6px solid green
+    margin-top: -6px
+
+  &:after
+    border-left: 6px solid #fff
+    margin-left: -1px
+
+.new-popup-registration__step3-field-container
+  width: 70%
+
+  &.checkboxes-cotnainer
+    margin-bottom: -8px
+
+.new-popup-registration__step3-field-name
+  width: 30%
+  padding-right: 20px
+  padding-top: 10px
+  box-sizing: border-box
+  text-align: left
+  font-family: TruthCYR-M
+
+.new-popup-registration__step3-separator
+  border-bottom: 1px solid #dadada
+
+.text-light
+  font-family: TruthCYR
+
+.new-popup-reg__radio-detect
+  line-height: 38px
+  background: #a7a7a7
+  border-radius: 5px
+  display: inline-block
+  color: #fff
+  padding: 0 15px
+  margin-bottom: 8px
+  cursor: pointer
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input:checked
+  & + .new-popup-reg__radio-detect
+    background: #000
+    background: linear-gradient(to bottom, #cb83d2, #8b5a8f)
+
+.display-flex
+  display: flex
+
+.display-wrap
+  flex-wrap: wrap
+
+.flex-middle
+  align-items: center
+
+.space-between
+  justify-content: space-between
+
+.space-around
+  justify-content: space-around
+
+.new-popup-reg__left, .new-popup-reg__right
+  width: 48%
+
+.new-popup-reg__left-text
+  line-height: 1.7
+
+.new-popup-reg__left
+  padding-bottom: 70px
+  position: relative
+
+  .new-popup-reg__present
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+
+.new-popup-reg__present
+  color: #747aa8
+  line-height: 1.36
+  background: #f9faff
+  border-radius: 5px
+  border: 1px solid #bec2e8
+  padding: 12px
+
+.new-reg__gender-wrapper
+  border-radius: 3px
+  border: 1px solid #9e9e9e
+
+  .new-reg__radio-detector
+    line-height: 38px
+    color: #4d4d4d
+    +transition()
+
+  &
+    > *
+      box-sizing: border-box
+      &:not(:last-child)
+        border-right: 1px solid #9e9e9e
+  input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    z-index: 1
+    cursor: pointer
+
+    &:checked
+      & + .new-reg__radio-detector
+        background: #8b5a8f
+        color: #fff
+
+.new-purple-link
+  color: #a168a6
+  font-family: TruthCYR-R
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.multi-select-emitation__text
+  line-height: 38px
+  border: 1px solid #9e9e9e
+  background: #fff
+  padding: 0 35px 0 35px
+  border-radius: 3px
+  position: relative
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  cursor: pointer
+
+  &.not-empty
+    &:before
+      display: block
+      content: ''
+      position: absolute
+      left: 10px
+      top: 50%
+      margin-top: -6px
+      height: 8px
+      width: 12px
+      border-left: 3px solid #9e4fa6
+      border-bottom: 3px solid #9e4fa6
+      +transform(rotate(-45deg))
+
+  &:after
+    border: 4px solid transparent
+    border-top: 6px solid #a7a7a7
+    content: ''
+    display: block
+    position: absolute
+    right: 15px
+    top: 50%
+    margin-top: -3px
+
+.multi-select-emitation__dropdown
+  position: absolute
+  top: 100%
+  left: 0
+  min-width: 100%
+  z-index: 5
+  background: #fff
+  border: 1px solid #a7a7a7
+  margin-top: 10px
+  padding: 3px 0
+
+  &:before, &:after
+    content: ""
+    display: block
+    position: absolute
+    bottom: 100%
+    left: 20px
+    border: 5px solid transparent
+    border-bottom: 5px solid #9e9e9e
+
+  &:after
+    border-bottom: 5px solid #fff
+    margin-bottom: -1px
+
+.multi-select-emitation__item
+  display: block
+
+  > label
+    display: block
+    padding: 3px 15px 3px 35px
+    position: relative
+
+  .multi-select-emitation__icon-detection
+    position: absolute
+    top: 50%
+    height: 0
+    width: 0
+    left: 10px
+    line-height: 20px
+    margin-top: -10px
+    display: none
+
+  input:checked
+    & + .multi-select-emitation__detection
+      .multi-select-emitation__icon-detection
+        display: block
+
+.overlay
+  &.registration-popups
+    .table_wrap
+      padding: 20px
+
+.new-popup-registration__mask-container__text
+  color: #9b9b9b
+  position: absolute
+  top: 50%
+  +transform(translateY(-50%))
+  left: 0
+  width: 100%
+  text-align: center
+  font-size: 14px
+  line-height: 1.3
+
+.new-popup-reg__three-in-row
+  width: 31.8%
+
+.new-popup-registration__social-listing
+  li:not(:last-child)
+    margin-bottom: 5px
+
+.new-popup-reg__email-question-content
+  p:not(:last-child)
+    margin-bottom: 20px
+
+.new-popup-reg__email-question
+  .icon-purple-question
+    position: absolute
+    top: 50%
+    right: 15px
+    +transform(translateY(-50%))
+
+    &:hover
+      & + .new-popup-reg__email-question-content
+        display: block
+
+.input-has-focus-tooltip
+  &:focus
+    & + .new-popup-reg__email-question
+      .new-popup-reg__email-question-content
+        display: block
+
+.new-popup-reg__email-question-content
+  position: absolute
+  left: -100%
+  right: 100%
+  margin-right: 20px
+  top: 0
+  border-radius: 5px
+  background-color: #ffffff
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.43)
+  padding: 20px
+  z-index: 20
+
+  &:before, &:after
+    position: absolute
+    left: 100%
+    top: 13px
+    content: ''
+    display: block
+    border: 8px solid transparent
+    border-left: 8px solid #fff
+
+  &:before
+    margin-left: 1px
+    border-left-color: #eee
+
+.new-popup-registration__notice
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 410px
+  background: #fff
+  border-radius: 5px
+  padding: 20px
+  box-sizing: border-box
+  +transform(translate3d(-50%, -50%, 0))
+  +transition()
+  z-index: -100
+  opacity: 0
+
+.inherit
+  color: inherit
+  font-size: inherit
+  text-decoration: inherit
+
+.green-round-button
+  border-radius: 100px
+  background: linear-gradient(to bottom, #48ddb0, #3fd0a5)
+  background: -webkit-linear-gradient(to bottom, #48ddb0, #3fd0a5)
+  background: -moz-linear-gradient(to bottom, #48ddb0, #3fd0a5)
+  background: -o-linear-gradient(to bottom, #48ddb0, #3fd0a5)
+  background: -ms-linear-gradient(to bottom, #48ddb0, #3fd0a5)
+  box-shadow: 0 1px 3px 0 rgba(63, 208, 165, 0.7)
+  display: inline-block
+  color: #fff
+  padding: 0 40px
+  line-height: 40px
+  text-decoration: none
+  +transition()
+
+  &:hover
+    box-shadow: 0 1px 3px 0 rgba(63, 208, 165, 0.7), inset 0 0 0 500px rgba(#000, 0.2)
+
+.new-popup-reg__main-block
+  .w30
+    width: 31%
+
+.new-reg-premium
+  &__subtitle
+    font-size: 18px
+
+  &__info-plate
+    color: #fff
+    margin-left: -20px
+    margin-right: -20px
+
+  &__title
+    font-size: 22px
+
+  &__header
+    color: #fff
+    margin-top: -15px
+    margin-right: -20px
+    margin-left: -20px
+    border-radius: 10px 10px 0 0
+    +retina-bg("premium-popup-bg.jpg", "premium-popup-bg@2x.jpg", cover)
+    background-size: cover
+    padding: 40px
+
+  &__info-plate
+    background: #f2535c
+    padding: 10px
+    a
+      &:hover
+        text-decoration: underline
+
+  &__abilities
+    padding: 40px 0
+
+    &-item
+      color: #585858
+
+    &-icon-wrapper
+      line-height: 80px
+      display: inline-block
+      margin-bottom: 10px
+
+    &-title
+      font-size: 18px
+      color: #0c0c0c
+      margin-bottom: 20px
+
+  &__feedbacks
+    color: #000
+    background: rgba(#8e94be, 0.1)
+    display: flex
+    align-items: center
+    margin-left: -20px
+    margin-right: -20px
+    &:before
+      +retina-bg("many-photos-bg.png", "many-photos-bg@2x.png")
+      width: 303px
+      height: 181px
+      background-size: cover
+      display: inline-block
+      vertical-align: middle
+      margin-right: 40px
+      content: ''
+
+    &-text
+      width: 440px
+      text-align: left
+
+  &__choseLifetime
+    padding: 20px 0
+
+    &-title
+      font-size: 18px
+      margin-bottom: 15px
+
+    &-subTitle
+      color: #585858
+      margin-bottom: 30px
+
+    &-buy-button
+      width: 300px
+      margin-left: 20px
+
+    .select_wrap
+      width: 300px
+
+  &__notify
+    padding: 40px 0
+    color: #585858
+
+    .icon-premium-notify-star
+      position: absolute
+      left: -30px
+      top: 5px
+
+.new-popup-registration__crop-buttons
+  width: 370px
+  margin-left: auto
+  margin-right: auto
+
+.new-popup-registration__crop
+  margin-bottom: 10px
+  overflow: hidden
+  max-height: 470px
+  width: 570px
+
+  &-wrapper
+    position: absolute
+    top: -15px
+    bottom: -15px
+    left: -20px
+    right: -20px
+    border-radius: 10px
+    background: #000
+    z-index: 20
+    color: #fff
+    padding: 20px
+    height: 750px
+
+  &-title
+    font-size: 20px
+    margin-bottom: 10px
+
+  &-mask-wrapper
+    position: relative
+    //padding-top: 11px
+    margin-bottom: 30px
+    width: 370px
+    margin-right: auto
+    margin-left: auto
+
+  &-mask-progressbar
+    margin-bottom: 5px
+    height: 4px
+    background: #09c899
+    border-radius: 1px
+    width: 80%
+    display: block
+    +transition()
+
+  &-success
+    color: #10c899
+
+  &-cross
+    color: #df6365
+
+.js-crop-slider
+  width: 150px
+  background: transparent
+  height: 2px
+
+  .ui-slider-handle
+    background: #10c899
+    border: none
+    margin-top: -3px
+
+  .slider-range
+    background: #fff
+    border-radius: 0
+    width: 100%
+
+.crop-slider-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: auto
+
+.new-popup-registration__crop-wrapper-inner
+  width: 570px
+  margin: 0 auto
+  position: relative
+
+// multiselect styles START
+
+.js-multiselect
+  position: relative
+
+  &.dropdown-open
+    .js-multiselect__dropdown
+      display: block
+
+.js-multiselect__current
+  line-height: 36px
+  height: 38px
+  border: 1px solid #9e9e9e
+  border-radius: 3px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding: 0 35px 0 15px
+  background: #f4f4f4
+
+  &:after
+    content: ''
+    display: block
+    border: 4px solid transparent
+    border-top: 6px solid #a7a7a7
+    height: 0
+    width: 0
+    position: absolute
+    top: 50%
+    right: 15px
+    margin-top: -3px
+
+.js-multiselect__dropdown
+  padding-top: 10px
+  display: none
+  position: absolute
+  top: 100%
+  left: 0
+  right: 0
+  z-index: 10
+  font-size: 16px
+
+  &:after, &:before
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    left: 20px
+    border: 5px solid transparent
+    border-bottom: 5px solid #9e9e9e
+
+  &:after
+    border-bottom: 5px solid #fff
+    margin-top: 1px
+
+.js-multiselect__lising
+  border: 1px solid #a7a7a7
+  background: #fff
+  max-height: 300px
+  overflow: auto
+
+.js-multiselect__item
+  position: relative
+  z-index: 1
+  list-style: none
+  line-height: 38px
+
+  &:hover
+    background: #DADADA
+
+  &:not(:last-child)
+    border-bottom: 1px solid #a7a7a7
+
+.js-multiselect__label
+  display: block
+  padding: 0 35px 0 15px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+input:checked
+  & + .js-multiselect__detector
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      position: absolute
+      top: 50%
+      right: 10px
+      -webkit-transform: rotate(-45deg) translateY(-50%)
+      -moz-transform: rotate(-45deg) translateY(-50%)
+      -ms-transform: rotate(-45deg) translateY(-50%)
+      -o-transform: rotate(-45deg) translateY(-50%)
+      transform: rotate(-45deg) translateY(-50%)
+      width: 14px
+      height: 6px
+      border-bottom: 2px solid #000
+      border-left: 2px solid #000
+
+label.parsley-error
+  border: none !important
+
+  span
+    border: 1px solid red
+
+.mask-item
+  &:hover
+    cursor: pointer
+// multiselect styles END
+
+.new-popup-registration__phone-country
+  width: 80px
+  position: relative
+
+  input
+    border-radius: 3px 0 0 3px !important
+    border-right: none !important
+    box-shadow: none !important
+
+  &:after
+    display: block
+    content: ''
+    position: absolute
+    border: 4px solid transparent
+    border-top: 6px solid #4a4a4a
+    right: 10px
+    top: 50%
+    +transform(translateY(-30%))
+    +transition()
+
+  &.active
+    &:after
+      +transform(translateY(-70%) rotate(-180deg))
+
+.new-popup-registration__phone-input
+  flex-grow: 1
+
+  input
+    border-radius: 0 3px 3px 0 !important
+    position: relative
+    z-index: 2
+
+.phone-countries__dropdown
+  position: absolute
+  top: 100%
+  left: 0
+  background: #fff
+  visibility: hidden
+  opacity: 0
+  margin-top: 20px
+  width: 100%
+  text-align: left
+  +transition()
+  box-shadow: 0 0 6px 0 rgba(154, 154, 154, 0.5)
+  padding: 0
+  max-height: 290px
+  overflow: auto
+
+  &.active
+    visibility: visible
+    opacity: 1
+    margin-top: 5px
+
+.phone-countries__item
+  padding: 5px 20px
+  list-style: none
+  cursor: pointer
+
+  &:hover, &.selected
+    background: #f4f4f4
+
+.wallet-lock-page
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .icon-wallet-lock
+    margin-left: 100px
+    margin-right: 50px
+
+  .violet_btn
+    padding: 10px 26px
+
+.violet_btn.semi-disabled
+  background: #fff
+  color: #A269A7
+
+.new-popup-registration__crop-checkbox
+  .checkbox
+    background: #fff
+
+.new-popup-registration
+  .close_popup
+    top: 0
+    right: 0
+
+.canvas-container
+  margin: 0 auto
+
+.buy-premium-popup
+  margin: 0 auto
+
+  .select_wrap_
+    width: 50%
+
+  .package-block
+    width: 70%
+    margin: 0 auto
+    margin-bottom: 15px
+    text-align: left
+
+.phone-on-focus
+  border-color: #b263b8 !important
+  box-shadow: 0 0 0 1px #b263b8
+
+  input[type="text"]
+    border-color: #b263b8 !important
+    box-shadow: 0 0 0 1px #b263b8
+    
+.confirm-picture__userid
+  font-size: 30px
+  
+.confirm-picture
+  display: flex
+  justify-content: space-between
+  align-items: center
+  //width: 100%
+  margin-left: -50px
+  margin-right: -50px
+  
+  &__right
+    width: 200px
+    height: 200px
+    overflow: hidden
+    
+    img
+      max-width: 100%
+  
+  &__left
+    width: calc(100% - 220px)
+    position: relative
+    
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      left: 12px
+      border-right: 1px dotted #3fd0a5
+      height: 100%
+      top: 0
+    
+    &-item
+      padding-left: 32px
+      position: relative
+      z-index: 2
+      
+      &:first-child
+        &:before
+          content: '1'
+          background: #fff
+          display: inline-block
+          width: 24px
+          height: 24px
+          border: 2px solid #3fd0a5
+          border-radius: 100%
+          color: #3fd0a5
+          line-height: 20px
+          text-align: center
+          position: absolute
+          left: 0
+          top: 0
+          
+      &:last-child
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 24px
+          height: 24px
+          border-radius: 100%
+          background: #3fd0a5 url(/images/check-font-awesome@2x.png) no-repeat center center
+          background-size: 14px 14px
+          z-index: 3
+          
+        &:after
+          content: ''
+          position: absolute
+          width: 3px
+          background: #fff
+          z-index: 2
+          height: 100%
+          top: 0
+          left: 11px

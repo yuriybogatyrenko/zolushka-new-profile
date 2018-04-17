@@ -1,0 +1,100 @@
+.about_block{
+	padding: 20px 0 60px 0;
+}
+.about_block h2{
+	font-weight: bold;
+	font-size: 22px;
+    color: #AD5FB5;
+	padding: 30px 0 25px 0;
+	margin: 0;
+}
+.about_block p{
+	line-height: 1.5;
+}
+.about_block li{
+	line-height: 1.5;
+	background: url("../../images/li.png") 0 7px no-repeat;
+	padding: 5px 0 5px 26px;
+	display: block;
+	list-style: none;
+}
+.about_block ul{
+	margin: 10px 0 10px 20px;
+	padding: 10px 0;
+	width: 70%;
+}
+.selected-block{
+	color: #fff;
+	background: #AD5FB5;
+	padding: 5px;
+}
+.selected-block .border-box{
+	border: 1px dashed #fff;
+	padding: 20px 20px 20px 120px;
+	background: url("../../images/logo2-white.png") 15px 15px no-repeat;
+}
+.selected-block h2{
+	color: #fff;
+	padding-top: 0;
+}
+.rules_block{
+	padding: 50px 0;
+}
+.rules_block table thead td{
+	padding: 10px 20px;
+	font-size: 20px;
+}
+.rules_block table td{
+	padding: 10px 20px;
+}
+.custom-ul{
+	margin: 10px 20px;
+	padding: 10px 0;
+}
+.custom-ul li{
+	line-height: 1.5;
+	background: url("../../images/li.png") 0 7px no-repeat;
+	padding: 5px 0 5px 26px;
+	display: block;
+	list-style: none;
+}
+
+.wallet_content .main_popup {
+	display: block;
+	width: auto;
+	padding: 0px;
+	box-shadow: none;
+}
+.wallet_content .mb25 {
+	margin-bottom: 25px;
+}
+.wallet_content .unlocking ul li {
+	list-style: none;
+	padding-left: 40px;
+	line-height: 1.2em;
+}
+.wallet_content .unlocking .main_red_btn {
+	padding: 11px 42px;
+	font-size:14px;
+	background: #f2535c;
+	margin-bottom: 10px;
+}
+.wallet_content .unlocking .main_red_btn:hover {
+	background: #F00;
+}
+.wallet_content .do_not_agree {
+	font-size: 12px;
+	color: #333;
+	text-decoration: underline;
+}
+.wallet_content .add_photoblog {
+	width: 640px;
+	float: left;
+}
+.wallet_content .buy_block .cost_txt {
+	color: #000;
+	position: relative;
+}
+.wallet_content .descr_line {
+	line-height: 30px;
+}

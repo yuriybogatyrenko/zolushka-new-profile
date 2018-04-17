@@ -1,0 +1,180 @@
+@import "mixins/mixins"
+
+.club-cards
+  &__title
+    font-size: 24px
+    color: #0c0c0c
+    margin-bottom: 20px
+
+  &__list_card_preview
+    width: calc(100% - 320px)
+    padding-top: 20px
+
+  &__list
+    padding-left: 20px
+
+  &__list-item
+    list-style: none
+    position: relative
+    padding-left: 25px
+
+    &:not(:last-child)
+      margin-bottom: 15px
+      line-height: 1.3
+
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      left: 0
+      top: 5px
+      width: 10px
+      height: 6px
+      border-bottom: 2px solid #3fd0a5
+      border-left: 2px solid #3fd0a5
+      +transform(rotate(-45deg))
+
+  &__card-preview
+    width: 286px
+
+    img
+      max-width: 100%
+
+  &__bottom-info
+    color: #585858
+    max-width: 80%
+    line-height: 1.3
+
+  .new-reg-premium__notify
+    padding-left: 40px
+    line-height: 1.3
+    max-width: 80%
+
+    p
+      &:not(:last-child)
+        margin-bottom: 20px
+
+  &__activated-list
+    line-height: 1.4
+
+  .new-purple-link
+    color: #b05fbc
+
+.cards-lifetime
+  &__title
+    font-size: 18px
+    color: #0c0c0c
+    line-height: 1.4
+
+  &__sub-title
+    color: #585858
+    line-height: 1.15
+    margin-bottom: 25px
+
+    .red-text
+      color: #e9535d
+
+  &__item
+    background: rgba(#bdbdbd, 0.1)
+    border-radius: 5px
+    width: 30%
+    padding: 25px 15px 50px
+    color: #585858
+    +transition()
+    border: 1px solid rgba(#ac6fb1, 0.1)
+    position: relative
+
+    &:hover, &.active
+      background: rgba(#ac6fb1, 0.1)
+      box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1)
+      border: solid 1px rgba(#9b64a0, 0.1)
+
+    .violet_btn
+      padding: 0
+      line-height: 38px
+
+    &-duration
+      color: #333333
+      margin-bottom: 20px
+
+    &-icon
+      margin-bottom: 15px
+      position: relative
+      display: inline-block
+      vertical-align: middle
+
+    &-title, &-descr
+      font-size: 12px
+      font-family: TruthCYR-M
+      line-height: 1.5
+      color: #585858
+
+    &-descr
+      margin-bottom: 15px
+      font-family: TruthCYR-R
+
+    &-old-price
+      font-family: TruthCYR
+      text-decoration: line-through
+      color: #000
+      opacity: 0.4
+
+    &-price
+      margin-bottom: 15px
+      color: #000
+
+    &-button
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      padding: 10px
+
+  .icon-present-empty__text
+    position: absolute
+    top: -12px
+    right: -15px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 100%
+    width: 32px
+    height: 32px
+    box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.12)
+    color: #ff0418
+    font-size: 14px
+    background: #ffffff
+    font-family: TruthCYR-R
+
+.activated-card
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  height: 130px
+  width: 205px
+  border-radius: 10px
+  color: #fff
+  box-shadow: 0 0 45px rgba(#000, 0.3)
+  background-image: linear-gradient(-60deg, #e2adea, #d663c6)
+  background-image: -webkit-linear-gradient(-60deg, #e2adea, #d663c6)
+  background-image: -moz-linear-gradient(-60deg, #e2adea, #d663c6)
+  background-image: -ms-linear-gradient(-60deg, #e2adea, #d663c6)
+  background-image: -o-linear-gradient(-60deg, #e2adea, #d663c6)
+
+  &__duration
+    font-size: 29px
+    line-height: 1
+
+.hide-status__title
+  color: #0c0c0c
+  margin-bottom: 20px
+
+.wallet-lock-page
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .icon-wallet-lock
+    margin-left: 100px
+    margin-right: 50px

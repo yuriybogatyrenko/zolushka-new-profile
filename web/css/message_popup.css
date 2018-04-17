@@ -1,0 +1,145 @@
+/*.main_popup.message_popup {
+	max-width:1170px;
+	min-width:940px;
+	width:100%;
+	text-align:left;
+	margin: 0 auto;
+}*/
+
+.message_popup .open_edit_messages_profiles {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.messages_folders .close_messages {
+	position:absolute !important;
+	top:15px !important;
+	right:5px !important;
+	font-size:24px !important;
+	cursor:pointer !important;
+	color:#666 !important;
+}
+
+.messages_folders {
+	position:relative !important;
+}
+
+.message_popup .content_wrap_shadow {
+	margin-bottom:0 !important;
+}
+
+.sidebar_msg_contacts li > label {
+	padding: 10px 0 10px 10px !important;
+}
+
+.sidebar_msg_contacts li .photo .message_num {
+	top: -2px !important;
+	right: -2px !important;
+	box-shadow: 0 0 5px #000 !important;
+	font-size: 10px !important;
+	width: 16px !important;
+	height: 16px !important;
+	line-height: 16px !important;
+}
+
+.sidebar_msg_contacts .icon_wrap {
+	font-size: 0 !important;
+}
+
+.sidebar_msg_contacts .icon_wrap > .dib {
+	font-size: 20px !important;
+}
+
+.sidebar_msg_contacts li .photo {
+	width: 50px !important;
+}
+
+.sidebar_msg_contacts li .photo .icon {
+	width: 40px !important;
+	height: 40px !important;
+}
+
+.message_table .message_text_wrap {
+	padding: 10px 15px !important;
+}
+
+.message_table .message_time {
+	top: 10px !important;
+}
+
+.open_edit_chats {
+	color: #ff6673 !important;
+	text-decoration: none !important;
+	vertical-align: baseline !important;
+}
+
+.open_edit_chats:hover {
+	text-decoration: underline !important;
+}
+
+.dd_menu_chats_action {
+	position: absolute !important;
+	top: 70% !important;
+	right: -21px;
+	z-index: 10 !important;
+	white-space: nowrap !important;
+	padding-top: 10px !important;
+	display: none;
+}
+
+.dd_menu_chats_action > ul {
+	box-shadow: 0 0 5px #ccc;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.dd_menu_chats_action:after, .dd_menu_chats_action:before {
+	position: absolute !important;
+	top: 0;
+	content: '';
+	right: 22px;
+	display: block;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #ccc;
+	margin-top: -10px;
+}
+
+.dd_menu_chats_action:after {
+	margin-top: -8px !important;
+	border-bottom: 10px solid #fff !important;
+}
+
+.dd_menu_chats_action li {
+	list-style: none !important;
+	border-bottom: 1px solid #ccc !important;
+}
+
+.dd_menu_chats_action li:last-child {
+	border-bottom: none !important;
+}
+
+.dd_menu_chats_action a {
+	display: block;
+	padding: 10px!important;
+	font-size: 12px!important;
+	color: #000!important;
+	line-height: 1em;
+}
+
+.dd_menu_chats_action a:hover {
+	background: #eee !important;
+}
+
+.open_edit_messages_profiles {
+	position: relative !important;
+}
+
+@media screen and (max-width: 1000px) {
+	.main_popup.message_popup {
+		width: 100% !important;
+	}
+}
+
+.add_folder_btn_wrap .add_folder_btn {
+	display: block;
+}

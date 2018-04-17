@@ -1,0 +1,55 @@
+.frame-kept{
+  width: 846px;
+  height: 564px;
+  padding: 0;
+  margin: 0;
+}
+
+.frame-kept .kept{
+  float: left;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.frame-kept .kept .avatar{
+  width: 282px;
+  height: 282px;
+  padding: 0;
+  margin: 0;
+}
+
+.frame-kept .kept .photo-real-icon{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -63px;
+}
+
+.frame-horizontal {
+  width: 990px;
+  height: 100px;
+  outline: 1px solid #f4f4f4;
+}
+
+.frame-horizontal__item {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid #f9f9f9;
+}
+
+.frame-horizontal__kept__avatar {
+  width: 100px;
+}
+
+.frame-horizontal__item--left {
+  float: left;
+}
+
+.frame-horizontal__item--right {
+  float: right;
+}
+
+.frame-horizontal__banner {
+  float: left;
+}

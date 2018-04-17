@@ -1,0 +1,123 @@
+.icomoon-profile-moderation-pending {
+  position: relative;
+}
+.icomoon-profile-moderation-pending .path2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+.icomoon-profile-moderation-pending .path2:before {
+  margin: 0;
+}
+
+.circle-status {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+  background-color: #ccc;
+}
+.circle-status.online {
+  background-color: #7ed321;
+}
+
+.fw-reset {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.fw-reset:hover, .fw-reset:active, .fw-reset:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.new-profile {
+  display: flex;
+}
+.new-profile__left {
+  width: 276px;
+  flex-shrink: 0;
+}
+.new-profile__image-wrapper {
+  font-size: 0;
+  position: relative;
+}
+.new-profile__avatar {
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.new-profile__image-notify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding-right: 30px;
+}
+.new-profile__image-notify--blue {
+  background-color: rgba(72, 171, 255, 0.5);
+  color: #fff;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.new-profile__image-notify [class*="icomoon-"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+}
+.new-profile__parameters {
+  padding: 15px 0;
+  display: flex;
+}
+.new-profile__appearance {
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.new-profile__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.2);
+}
+.new-profile__actions-separator {
+  border-left: solid 1px rgba(151, 151, 151, 0.2);
+  height: 20px;
+}
+.new-profile__about {
+  flex-grow: 1;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.new-profile__name {
+  font-size: 18px;
+}
+.new-profile__city {
+  margin-top: 10px;
+}
+.new-profile__album {
+  flex-grow: 1;
+}
+
+.color-light {
+  color: #969696;
+}
+
+.color-red {
+  color: #ff666f;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=new-profile.css.map */

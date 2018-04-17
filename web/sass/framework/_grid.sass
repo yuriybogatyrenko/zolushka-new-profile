@@ -1,0 +1,27 @@
+.fw-grid
+  display: flex
+  flex-wrap: wrap
+
+.fw-grid-middle
+  align-items: center
+
+.fw-grid-center
+  justify-content: center
+
+.fw-grid-bottom
+  align-items: center
+
+.fw-grid-match
+  align-items: stretch
+
+@each $value in $grid
+  .fw-grid-#{$value}
+    margin-left: -#{$value}px
+    margin-bottom: -#{$value}px
+
+    & > *
+      box-sizing: border-box
+      padding-left: #{$value}px
+      margin-bottom: #{$value}px
+      display: flex
+      flex-direction: column

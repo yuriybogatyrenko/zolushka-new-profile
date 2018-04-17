@@ -1,0 +1,134 @@
+.popup--addinfo_mask__item {
+	float: left;
+	width: 18%;
+	text-align: center;
+	margin-right: 2.5%;
+	position: relative;
+}
+
+.popup--addinfo_mask__item.active:after {
+	position: absolute;
+	content: '';
+	display: block;
+	background: url(../images/popup_mask/active--mask.png) no-repeat center center;
+	top: 7px;
+	right: 7px;
+	width: 22px;
+	height: 22px;
+}
+
+strong {
+	font-family: TruthCYR-R;
+	font-weight: normal;
+}
+
+.popup--addinfo_mask_img {
+	max-width: 100%;
+}
+
+.popup--addinfo_mask__item:last-child {
+	margin-right: 0;
+}
+
+.popup--addinfo_subtitle {
+	margin-bottom: 5px;
+}
+
+.popup--addinfo_content {
+	/*margin-bottom: 20px;*/
+	line-height: normal;
+}
+
+.popup--addinfo_content p {
+	margin-bottom: 10px;
+}
+
+.popup--addinfo_content p:last-child {
+	margin-bottom: 0;
+}
+
+.popup--meet__goal--form_left {
+	margin-right: 50px;
+}
+
+.popup--meet__goal--form_left p {
+	margin-bottom: 10px;
+}
+
+.popup--meet__goal--form_left p:last-child {
+	margin-bottom: 0;
+}
+
+.popup--addinfo_mask__grid {
+	margin-bottom: 10px;
+}
+
+.popup--addinfo_mask__grid.dark_bg {
+	background: #4a4a4a;
+	padding: 10px 0;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 0;
+}
+
+.popup--meet__goal__title {
+	margin-bottom: 5px;
+}
+
+.popup--meet__goal__text {
+	margin-bottom: 20px;
+}
+
+.popup--addinfo_crop__wrapper {
+	background: #282828;
+	padding: 30px 0;
+}
+
+.the_crop__add_file {
+	width: auto;
+	padding: 0 15px;
+	line-height: 34px;
+	border-radius: 5px;
+	border: 1px solid #979797;
+	background: linear-gradient(top , #f1f1f1 0%, #d5d5d5 100%);
+	background: -webkit-linear-gradient(top , #f1f1f1 0%, #d5d5d5 100%);
+	background: -moz-linear-gradient(top , #f1f1f1 0%, #d5d5d5 100%);
+	background: -o-linear-gradient(top , #f1f1f1 0%, #d5d5d5 100%);
+	background: -ms-linear-gradient(top , #f1f1f1 0%, #d5d5d5 100%);
+	font-family: "TruthCYR-R";
+	display: inline-block;
+	font-size: 16px;
+	color: #6f6f6f;
+	cursor: pointer;
+}
+
+.popup--addinfo_buttons {
+	padding-top: 20px;
+}
+
+.popup--addinfo_buttons .main_red_btn {
+	margin-right: 20px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.icon-make_main {
+	display: inline-block;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	border-radius: 100%;
+	position: relative;
+	top: -1px;
+	border: 1px solid #fff;
+	margin-right: 3px;
+}
+
+.text--make--main {
+	color: #fff;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-bottom: -20px;
+	margin-top: 5px;
+}

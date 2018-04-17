@@ -1,0 +1,111 @@
+.page_404 {
+	padding: 30px 0;
+	line-height: normal;
+	margin-bottom: 50px;
+}
+
+.page_404 h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.page_404 .page_not_found {
+	font-size: 32px;
+	font-family: truthcyr-r;
+	color: #a04fa7;
+	margin-bottom: 20px;
+}
+
+.page_404_descr {
+	font-size: 14px;
+	line-height: normal;
+	margin-bottom: 45px;
+	line-height: 1.5;
+}
+
+.page_404_promo_block .promo_header {
+	border-radius: 40px 40px 0 0;
+	background: #AC5EB2;
+	color: #fff;
+	font-size: 16px;
+	padding: 30px 0;
+	font-family: "truthcyr";
+}
+
+.page_404_promo_block .promo_header .purple_text {
+	background: #b38bb7;
+	font-size: 22px;
+	padding: 3px 10px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.page_404_promo_block .promo_header .bigger {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.page_404_promo_block .promo_content {
+	border: 3px dashed #ac5eb3;
+	border-radius: 0 0 40px 40px;
+	box-shadow: 0 0 59px rgba( 0, 0, 0, 0.6 );
+}
+
+.page_404_promo_block .promo_content img {
+	max-width: 90%;
+	border-radius: 40px;
+}
+
+.page_404_promo_block .promo_content .l_bl, .page_404_promo_block .promo_content .r_bl {
+	width: 50%;
+	padding-right: 20px;
+	padding-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.page_404_promo_block .promo_content .r_bl {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.page_404_promo_block .promo_content .get_money {
+	font-size: 36px;
+	color: #a04da8;
+	margin-bottom: 10px;
+}
+
+.page_404_promo_block .promo_content .the_promo_p {
+	color: #a04da8;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.page_404_promo_block .promo_content .the_promo_p .the_promo {
+	font-size: 24px;
+	color: #242424;
+}
+
+.page_404_promo_block .additional_information {
+	font-size: 14px;
+	color: #303030;
+}
+
+.page_404_promo_block .additional_information p {
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+
+.page_404_promo_block .additional_information p:last-child {
+	margin-bottom: 0;
+}
+
+.page_404_promo_block .additional_information a {
+	text-decoration: underline;
+	display: inline;
+}
+
+.page_404_promo_block .additional_information a:hover {
+	text-decoration: none;
+}

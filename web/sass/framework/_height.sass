@@ -1,0 +1,16 @@
+.fw-max-height-percent-100
+  max-height: 100%
+
+@each $value in $height_grid
+  .fw-height-#{nth($value, 1)}-#{nth($value, 2)}
+    height: nth($value,1) / nth($value,2) * 100%
+
+@each $value in $height
+  .fw-height-#{$value}
+    height: #{$value}px
+
+  .fw-max-height-#{$value}
+    max-height: #{$value}px
+
+  .fw-min-height-#{$value}
+    min-height: #{$value}px

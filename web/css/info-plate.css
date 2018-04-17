@@ -1,0 +1,31 @@
+.-info-plate {
+  background: rgba(188, 121, 195, 0.1);
+  color: #000;
+  font-family: TruthCYR-R;
+  font-size: 12px;
+  padding: 16px 0;
+}
+
+.icon-plate-notice {
+  background-image: url('../images/icons-s97e2d2597d.png');
+  background-position: 0 -308px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-right: 2px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .icon-plate-notice {
+    background-image: url('../images/icons-2x-s331bd375d3.png');
+    background-size: 70px auto;
+    background-position: 0 -283px;
+    height: 16px;
+    width: 16px;
+  }
+}

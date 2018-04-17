@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kowwls');
-  src:  url('fonts/icomoon.eot?kowwls#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kowwls') format('truetype'),
-    url('fonts/icomoon.woff?kowwls') format('woff'),
-    url('fonts/icomoon.svg?kowwls#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?y06z36');
+  src:  url('fonts/icomoon.eot?y06z36#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y06z36') format('truetype'),
+    url('fonts/icomoon.woff?y06z36') format('woff'),
+    url('fonts/icomoon.svg?y06z36#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,19 +24,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-more-dots:before {
+  content: "\e90d";
+}
+.icomoon-profile-moderation-canceled .path1:before {
+  content: "\e90b";
+  color: rgb(255, 0, 0);
+}
+.icomoon-profile-moderation-canceled .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icomoon-pad-lock:before {
+  content: "\e90e";
+}
+.icomoon-writing-message:before {
+  content: "\e90f";
+}
 .icomoon-crown:before {
   content: "\e90a";
 }
-.icomoon-profile-photo-canceled .path1:before {
+.icomoon-profile-photo-warning .path1:before {
   content: "\1f32b";
   color: rgb(255, 0, 0);
 }
-.icomoon-profile-photo-canceled .path2:before {
+.icomoon-profile-photo-warning .path2:before {
   content: "\1f32c";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-.icomoon-profile-photo-canceled .path3:before {
+.icomoon-profile-photo-warning .path3:before {
   content: "\1f32d";
   margin-left: -1em;
   color: rgb(255, 255, 255);

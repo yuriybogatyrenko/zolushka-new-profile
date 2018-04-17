@@ -11,6 +11,7 @@ var gulp = require('gulp'),                        // Gulp
     sourcemaps = require('gulp-sourcemaps'),
     path = require('path'),  						// Path
     twig = require('gulp-twig'),
+    browserSync = require('browser-sync'),
     plumber = require('gulp-plumber');  			// Path
 
 gulp.task('css', function () {
@@ -47,10 +48,12 @@ gulp.task('css', function () {
         .pipe(concat('style.min.css'))
         .pipe(minifyCss())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./web/dist'));
+        .pipe(gulp.dest('./web/dist'))
+        .pipe(browserSync.reload({stream: true}));
 
     gulp.src(assets)
-        .pipe(gulp.dest('./web/dist'));
+        .pipe(gulp.dest('./web/dist'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 // Build our js files!
@@ -241,7 +244,8 @@ gulp.task('js', function () {
         './web/js/app/m/blog/comment/comment.component.js'
     ])
         .pipe(concat('app.min.js'))
-        .pipe(gulp.dest('./web/m/js'));
+        .pipe(gulp.dest('./web/m/js'))
+        .pipe(browserSync.reload({stream: true}));
 
 });
 
@@ -293,7 +297,8 @@ gulp.task('compass', function () {
             sourcemap: true,
             relative: true
         }))
-        .pipe(gulp.dest(sources.css.dist));
+        .pipe(gulp.dest(sources.css.dist))
+        .pipe(browserSync.reload({stream: true}));
 
     gulp.src(sources.mobile.sass.watch)
         .pipe(plumber())
@@ -305,7 +310,8 @@ gulp.task('compass', function () {
             relative: true
 
         }))
-        .pipe(gulp.dest(sources.mobile.css.dist));
+        .pipe(gulp.dest(sources.mobile.css.dist))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('twig', function () {
@@ -320,7 +326,15 @@ gulp.task('twig', function () {
                 ]
             }
         }))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+/* BROWSER SYNC -------------------------------------------------------------- */
+gulp.task('browser-sync', function () {
+    browserSync.init({
+        server: "./"
+    });
 });
 
 // watch
@@ -329,6 +343,7 @@ gulp.task('watch', function () {
     gulp.watch('./web/css/**/*.css', ['css']);
     gulp.watch('./web/js/app/**/*.js', ['js']);
     gulp.watch('./twig/**/*.twig', ['twig']);
+    gulp.watch('./*.html').on('change', browserSync.reload)
 });
 
-gulp.task('default', ['compass', 'css', 'js', 'twig', 'watch']);
+gulp.task('default', ['browser-sync', 'compass', 'css', 'js', 'twig', 'watch']);

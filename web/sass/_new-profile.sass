@@ -204,7 +204,7 @@
         width: 14px
         height: 14px
         border-radius: 100%
-        border: 2px solid $colorPurple
+        border: 2px solid #fff
         display: inline-block
         position: relative
         vertical-align: middle
@@ -225,6 +225,7 @@
     input[type="checkbox"]
       &:checked + .new-profile__album-item-checkbox-detector
         background-color: $colorPurple
+        border-color: $colorPurple
         &:after
           opacity: 1
 
@@ -240,3 +241,42 @@
 
 .fz20
   font-size: 20px
+
+body
+  line-height: normal
+
+.fw-absolute
+  left: 0
+  top: 0
+  background-color: transparent
+  border-radius: 4px
+  transition: 1s ease
+  opacity: 0
+  &:hover
+    opacity: 1
+    background-color: rgba(0,0,0,0.5)
+
+.photoOverlay_active
+  background-color: rgba(0,0,0,.5)
+  opacity: 1
+
+.deleteImages
+  display: none
+.button_view_photo
+  position: absolute
+  font-size: 18px
+  color: #ffffff
+  cursor: pointer
+  margin: 0
+  padding: 0
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+
+.editPhoto
+  position: absolute
+  left: 10px
+  top: 10px
+  font-size: 14px
+  color: $colorPurple
+  cursor: pointer

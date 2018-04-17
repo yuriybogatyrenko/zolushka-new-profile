@@ -1626,7 +1626,7 @@
 }
 
 .icon-reg-video {
-  background-image: url('../../sass_images/reg-popup-vedeo-bg.jpg?1517635277');
+  background-image: url('../../sass_images/reg-popup-vedeo-bg.jpg?1523948154');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 253px 146px;
@@ -1638,7 +1638,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .icon-reg-video {
-    background-image: url('../../sass_images/reg-popup-vedeo-bg@2x.jpg?1517635277');
+    background-image: url('../../sass_images/reg-popup-vedeo-bg@2x.jpg?1523948154');
   }
 }
 
@@ -2893,7 +2893,7 @@ input:checked + .new-popup-reg__radio-detect {
   margin-right: -20px;
   margin-left: -20px;
   border-radius: 10px 10px 0 0;
-  background-image: url('../../sass_images/premium-popup-bg.jpg?1517635277');
+  background-image: url('../../sass_images/premium-popup-bg.jpg?1523948154');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 900px 389px;
@@ -2902,7 +2902,7 @@ input:checked + .new-popup-reg__radio-detect {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .new-reg-premium__header {
-    background-image: url('../../sass_images/premium-popup-bg@2x.jpg?1517635277');
+    background-image: url('../../sass_images/premium-popup-bg@2x.jpg?1523948154');
   }
 }
 .new-reg-premium__info-plate {
@@ -2937,7 +2937,7 @@ input:checked + .new-popup-reg__radio-detect {
   margin-right: -20px;
 }
 .new-reg-premium__feedbacks:before {
-  background-image: url('../../sass_images/many-photos-bg.png?1517635277');
+  background-image: url('../../sass_images/many-photos-bg.png?1523948154');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 303px 181px;
@@ -2951,7 +2951,7 @@ input:checked + .new-popup-reg__radio-detect {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .new-reg-premium__feedbacks:before {
-    background-image: url('../../sass_images/many-photos-bg@2x.png?1517635277');
+    background-image: url('../../sass_images/many-photos-bg@2x.png?1523948154');
   }
 }
 .new-reg-premium__feedbacks-text {
@@ -3594,7 +3594,7 @@ label.parsley-error span {
   width: 14px;
   height: 14px;
   border-radius: 100%;
-  border: 2px solid #ba78c0;
+  border: 2px solid #fff;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -3614,6 +3614,7 @@ label.parsley-error span {
 }
 .new-profile__album input[type="checkbox"]:checked + .new-profile__album-item-checkbox-detector {
   background-color: #ba78c0;
+  border-color: #ba78c0;
 }
 .new-profile__album input[type="checkbox"]:checked + .new-profile__album-item-checkbox-detector:after {
   opacity: 1;
@@ -3632,6 +3633,116 @@ label.parsley-error span {
 
 .fz20 {
   font-size: 20px;
+}
+
+body {
+  line-height: normal;
+}
+
+.fw-absolute {
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: 1s ease;
+  opacity: 0;
+}
+.fw-absolute:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photoOverlay_active {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.deleteImages {
+  display: none;
+}
+
+.button_view_photo {
+  position: absolute;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.editPhoto {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: #ba78c0;
+  cursor: pointer;
+}
+
+.overlay .popupWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewPhoto {
+  height: auto;
+  width: 610px;
+  position: relative;
+  overflow: hidden;
+  max-width: 610px;
+  line-height: normal;
+}
+.viewPhoto__img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.editPanel {
+  position: absolute;
+  bottom: 28px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+.editPanel__buttons .edit {
+  padding-left: 38px;
+  position: relative;
+}
+.editPanel__buttons .edit:before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  width: 1px;
+  height: 18px;
+  top: 0;
+  background-color: #fff;
+}
+
+.view-popup-btn {
+  font-family: "TruthCYR";
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.view-popup-btn:hover {
+  color: #b263b7;
+}
+
+.closePhotoPopup {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

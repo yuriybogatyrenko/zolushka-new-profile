@@ -617,5 +617,47 @@
                src="https://www.facebook.com/tr?id=517976461707824&ev=PageView&noscript=1"
     /></noscript>
 
-</body>
+<div class="overlay overlayPopup">
+    <div class="table_wrap popupWrap">
+        <div class="viewPhoto fw-relative">
+            <div class="closePhotoPopup"><img src="web/sass_images/icons/icon-crop-cross.png" alt=""></div>
+            <img src="web/sass_images/header_bg.jpg" class="viewPhoto__img" alt="">
+            <div class="editPanel fw-width-1-1">
+                <div class="editPanel__buttons">
+                    <button class="beMain view-popup-btn">Сделать основным</button>
+                    <button class="edit view-popup-btn">Редактировать</button>
+                </div>
+
+                <button class="editPanel__delete view-popup-btn">Удалить</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var vievPopup = function () {
+
+        $('.button_view_photo').click(function () {
+            $('.overlay').css('display', 'block');
+        });
+
+        $('.closePhotoPopup').click(function () {
+            $('.overlay').css('display', 'none');
+        });
+
+    };
+
+    $('.check_img').click(function () {
+        if($(this).is(":checked")) {
+            $(this).parent().parent().addClass('photoOverlay_active');
+            $('.deleteImages').css('display', 'block');
+        } else {
+            $(this).parent().parent().removeClass('photoOverlay_active');
+        }
+    });
+
+    vievPopup();
+</script></body>
 </html>

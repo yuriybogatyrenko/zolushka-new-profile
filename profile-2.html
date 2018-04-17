@@ -211,7 +211,7 @@
                 <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
                     <div class="fw-fz-18">Общий альбом</div>
                     <div>
-                        <a href="#" class="fw-reset fw-flex fw-flex-middle fw-color-purple">
+                        <a href="#" class="fw-reset fw-flex fw-flex-middle deleteImages fw-color-purple">
                             <i class="icomoon icomoon-trash fw-color-red-light fw-fz-18 fw-mr-10"></i>
                             <span>Удалить</span>
                         </a>
@@ -225,241 +225,339 @@
                         </span>
                     </label>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                             <div class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative">
-                            <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image"
-                                 alt="">
-                            <div class="new-profile__album-item--hover fw-width-1-1 fw-height-1-1 fw-absolute">
+                            <div class="fw-width-1-1 fw-height-1-1 fw-relative">
+                                <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                            </div>
-                            <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                <input type="checkbox" class="fw-hidden no-style">
-                                <span class="new-profile__album-item-checkbox-detector"></span>
-                            </label>
-                            <div class="new-profile__album-item-notify fw-fz-16">
-                                <span class="icomoon icomoon-profile-moderation-pending">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
+                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+
+                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                        <input type="checkbox" class="fw-hidden no-style check_img">
+                                        <span class="new-profile__album-item-checkbox-detector"></span>
+                                    </label>
+
+                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
+
+                                    <div class="new-profile__album-item-notify fw-fz-16">
+                                        <span class="icomoon icomoon-profile-moderation-pending">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                                                                 <div class="js-new-profile__album-item new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative fw-hidden">
@@ -631,6 +729,8 @@
 
             document.getElementsByClassName('js-new-profile__album-more')[0].classList.add('fw-hidden');
         });
+
+
     </script>
     </div>
 
@@ -983,5 +1083,47 @@
                src="https://www.facebook.com/tr?id=517976461707824&ev=PageView&noscript=1"
     /></noscript>
 
-</body>
+<div class="overlay overlayPopup">
+    <div class="table_wrap popupWrap">
+        <div class="viewPhoto fw-relative">
+            <div class="closePhotoPopup"><img src="web/sass_images/icons/icon-crop-cross.png" alt=""></div>
+            <img src="web/sass_images/header_bg.jpg" class="viewPhoto__img" alt="">
+            <div class="editPanel fw-width-1-1">
+                <div class="editPanel__buttons">
+                    <button class="beMain view-popup-btn">Сделать основным</button>
+                    <button class="edit view-popup-btn">Редактировать</button>
+                </div>
+
+                <button class="editPanel__delete view-popup-btn">Удалить</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var vievPopup = function () {
+
+        $('.button_view_photo').click(function () {
+            $('.overlay').css('display', 'block');
+        });
+
+        $('.closePhotoPopup').click(function () {
+            $('.overlay').css('display', 'none');
+        });
+
+    };
+
+    $('.check_img').click(function () {
+        if($(this).is(":checked")) {
+            $(this).parent().parent().addClass('photoOverlay_active');
+            $('.deleteImages').css('display', 'block');
+        } else {
+            $(this).parent().parent().removeClass('photoOverlay_active');
+        }
+    });
+
+    vievPopup();
+</script></body>
 </html>

@@ -1,0 +1,58 @@
+.overlay .popupWrap
+	display: flex
+	align-items: center
+	justify-content: center
+
+.viewPhoto
+	height: auto
+	width: 610px
+	position: relative
+	overflow: hidden
+	max-width: 610px
+	line-height: normal
+	//background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)
+	&__img
+		width: 100%
+		height: auto
+		border-radius: 10px
+
+.editPanel
+	position: absolute
+	bottom: 28px
+	left: 0px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0 28px
+	&__buttons
+		.edit
+			padding-left: 38px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				left: 19px
+				width: 1px
+				height: 18px
+				top: 0
+				background-color: #fff
+
+
+
+.view-popup-btn
+	font-family: "TruthCYR"
+	font-size: 14px
+	color: #ffffff
+	transition: all .5s ease
+	cursor: pointer
+	background-color: transparent
+	border: none
+	&:hover
+		color: #b263b7
+
+
+.closePhotoPopup
+	position: absolute
+	right: 28px
+	top: 28px
+	cursor: pointer

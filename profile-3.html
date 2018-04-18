@@ -620,7 +620,7 @@
 <div class="overlay overlayPopup">
     <div class="table_wrap popupWrap">
         <div class="viewPhoto fw-relative">
-            <div class="closePhotoPopup"><img src="web/sass_images/icons/icon-crop-cross.png" alt=""></div>
+            <div class="closePhotoPopup"><i class="icon icon-crop-cross"></i></div>
             <img src="web/sass_images/header_bg.jpg" class="viewPhoto__img" alt="">
             <div class="editPanel fw-width-1-1">
                 <div class="editPanel__buttons">
@@ -638,8 +638,8 @@
 
 <script>
 
-    $( document ).ready(function() {
-        
+    $(document).ready(function () {
+
         var viewPopup = function () {
 
             $('.button_view_photo').click(function () {
@@ -650,31 +650,38 @@
                 $('.overlay').css('display', 'none');
             });
 
+            // TODO вот этот код не было необходимости писать, потому что функционал попапов написан и надо использовать функционал попапов проекта в целом а не писать каждый раз свой под каждый попап
+
         };
 
-
+        // TODO все классы с которым работает JS необходимо создавать отдельно, дополнительные классы и ставить им приставку .js-check-box
         var checkboxFunction = function () {
 
             var i = 0;
 
-            function add(){
+            function add() {
                 i++;
             }
 
-            function remove(){
+            function remove() {
                 i--;
             }
 
-            function button(){
-                if(i == 0 ){
-                    $('.deleteImages').hide();
-                }else if(i>0){
+            function button() { // TODO вместо того что бы каждый раз бегать по всем картинкам и показывать или прятать их, я бы на текущий момент зацепился за контейнер и добавлял ему доп класс и убирал его, и уже через CSS показывал или прятал необходимые мне элементы и состояния, это более оптимизированный подход (меньше JS ресурсов)
+                if (i === 0) {
+                    $('.deleteImages').hide(); // TODO подобные классы в таком крупном проекте не подходят, по скольку ты хочешь тут юзать БЭМ необходимо заменять их на .js-new-profile-album-delete-image к примеру. что бы они имели очень конкретную привязку
+                } else if (i > 0) {
                     $('.deleteImages').show();
                 }
             }
 
-            $('.check_img').click(function () {
-                if($(this).is(":checked"))  {
+
+            // TODO вот эту функцию я бы вообще переписал, я бы сделал ее таким образом что она подсчитывает количество чекнутых чекбоксов при изменении состояния чекбокса
+            // в данном случае функции add и remove будут не нужны, логика с определением и добавлением будет так же не нужна, в общем проще и красивее
+            // + конструкция .click устарела, необходимо писать .on('click', function(){})
+
+            $('.check_img').click(function () { // TODO тут так же проблемы с классом и в целом таких классов даже в новом проекте быть не должно. необходимо делать очень конкретные классы что бы понимать к чему относится
+                if ($(this).is(":checked")) {
                     add();
                     $(this).parent().parent().addClass('photoOverlay_active');
 

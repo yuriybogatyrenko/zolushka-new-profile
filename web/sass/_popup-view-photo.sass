@@ -1,33 +1,34 @@
 .overlay .popupWrap
-	display: flex
-	align-items: center
-	justify-content: center
+	display: flex // .fw-flex
+	align-items: center // .fw-flex-middle
+	justify-content: center // .fw-flex-center
+
 
 .viewPhoto
-	height: auto
-	width: 610px
-	position: relative
-	overflow: hidden
-	max-width: 610px
+	height: auto // TODO сюда в целом можно добавить класс типа fw-height-auto, ты его много где юзаешь по этому это имеет отличный смысл, добавить его можно соответственно в файл _height.sass
+	width: 610px // fw-width-610
+	position: relative // fw-relative
+	overflow: hidden // fw-overflow-hidden
+	max-width: 610px // fw-max-width-610
 	line-height: normal
 	//background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)
 	&__img
-		width: 100%
+		width: 100% // fw-width-1-1
 		height: auto
-		border-radius: 10px
+		border-radius: 10px //fw-border-radius-10
 
 .editPanel
-	position: absolute
-	bottom: 28px
-	left: 0px
-	display: flex
-	align-items: center
-	justify-content: space-between
-	padding: 0 28px
+	position: absolute // fw-absolute
+	bottom: 28px // fw-bottom-28
+	left: 0 // fw-left-0
+	display: flex // fw-flex
+	align-items: center // fw-flex-middle
+	justify-content: space-between // fw-flex-space-between
+	padding: 0 28px // fw-pl-28 fw-pr-28
 	&__buttons
 		.edit
-			padding-left: 38px
-			position: relative
+			padding-left: 38px // fw-pl-38
+			position: relative // fw-relative
 			&:before
 				content: ''
 				position: absolute
@@ -40,18 +41,18 @@
 
 
 .view-popup-btn
-	font-size: 14px
-	color: #ffffff
-	transition: all .5s ease
+	font-size: 14px // fw-fz-14
+	color: #ffffff // fw-color-white
+	transition: all .3s ease
 	cursor: pointer
 	background-color: transparent
 	border: none
 	&:hover
-		color: #b263b7
+		color: #b263b7 // TODO нужно выделить в отдельный цвет в файле colors.sass и использовать переменную
 
 
 .closePhotoPopup
-	position: absolute
-	right: 28px
-	top: 28px
-	cursor: pointer
+	position: absolute // fw-absolute
+	right: 28px // fw-right-28
+	top: 28px // fw-top-28
+	cursor: pointer // TODO убираем camelcase везде и переводим на обычный бэм

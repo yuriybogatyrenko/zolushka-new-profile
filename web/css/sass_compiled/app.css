@@ -1626,7 +1626,7 @@
 }
 
 .icon-reg-video {
-  background-image: url('../../sass_images/reg-popup-vedeo-bg.jpg?1523948154');
+  background-image: url('../../sass_images/reg-popup-vedeo-bg.jpg?1517635277');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 253px 146px;
@@ -1638,7 +1638,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .icon-reg-video {
-    background-image: url('../../sass_images/reg-popup-vedeo-bg@2x.jpg?1523948154');
+    background-image: url('../../sass_images/reg-popup-vedeo-bg@2x.jpg?1517635277');
   }
 }
 
@@ -2893,7 +2893,7 @@ input:checked + .new-popup-reg__radio-detect {
   margin-right: -20px;
   margin-left: -20px;
   border-radius: 10px 10px 0 0;
-  background-image: url('../../sass_images/premium-popup-bg.jpg?1523948154');
+  background-image: url('../../sass_images/premium-popup-bg.jpg?1517635277');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 900px 389px;
@@ -2902,7 +2902,7 @@ input:checked + .new-popup-reg__radio-detect {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .new-reg-premium__header {
-    background-image: url('../../sass_images/premium-popup-bg@2x.jpg?1523948154');
+    background-image: url('../../sass_images/premium-popup-bg@2x.jpg?1517635277');
   }
 }
 .new-reg-premium__info-plate {
@@ -2937,7 +2937,7 @@ input:checked + .new-popup-reg__radio-detect {
   margin-right: -20px;
 }
 .new-reg-premium__feedbacks:before {
-  background-image: url('../../sass_images/many-photos-bg.png?1523948154');
+  background-image: url('../../sass_images/many-photos-bg.png?1517635277');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 303px 181px;
@@ -2951,7 +2951,7 @@ input:checked + .new-popup-reg__radio-detect {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .new-reg-premium__feedbacks:before {
-    background-image: url('../../sass_images/many-photos-bg@2x.png?1523948154');
+    background-image: url('../../sass_images/many-photos-bg@2x.png?1517635277');
   }
 }
 .new-reg-premium__feedbacks-text {
@@ -3705,7 +3705,7 @@ body {
 .editPanel {
   position: absolute;
   bottom: 28px;
-  left: 0px;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3726,10 +3726,9 @@ body {
 }
 
 .view-popup-btn {
-  font-family: "TruthCYR";
   font-size: 14px;
   color: #ffffff;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   background-color: transparent;
   border: none;

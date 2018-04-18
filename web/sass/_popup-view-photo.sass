@@ -1,42 +1,27 @@
-.overlay .popupWrap
-	display: flex // .fw-flex
+.overlay .popup-wrap
 	align-items: center // .fw-flex-middle
-	justify-content: center // .fw-flex-center
 
-
-.viewPhoto
+.view-photo
 	height: auto // TODO сюда в целом можно добавить класс типа fw-height-auto, ты его много где юзаешь по этому это имеет отличный смысл, добавить его можно соответственно в файл _height.sass
-	width: 610px // fw-width-610
-	position: relative // fw-relative
-	overflow: hidden // fw-overflow-hidden
-	max-width: 610px // fw-max-width-610
 	line-height: normal
-	//background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)
+
 	&__img
 		width: 100% // fw-width-1-1
 		height: auto
 		border-radius: 10px //fw-border-radius-10
 
-.editPanel
-	position: absolute // fw-absolute
-	bottom: 28px // fw-bottom-28
-	left: 0 // fw-left-0
-	display: flex // fw-flex
-	align-items: center // fw-flex-middle
-	justify-content: space-between // fw-flex-space-between
-	padding: 0 28px // fw-pl-28 fw-pr-28
+.edit-panel
+	position: absolute
 	&__buttons
 		.edit
-			padding-left: 38px // fw-pl-38
-			position: relative // fw-relative
 			&:before
 				content: ''
 				position: absolute
 				left: 19px
 				width: 1px
-				height: 18px
-				top: 0
-				background-color: #fff
+				height: 23px
+				top: -3px
+				background-color: rgba(216, 216, 216, 0.5)
 
 
 
@@ -48,11 +33,48 @@
 	background-color: transparent
 	border: none
 	&:hover
-		color: #b263b7 // TODO нужно выделить в отдельный цвет в файле colors.sass и использовать переменную
+		color: $colorPurple // TODO нужно выделить в отдельный цвет в файле colors.sass и использовать переменную
 
 
-.closePhotoPopup
+.close-photo-popup
 	position: absolute // fw-absolute
-	right: 28px // fw-right-28
-	top: 28px // fw-top-28
 	cursor: pointer // TODO убираем camelcase везде и переводим на обычный бэм
+
+.gradient-overlay
+	background: -webkit-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+	background: -o-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+	background: -ms-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+	background: -moz-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+	background: linear-gradient(to top, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+
+.close.rounded::before, .close.rounded::after
+	border-radius: 5px
+
+.close
+	width: 20px
+	height: 20px
+	opacity: 1
+	transition: all 1s ease
+	display: block
+	&:hover
+		&:before, &:after
+			background-color: $colorPurple
+	&:before, &:after
+		position: absolute
+		left: 15px
+		content: ' '
+		height: 20px
+		width: 1px
+		background-color: $colorWhite
+	&:before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(-45deg)
+
+
+.img-status
+	&-title
+		color: $colorWhite
+		background-color: rgba($colorBlue, .5)
+		border-radius: 30px
+

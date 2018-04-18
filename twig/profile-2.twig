@@ -32,9 +32,9 @@
                     Блондин, Глаза синие, Спортивное
                     телосложение, Европейская внешность
                 </div>
+
                 <div class="new-profile__invisible fw-mt-15 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle">
                     <div>
-
                         <a href="#" class="fw-flex fw-flex-middle fw-color-purple">
                             <i class="icomoon icomoon-invisible-hat fw-fz-25 fw-mr-10 fw-color-red-light"></i>
                             <span>Стать невидимкой</span>
@@ -44,6 +44,22 @@
                         <a href="#" class="fw-reset new-profile__invisible-question">?</a>
                     </div>
                 </div>
+
+                {# Add to favorites and nav #}
+                    <div class="favorites-wrap fw-relative fw-flex fw-flex-space-between fw-flex-middle fw-pt-10 fw-pb-10">
+                        <a class="fw-pl-12" href=""><i class="icomoon icomoon-heart fw-mr-10 fw-color-red-light fw-fz-16"> <span class="fw-fz-14 fw-color-purple">В избранное</span></i></a>
+                        <div class="left-content">
+                            <i class="open-fav-menu icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-5"></i>
+
+                            <div class="favorite-menu-wrap fw-left-0  fw-absolute fw-width-1-1 fw-border-radius-3 fw-top-100-percent">
+                                <ul class="favorite-menu fw-relative fw-pl-14 fw-pr-14 fw-pt-10 fw-pb-10 fw-color-white">
+                                    <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-pad-lock fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Добавить в игнор</span></a></li>
+                                    <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-writing-message fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Пожаловаться</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {# end #}
             </div>
             <div class="new-profile__about">
                 <div class="new-profile__name fw-flex fw-flex-middle fw-flex-space-between">
@@ -123,16 +139,17 @@
                 </div>
             </div>
             <div class="new-profile__album">
-                <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
+                <div class="fw-flex fw-flex-middle fw-relative fw-flex-space-between fw-mb-20">
                     <div class="fw-fz-18">Общий альбом</div>
-                    <div>
-                        <a href="#" class="fw-reset fw-flex fw-flex-middle deleteImages fw-color-purple">
+                    <div class="fw-flex">
+                        <div class="reset-checkbox fw-relative fw-right-15 "><i class=" fw-fz-18 icomoon reset-icon icomoon-undo"></i></div>
+
+                        <a href="#" class="fw-reset fw-flex fw-flex-middle delete-images fw-color-purple">
                             <i class="icomoon icomoon-trash fw-color-red-light fw-fz-18 fw-mr-10"></i>
-                            <span>Удалить</span>
                         </a>
                     </div>
                 </div>
-                <form class="fw-grid fw-grid-10">
+                <form class="fw-grid fw-grid-10 album-wrapper">
                     <label class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative fw-block">
                         <input type="file" class="fw-hidden">
                         <span class="new-profile__album-item-input fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-flex-center">
@@ -144,24 +161,22 @@
                             <div class="fw-width-1-1 fw-height-1-1 fw-relative">
                                 <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
-                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute photoOverlay">
-                                    <span class="icomoon editPhoto icomoon-edit-pencil"></span>
+                                <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
+                                    <input type="checkbox" class="fw-hidden no-style check_img">
+                                    <span class="new-profile__album-item-checkbox-detector"></span>
+                                </label>
 
-                                    <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                        <input type="checkbox" class="fw-hidden no-style check_img">
-                                        <span class="new-profile__album-item-checkbox-detector"></span>
-                                    </label>
-
-                                    <span class="icomoon button_view_photo icomoon-zoom-in"></span>
-
-                                    <div class="new-profile__album-item-notify fw-fz-16">
-                                        <span class="icomoon icomoon-profile-moderation-pending">
-                                            <span class="path1"></span>
-                                            <span class="path2"></span>
-                                        </span>
-                                    </div>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute fw-top-0 photo-overlay">
+                                    <span class="icomoon edit-photo icomoon-edit-pencil"></span>
+                                    <span class="icomoon button-view-photo icomoon-zoom-in"></span>
                                 </div>
 
+                                <div class="new-profile__album-item-notify fw-fz-16">
+                                    <span class="icomoon icomoon-profile-moderation-pending">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}

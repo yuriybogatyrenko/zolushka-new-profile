@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?y06z36');
-  src:  url('fonts/icomoon.eot?y06z36#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?y06z36') format('truetype'),
-    url('fonts/icomoon.woff?y06z36') format('woff'),
-    url('fonts/icomoon.svg?y06z36#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?rdi9l9');
+  src:  url('fonts/icomoon.eot?rdi9l9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rdi9l9') format('truetype'),
+    url('fonts/icomoon.woff?rdi9l9') format('woff'),
+    url('fonts/icomoon.svg?rdi9l9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-undo:before {
+  content: "\e910";
+}
+.icomoon-left:before {
+  content: "\e910";
+}
+.icomoon-arrow-left:before {
+  content: "\e910";
+}
+.icomoon-zoom-in:before {
+  content: "\e987";
+}
+.icomoon-heart:before {
+  content: "\e9da";
+}
+.icomoon-cancel:before {
+  content: "\ea0d";
+}
+.icomoon-cross:before {
+  content: "\ea0f";
+}
 .icomoon-more-dots:before {
   content: "\e90d";
 }
@@ -91,16 +112,4 @@
 }
 .icomoon-views:before {
   content: "\e909";
-}
-.icomoon-zoom-in:before {
-  content: "\e987";
-}
-.icomoon-heart:before {
-  content: "\e9da";
-}
-.icomoon-cancel:before {
-  content: "\ea0d";
-}
-.icomoon-cross:before {
-  content: "\ea0f";
 }

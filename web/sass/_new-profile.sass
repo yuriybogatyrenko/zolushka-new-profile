@@ -87,6 +87,7 @@
     left: 10px
     right: 10px
     padding-right: 30px
+
     
     &--blue
       background-color: rgba(#48abff, 0.5)
@@ -168,7 +169,10 @@
   &__album
     flex-grow: 1
     flex-basis: 0
-
+    &-item
+      &:hover
+        .new-profile__album-item-notify
+          opacity: 0
     &-item-hover
       opacity: 0
       transition: all 0.3s ease
@@ -191,6 +195,8 @@
       position: absolute
       bottom: 10px
       right: 10px
+      z-index: 10
+      transition: all .3s ease
 
     &-item-image
       border-radius: 5px
@@ -198,6 +204,7 @@
     &-item-checkbox
       position: absolute
       top: 10px
+      z-index: 10
       right: 10px
 
       &-detector
@@ -208,6 +215,9 @@
         display: inline-block
         position: relative
         vertical-align: middle
+        transition: all .3s ease
+        &:hover
+          border-color: $colorPurple
 
         &:after
           display: block
@@ -242,46 +252,89 @@
 .fz20
   font-size: 20px
 
-body
-  line-height: normal //TODO задавать вот такой глобальный стиль на проекте, который работает уже 4 года это очень хреновая идея. высота линии в целом не просто так была написана вероятно и то что ты тут написал оно применится ко всему проекту и скорее всего ченить там поломает
 
-.fw-absolute
+.photo-overlay
   // TODO этот класс уже есть во фреймворке, их нельзя перебивать, потому что каждый класс который имеет название отвечает только за 1 стиль, в данном случае он просто должен делать элемент абсолютным, а ты ему еще и ховер сделал и все остальное, прикинь как все там по сайту сломается если бы этот сайт был в целом написан на фреймворке, об этом обязательно надо думать
   left: 0
   top: 0 // тут тоже есть свой класс  .fw-top-0
   background-color: transparent
   border-radius: 4px // и тут свой класс
-  transition: 1s ease // TODO все анимации которые у нас имеются они в обычном состоянии не больше 0.3s должны идти
+  transition: .3s ease // TODO все анимации которые у нас имеются они в обычном состоянии не больше 0.3s должны идти
   opacity: 0
+  z-index: 5
   &:hover
     opacity: 1
     background-color: rgba(0,0,0,0.5)
+
 
 .photoOverlay_active
   // TODO все состояния и модификаторы давай будем делать через -- .photoOverlay--active | я думаю так более читаемо и в целом соответствует БЭМ
   background-color: rgba(0,0,0,.5)
   opacity: 1
 
-.deleteImages
+.delete-images
   display: none // TODO вот такие классы я обычно не использую, я использую .fw-hidden на элементе, потому что его проще всего перебить неважно чем, так как фреймворк подключается в самом начале и последующий CSS даже в первом уровне без дополнительных вложенностей можно перебить этот стиль
 
-.button_view_photo
+.button-view-photo
   // TODO тут надо использовать - вместо _ и если делаем по бэму то надо делать по нему
   position: absolute
   font-size: 18px
-  color: #ffffff // TODO цвет зацепить через файл цветов
+  color: $colorWhite // TODO цвет зацепить через файл цветов
   cursor: pointer
   margin: 0
   padding: 0
   left: 50%
   top: 50%
+  transition: all .3s ease
   transform: translate(-50%,-50%)
+  &:hover
+    color: $colorPurple
 
-.editPhoto
+.edit-photo
   // в этом классе можно по сути все включая цвет заменить на классы
   position: absolute
   left: 10px
   top: 10px
   font-size: 14px
-  color: $colorPurple // вот тут правильно применил цвет
+  color: $colorWhite // вот тут правильно применил цвет
   cursor: pointer
+  &:hover
+    color: $colorPurple
+
+.album-wrapper
+  line-height: normal
+
+.reset-icon
+  color: $colorRedLight
+  cursor: pointer
+
+
+.left-content
+  cursor: pointer
+  &:hover
+    color: $colorPurple
+    .favorite-menu-wrap
+      top: 100% !important
+      opacity: 1 !important
+      visibility: visible !important
+
+
+.favorite-menu-wrap
+  display: block
+  box-shadow: 0 1px 28px 0 rgba(0, 0, 0, 0.23)
+  opacity: 0
+  visibility: hidden
+  top: 130%
+  transition: all .3s linear
+.favorite-menu
+  &:before
+    content: '◆'
+    position: absolute
+    right: 8px
+    top: -7px
+    color: #fff
+    z-index: 0
+    font-size: 20px
+
+
+

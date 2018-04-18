@@ -3867,7 +3867,7 @@ label.parsley-error span {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.photoOverlay_active {
+.photoOverlay--active {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
@@ -3920,9 +3920,9 @@ label.parsley-error span {
   color: #ba78c0;
 }
 .left-content:hover .favorite-menu-wrap {
-  top: 100% !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
 }
 
 .favorite-menu-wrap {
@@ -3953,9 +3953,7 @@ label.parsley-error span {
   line-height: normal;
 }
 .view-photo__img {
-  width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
 .edit-panel {
@@ -3972,8 +3970,6 @@ label.parsley-error span {
 }
 
 .view-popup-btn {
-  font-size: 14px;
-  color: #ffffff;
   transition: all 0.3s ease;
   cursor: pointer;
   background-color: transparent;

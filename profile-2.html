@@ -1086,7 +1086,7 @@
                 <div class="img-status-title fw-fz-12 fw-pt-8 fw-pb-8 fw-pr-72 fw-pl-72 fw-relative">
                     <span>Фото на модерации</span>
 
-                    <span class="icomoon fw-fz-28 fw-right-0 fw-top-0 icomoon-profile-moderation-pending">
+                    <span class="icomoon fw-fz-28 fw-right-0 fw-top-0 icomoon-profile-moderation-pending fw-absolute">
                         <span class="path1"></span><span class="path2"></span>
                     </span>
                 </div>
@@ -1094,10 +1094,10 @@
 
             <div class="edit-panel fw-flex fw-bottom-28 fw-left-0  fw-width-1-1 fw-flex-middle fw-flex-space-between fw-pl-28 fw-pr-28">
                 <div class="edit-panel__buttons">
-                    <button class="beMain view-popup-btn">Сделать основным</button>
-                    <button class="edit fw-pl-38 fw-relative view-popup-btn">Редактировать</button>
+                    <button class="beMain view-popup-btn fw-fz-14 fw-color-white">Сделать основным</button>
+                    <button class="edit fw-pl-38 fw-relative view-popup-btn fw-fz-14 fw-color-white">Редактировать</button>
                 </div>
-                <button class="edit-panel__delete view-popup-btn">Удалить</button>
+                <button class="edit-panel__delete view-popup-btn fw-fz-14 fw-color-white">Удалить</button>
             </div>
         </div>
     </div>
@@ -1173,7 +1173,35 @@
 
 
 
+<div class="overlay overlay-popup ">
+    <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1">
+        <div class="new-popup-registration tac hidden" data-popup-block="reg_photo" style="display: block;">
+            <div class="new-popup-registration__mask mb20">
+                <div class="new-popup-registration__mask-container">
+                    <input type="file" accept="image/jpeg,image/png" multiple="" class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
 
+                    <div class="new-popup-registration__mask-container-units tal">
+                        <div class="new-popup-registration__mask-item__added-photo add-button">
+                            <p class="new-popup-registration__mask-item__added-photo--top-icon"><i class="icon-reg-camera"></i></p>
+                            <p class="new-popup-registration__mask-item__added-photo--bottom-text-icon">Добавить фото</p></div>
+                    </div>
+
+                    <div class="new-popup-registration__mask-container__text">
+                        Перетащите сюда свои фото или <br><span class="new-purple-link">выберите</span>файл
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-popup-registration__buttons">
+                <p class="mb20">
+                    <button class="js-photo-upload-button violet_btn next-step" disabled="">Продолжить</button>
+                </p>
+
+                <div class="tac bottom-skip-button"><a href="#" class="new-popup-registration__skip-link next-step">Пропустить</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

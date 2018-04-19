@@ -5,7 +5,21 @@
     <div class="cont_wrap">
         <div class="new-profile">
             <div class="new-profile__left">
-                <div class="new-profile__image-wrapper fw-flex fw-flex-center fw-flex-middle new-profile__image-wrapper--placeholder fz0">
+                <div class="new-profile__image-wrapper fw-flex fw-flex-center fw-flex-middle new-profile__image-wrapper--placeholder fz0 fw-relative">
+                    {# AVATAR ON MODERATION, BLUR #}
+                    <div class="new-profile__blur-wrap fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0 fw-padding-10">
+                        <div class="new-profile__blur fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0"></div>
+
+                        <div class="new-profile__img-status-title fw-fz-12 fw-pt-8 fw-pb-8 fw-text-center fw-absolute fw-bottom-10 ">
+                            <span class="new-profile__moderation-title">Фото на модерации</span>
+
+                            <span class="icomoon fw-fz-28 fw-right-0 fw-top-0 icomoon-profile-moderation-pending new-profile__moderation-icon fw-absolute">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </span>
+                        </div>
+                    </div>
+                    {# END #}
                     <i class="icomoon icomoon-camera fw-color-white" style="font-size: 100px;"></i>
                     <div class="new-profile__image-notify">
                         <span class="icomoon icomoon-profile-photo-canceled"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
@@ -45,21 +59,6 @@
                     </div>
                 </div>
 
-                {# Add to favorites and nav #}
-                    <div class="favorites-wrap fw-relative fw-flex fw-flex-space-between fw-flex-middle fw-pt-10 fw-pb-10">
-                        <a class="fw-pl-12" href=""><i class="icomoon icomoon-heart fw-mr-10 fw-color-red-light fw-fz-16"> <span class="fw-fz-14 fw-color-purple">В избранное</span></i></a>
-                        <div class="left-content">
-                            <i class="open-fav-menu icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-5"></i>
-
-                            <div class="favorite-menu-wrap fw-left-0  fw-absolute fw-width-1-1 fw-border-radius-3 fw-top-100-percent">
-                                <ul class="favorite-menu fw-relative fw-pl-14 fw-pr-14 fw-pt-10 fw-pb-10 fw-color-white">
-                                    <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-pad-lock fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Добавить в игнор</span></a></li>
-                                    <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-writing-message fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Пожаловаться</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                {# end #}
             </div>
             <div class="new-profile__about">
                 <div class="new-profile__name fw-flex fw-flex-middle fw-flex-space-between">
@@ -139,17 +138,17 @@
                 </div>
             </div>
             <div class="new-profile__album">
-                <div class="fw-flex fw-flex-middle fw-relative fw-flex-space-between fw-mb-20">
+                <div class="fw-flex fw-flex-middle fw-relative fw-flex-space-between fw-mb-20 fw-height-20">
                     <div class="fw-fz-18">Общий альбом</div>
-                    <div class="fw-flex">
-                        <div class="reset-checkbox fw-relative fw-right-15 "><i class=" fw-fz-18 icomoon reset-icon icomoon-undo"></i></div>
+                    <div class="fw-flex fw-hidden js-new-profile-album-delete-images-wrap">
+                        <div class="reset-checkbox fw-relative fw-right-15 "><i class=" fw-fz-18 icomoon new-profile__reset-icon icomoon-undo"></i></div>
 
-                        <a href="#" class="fw-reset fw-flex fw-flex-middle delete-images fw-color-purple">
+                        <a href="#" class="fw-reset fw-flex fw-flex-middle fw-color-purple">
                             <i class="icomoon icomoon-trash fw-color-red-light fw-fz-18 fw-mr-10"></i>
                         </a>
                     </div>
                 </div>
-                <form class="fw-grid fw-grid-10 album-wrapper">
+                <form class="fw-grid fw-grid-10 new-profile__album-wrapper">
                     <label class="new-profile__album-item fw-width-1-3 fw-fz-0 fw-relative fw-block">
                         <input type="file" class="fw-hidden">
                         <span class="new-profile__album-item-input fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-flex-center">
@@ -162,13 +161,13 @@
                                 <img src="http://placehold.it/200" class="fw-width-1-1 new-profile__album-item-image" alt="">
 
                                 <label class="new-profile__album-item-checkbox new-profile__album-item-checkbox fw-block curp fw-fz-0">
-                                    <input type="checkbox" class="fw-hidden no-style check_img">
-                                    <span class="new-profile__album-item-checkbox-detector"></span>
+                                    <input type="checkbox" class="fw-hidden no-style js-checked">
+                                    <span class="new-profile__album-item-checkbox-detector js-checkbox-border"></span>
                                 </label>
 
-                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute fw-top-0 photo-overlay">
-                                    <span class="icomoon edit-photo icomoon-edit-pencil"></span>
-                                    <span class="icomoon button-view-photo icomoon-zoom-in"></span>
+                                <div class="fw-width-1-1 fw-height-1-1 fw-absolute fw-top-0 new-profile__photo-overlay js-new-profile__photo-overlay fw-left-0 fw-border-radius-5">
+                                    <span class="icomoon new-profile__edit-photo fw-left-10 fw-top-10 fw-fz-14 fw-color-white icomoon-edit-pencil"></span>
+                                    <span class="icomoon new-profile__button-view-photo fw-color-white fw-fz-18 icomoon-zoom-in fw-margin-0 fw-padding-0"></span>
                                 </div>
 
                                 <div class="new-profile__album-item-notify fw-fz-16">

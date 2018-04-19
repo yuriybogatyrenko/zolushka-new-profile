@@ -1,81 +1,114 @@
-.overlay .popup-wrap
-	align-items: center // .fw-flex-middle
+.new-profile
+	&__view-photo
+		height: auto // TODO сюда в целом можно добавить класс типа fw-height-auto, ты его много где юзаешь по этому это имеет отличный смысл, добавить его можно соответственно в файл _height.sass
+		line-height: normal
 
-.view-photo
-	height: auto // TODO сюда в целом можно добавить класс типа fw-height-auto, ты его много где юзаешь по этому это имеет отличный смысл, добавить его можно соответственно в файл _height.sass
-	line-height: normal
+		&-img
+			height: auto
 
-	&__img
-		//width: 100% // fw-width-1-1
-		height: auto
-		//border-radius: 10px //fw-border-radius-10
-
-.edit-panel
-	position: absolute
-	&__buttons
-		.edit
-			&:before
-				content: ''
-				position: absolute
-				left: 19px
-				width: 1px
-				height: 23px
-				top: -3px
-				background-color: rgba(216, 216, 216, 0.5)
-
-
-
-.view-popup-btn
-	//font-size: 14px // fw-fz-14
-	//color: #ffffff // fw-color-white
-	transition: all .3s ease
-	cursor: pointer
-	background-color: transparent
-	border: none
-	&:hover
-		color: $colorPurple // TODO нужно выделить в отдельный цвет в файле colors.sass и использовать переменную
-
-
-.close-photo-popup
-	position: absolute // fw-absolute
-	cursor: pointer // TODO убираем camelcase везде и переводим на обычный бэм
-
-.gradient-overlay
-	background: -webkit-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
-	background: -o-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
-	background: -ms-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
-	background: -moz-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
-	background: linear-gradient(to top, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
-
-// стили ниже которые можно заменить на классы сделаю утром :)
-.close.rounded::before, .close.rounded::after
-	border-radius: 5px
-
-.close
-	width: 20px
-	height: 20px
-	opacity: 1
-	transition: all 1s ease
-	display: block
-	&:hover
-		&:before, &:after
-			background-color: $colorPurple
-	&:before, &:after
+	&__edit-panel
 		position: absolute
-		left: 15px
-		content: ' '
+		&-buttons
+			.new-profile__edit
+				&:before
+					content: ''
+					position: absolute
+					left: 19px
+					width: 1px
+					height: 23px
+					top: -3px
+					background-color: rgba(216, 216, 216, 0.5)
+
+
+
+	&__view-popup-btn
+		transition: all .3s ease
+		cursor: pointer
+		background-color: transparent
+		border: none
+		&:hover
+			color: $colorPurple // TODO нужно выделить в отдельный цвет в файле colors.sass и использовать переменную
+
+
+	&__close-photo-popup
+		position: absolute
+		cursor: pointer
+
+	&__gradient-overlay
+		background: -webkit-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+		background: -o-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+		background: -ms-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+		background: -moz-linear-gradient(bottom, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+		background: linear-gradient(to top, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 4%, rgba(48, 48, 48, 0.53) 14%, rgba(71, 71, 71, 0.1) 23%, rgba(255, 255, 255, 0.1) 100%)
+
+	&__close::before
+		border-radius: 5px
+	&__close::after
+		border-radius: 5px
+
+	&__close-load-popup
+		.new-profile__close-photo-popup
+			position: relative
+
+
+	&__close
+		width: 20px
 		height: 20px
-		width: 1px
-		background-color: $colorWhite
-	&:before
-		transform: rotate(45deg)
-	&:after
-		transform: rotate(-45deg)
+		opacity: 1
+		transition: all 1s ease
+		display: block
+		&:hover
+			&:before, &:after
+				background-color: $colorPurple
+		&:before, &:after
+			transition: all .3s ease
+			position: absolute
+			left: 15px
+			content: ' '
+			height: 20px
+			width: 1px
+			background-color: $colorWhite
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+
+		&--close-load
+			width: 20px
+			height: 20px
+			opacity: 1
+			transition: all 1s ease
+			display: block
+			&:hover
+				&:before, &:after
+					background-color: $colorPurple
+			&:before, &:after
+				position: absolute
+				left: 15px
+				content: ' '
+				height: 20px
+				width: 2px
+				background-color: #707070
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+
+	&__img-status
+		&-title
+			color: $colorWhite
+			background-color: rgba($colorBlue, .5)
+			border-radius: 30px
+
+	&__moderation-icon
+		position: absolute
 
 
-.img-status
-	&-title
-		color: $colorWhite
-		background-color: rgba($colorBlue, .5)
-		border-radius: 30px
+	&__new-popup-registration__mask-container-units
+		margin-top: 64px
+		.new-profile__popup-registration__mask-container__text
+			top: 64%
 
+	&__popup-registration__mask-item__added-photo--top-icon
+		i
+			color: $colorRedLight

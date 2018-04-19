@@ -32,23 +32,21 @@
                 <div>
                     <a href="#" class="violet_btn w100">Отправить сообщение</a>
                 </div>
-                <div class="new-profile__actions">
-                    <div>
-                        <a href="#" class="fw-reset">
-                            <i class="icomoon icomoon-heart color-red fz20 mr5 vam"></i>
-                            <span class="dib vam fw-color-purple">В избранное</span>
-                        </a>
-                    </div>
-                    <div class="new-profile__actions-separator">
+                {# Add to favorites and nav #}
+                <div class="new-profile__favorites-wrap fw-relative fw-flex fw-flex-space-between fw-flex-middle fw-pt-10 fw-pb-10">
+                    <a class="fw-pl-12" href=""><i class="icomoon icomoon-heart fw-mr-10 fw-color-red-light fw-fz-16"> <span class="fw-fz-14 fw-color-purple">В избранное</span></i></a>
+                    <div class="new-profile__left-content">
+                        <i class="open-fav-menu icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-5"></i>
 
-                    </div>
-                    <div>
-                        <a href="#" class="fw-reset">
-                            <i class="icomoon icomoon-cancel color-red mr5 fz20 vam"></i>
-                            <span class="dib vam fw-color-purple">В игнор</span>
-                        </a>
+                        <div class="new-profile__favorite-menu-wrap fw-block fw-left-0  fw-absolute fw-width-1-1 fw-border-radius-5 fw-top-100-percent">
+                            <ul class="new-profile__favorite-menu fw-relative fw-pl-14 fw-pr-14 fw-pt-10 fw-pb-10 fw-color-white">
+                                <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-pad-lock fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Добавить в игнор</span></a></li>
+                                <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-writing-message fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Пожаловаться</span></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                {# end #}
             </div>
             <div class="new-profile__about">
                 <div class="new-profile__name">Аполлинарий 27 лет <i class="circle-status online ml10"></i></div>

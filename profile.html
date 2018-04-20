@@ -924,72 +924,28 @@
             $('.new-profile__button-view-photo').click(function () {
                 $('.overlay').css('display', 'block');
             });
-
-            $('.closePhotoPopup').click(function () {
-                $('.overlay').css('display', 'none');
-            });
-
             // TODO вот этот код не было необходимости писать, потому что функционал попапов написан и надо использовать функционал попапов проекта в целом а не писать каждый раз свой под каждый попап
         };
 
 
         // TODO все классы с которым работает JS необходимо создавать отдельно, дополнительные классы и ставить им приставку .js-check-box
         var checkboxFunction = function () {
+            var albumCheckboxes = $('input[type="checkbox"].js-new-profile-album-checkbox'),
+                profileAlbumWrapper = $('.js-new-profile__album'),
+                resetCheckbox = $('.js-new-profile__album-reset-checkbox');
 
-            function checkboxBorderPurple() {
-                var border = $(' .js-checkbox-border').css('border-color','#ba78c0');
-            }
-
-            function checkboxBorderWhite() {
-                var border = $(' .js-checkbox-border').css('border-color','#fff');
-            }
-
-
-
-            //counter
-            var i = 0;
-
-            function add() {
-                i++;
-            }
-
-            function remove() {
-                i--;
-            }
-
-            function buttonAndBorder() { // TODO вместо того что бы каждый раз бегать по всем картинкам и показывать или прятать их, я бы на текущий момент зацепился за контейнер и добавлял ему доп класс и убирал его, и уже через CSS показывал или прятал необходимые мне элементы и состояния, это более оптимизированный подход (меньше JS ресурсов)
-                var delAndResetWrapper = $('.js-new-profile-album-delete-images-wrap');
-                if (i === 0) {
-                    $(delAndResetWrapper).hide(); // TODO подобные классы в таком крупном проекте не подходят, по скольку ты хочешь тут юзать БЭМ необходимо заменять их на .js-new-profile-album-delete-image к примеру. что бы они имели очень конкретную привязку
-                    checkboxBorderWhite();
-                } else if (i > 0) {
-                    $(delAndResetWrapper).css('display','flex');
-                    checkboxBorderPurple();
-                }
-            }
-
-            // TODO вот эту функцию я бы вообще переписал, я бы сделал ее таким образом что она подсчитывает количество чекнутых чекбоксов при изменении состояния чекбокса
-            // в данном случае функции add и remove будут не нужны, логика с определением и добавлением будет так же не нужна, в общем проще и красивее
-            // + конструкция .click устарела, необходимо писать .on('click', function(){})
-
-            // validate checkbox on checked
-            $('.js-checked').on('click',(function () { // TODO тут так же проблемы с классом и в целом таких классов даже в новом проекте быть не должно. необходимо делать очень конкретные классы что бы понимать к чему относится
-                if ($(this).is(":checked")) {
-                    add();
+            albumCheckboxes.on('change', function () {
+                if (albumCheckboxes.filter(':checked').length > 0) {
+                    profileAlbumWrapper.addClass('какой то класс за который надо цепляться что бы реализовать механику альбома');
                 } else {
-                    remove();
+                    profileAlbumWrapper.removeClass('какой то класс за который надо цепляться что бы реализовать механику альбома');
                 }
-                buttonAndBorder();
-            }));
-
-            // reset checkbox function
-            $('.reset-checkbox').on('click', function() {
-                $('.js-checked').prop('checked',false);
-                var border = $(' .js-checkbox-border').css('border-color','#fff');
-                $('.js-new-profile-album-delete-images-wrap').hide();
-                i = 0;
             });
 
+            // reset checkbox function
+            resetCheckbox.on('click', function() {
+                albumCheckboxes.prop('checked', false);
+            });
         };
 
         checkboxFunction();

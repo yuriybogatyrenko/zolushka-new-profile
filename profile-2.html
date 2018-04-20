@@ -1075,7 +1075,8 @@
 
 <div class="overlay new-profile__overlay-popup">
     <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
-        <div class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610">
+        
+        <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: block;">
             <div class="new-profile__gradient-overlay fw-border-radius-10 fw-absolute fw-left-0 fw-height-1-1 fw-width-1-1"></div>
 
             <div class="new-profile__close-photo-popup fw-right-26 fw-top-20"><span class="new-profile__close"></span></div>
@@ -1099,6 +1100,41 @@
                 <button class="new-profile__edit-panel-delete new-profile__view-popup-btn fw-fz-14 fw-color-white">Удалить</button>
             </div>
         </div>
+        
+
+        
+        <div class="new-popup-registration tac hidden" data-popup-block="new-profile__load-photo" style="display: block;">
+            <div class="new-popup-registration__mask mb20">
+                <div class="new-profile__close-load-popup fw-relative fw-width-1-1 fw-pb-15">
+                    <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0">
+                        <span class="new-profile__close--close-load fw-relative"></span>
+                    </div>
+                </div>
+
+                <div class="new-popup-registration__mask-container">
+                    <input type="file" accept="image/jpeg,image/png" multiple=""
+                           class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
+
+                    <div class=" new-profile__new-popup-registration__mask-container-units ">
+                        <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
+                            <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon">
+                                <i class="icomoon icomoon-camera-add fw-fz-46 fw-color-red-light"></i></p>
+                        </div>
+
+                        <div class="new-popup-registration__mask-container__text new-profile__popup-registration__mask-container__text">
+                            Перетащите сюда свои фото или <br><span class="new-purple-link">выберите</span> файл
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-profile__popup-reg-slider-wrap">
+                    <div class="new-profile__popup-reg-slider">
+                        <div class="new-profile__popup-reg-slider--slide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
 
@@ -1107,16 +1143,6 @@
 
     $(document).ready(function () {
 
-        var viewPopup = function () {
-
-            $('.new-profile__button-view-photo').click(function () {
-                $('.overlay').css('display', 'block');
-            });
-            // TODO вот этот код не было необходимости писать, потому что функционал попапов написан и надо использовать функционал попапов проекта в целом а не писать каждый раз свой под каждый попап
-        };
-
-
-        // TODO все классы с которым работает JS необходимо создавать отдельно, дополнительные классы и ставить им приставку .js-check-box
         var checkboxFunction = function () {
             var albumCheckboxes = $('input[type="checkbox"].js-new-profile-album-checkbox'),
                 profileAlbumWrapper = $('.js-new-profile__album'),
@@ -1138,45 +1164,10 @@
         };
 
         checkboxFunction();
-        viewPopup();
-
     });
 
 </script>
 
-
-
-
-
-<div class="overlay overlay-popup ">
-    <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1">
-        <div class="new-popup-registration tac hidden" data-popup-block="reg_photo" style="display: block;">
-            <div class="new-popup-registration__mask mb20">
-                <div class="new-profile__close-load-popup fw-relative fw-width-1-1 fw-pb-15">
-                    <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0"><span class="new-profile__close--close-load fw-relative"></span></div>
-                </div>
-                <div class="new-popup-registration__mask-container">
-                    <input type="file" accept="image/jpeg,image/png" multiple="" class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
-
-                    <div class=" new-profile__new-popup-registration__mask-container-units ">
-                        <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
-                            <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon"><i class="icomoon icomoon-camera-add fw-fz-46 fw-color-red-light"></i></p>
-                        </div>
-
-                    <div class="new-popup-registration__mask-container__text new-profile__popup-registration__mask-container__text">
-                        Перетащите сюда свои фото или <br><span class="new-purple-link">выберите</span> файл
-                    </div>
-                </div>
-            </div>
-
-            <div class="new-profile__popup-reg-slider-wrap">
-                <div class="new-profile__popup-reg-slider">
-                    <div class="new-profile__popup-reg-slider--slide"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>

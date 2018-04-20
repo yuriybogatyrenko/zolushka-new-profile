@@ -936,15 +936,16 @@
 
             albumCheckboxes.on('change', function () {
                 if (albumCheckboxes.filter(':checked').length > 0) {
-                    profileAlbumWrapper.addClass('какой то класс за который надо цепляться что бы реализовать механику альбома');
+                    profileAlbumWrapper.addClass('new-profile__album-delete-mode');
                 } else {
-                    profileAlbumWrapper.removeClass('какой то класс за который надо цепляться что бы реализовать механику альбома');
+                    profileAlbumWrapper.removeClass('new-profile__album-delete-mode');
                 }
             });
 
             // reset checkbox function
             resetCheckbox.on('click', function() {
                 albumCheckboxes.prop('checked', false);
+                profileAlbumWrapper.removeClass('new-profile__album-delete-mode');
             });
         };
 
@@ -953,7 +954,7 @@
 
 
         $(function overlayCheckboxItem () {
-            var checkbox = $('.js-checkbox-border');
+            var checkbox = $('.js-new-profile__album-item-checkbox-detector');
             var overlay  = $('.js-new-profile__photo-overlay');
 
             $(checkbox).mouseenter(function () {

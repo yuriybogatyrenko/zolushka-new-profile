@@ -1,3 +1,22 @@
+
+.new-profile__album
+  &:not(.new-profile__album-delete-mode)
+    .js-new-profile-album-delete-images-wrap
+      display: none
+
+    .new-profile__album-item-checkbox-detector
+      border-color: $colorWhite
+      opacity: 0
+
+    .new-profile__photo-overlay
+      display: block
+
+    .new-profile__album-item
+      &:hover
+        .new-profile__album-item-notify
+          opacity: 0
+
+
 .icomoon-profile-moderation-pending
   position: relative
 
@@ -171,8 +190,12 @@
     flex-basis: 0
     &-item
       &:hover
+        .new-profile__album-item-checkbox-detector
+          opacity: 1
+          &:hover
+            border-color: $colorPurple
         .new-profile__album-item-notify
-          opacity: 0
+          opacity: 1
     &-item-hover
       opacity: 0
       transition: all 0.3s ease
@@ -211,13 +234,14 @@
         width: 14px
         height: 14px
         border-radius: 100%
-        border: 2px solid #fff
+        border: 2px solid $colorPurple
         display: inline-block
         position: relative
         vertical-align: middle
         transition: all .3s ease
+        opacity: 1
         &:hover
-          border-color: $colorPurple !important
+          border-color: $colorPurple
 
         &:after
           display: block
@@ -258,6 +282,7 @@
     background-color: transparent
     //border-radius: 4px // и тут свой класс
     transition: .3s ease
+    display: none
     opacity: 0
     z-index: 5
     &:hover
@@ -332,3 +357,4 @@
   opacity: 1
   visibility: visible
   background-color: rgba(#000, .5)
+

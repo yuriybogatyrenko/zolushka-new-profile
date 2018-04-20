@@ -3843,12 +3843,7 @@ label.parsley-error span {
   transition: all 0.3s ease;
 }
 .new-profile__album-item-checkbox-detector:hover {
-  border-color: #ba78c0;
-}
-.new-profile__album-item-checkbox-detector:hover .js-new-profile__photo-overlay {
-  opacity: 1;
-  visibility: visible;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-color: #ba78c0 !important;
 }
 .new-profile__album-item-checkbox-detector:after {
   display: block;

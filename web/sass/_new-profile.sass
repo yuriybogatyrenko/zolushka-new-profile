@@ -190,6 +190,10 @@
     flex-basis: 0
     &-item
       &:hover
+        .new-profile__photo-overlay
+          opacity: 1
+          visibility: visible
+          background-color: rgba(#000, .5)
         .new-profile__album-item-checkbox-detector
           opacity: 1
           &:hover
@@ -340,21 +344,25 @@
     opacity: 0
     visibility: hidden
     top: 130%
-    transition: all .3s linear
+    transition: all .3s ease
 
   &__favorite-menu
     &:before
       content: '◆'
       position: absolute
-      right: 8px
+      right: 10px
       top: -7px
       color: #fff
       z-index: 0
       font-size: 20px
 
+  &__edit-photo
+    transition: all .3s ease
 
-.active-overlay-hover-checkbox
-  opacity: 1
-  visibility: visible
-  background-color: rgba(#000, .5)
-
+  &__call-icon
+    //border-radius: 5px
+    background-image: linear-gradient(to bottom, #86ec51, #349e0a)
+    border: solid 2px #d8d9d8
+    transition: all .3s ease
+    &:hover
+      border-color: #999

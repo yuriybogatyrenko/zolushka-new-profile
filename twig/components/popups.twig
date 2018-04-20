@@ -66,21 +66,6 @@
         checkboxFunction();
         viewPopup();
 
-
-        $(function overlayCheckboxItem () {
-            var checkbox = $('.js-new-profile__album-item-checkbox-detector');
-            var overlay  = $('.js-new-profile__photo-overlay');
-
-            $(checkbox).mouseenter(function () {
-                $(this).parent().parent().find(overlay).addClass('active-overlay-hover-checkbox');
-            });
-
-            $(checkbox).mouseleave(function () {
-                $(this).parent().parent().find(overlay).removeClass('active-overlay-hover-checkbox');
-            });
-        });
-
-
     });
 
 </script>

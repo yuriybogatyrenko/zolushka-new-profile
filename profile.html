@@ -122,7 +122,7 @@
                 <div class="new-profile__favorites-wrap fw-relative fw-flex fw-flex-space-between fw-flex-middle fw-pt-10 fw-pb-10">
                     <a class="fw-pl-12" href=""><i class="icomoon icomoon-heart fw-mr-10 fw-color-red-light fw-fz-16"> <span class="fw-fz-14 fw-color-purple">В избранное</span></i></a>
                     <div class="new-profile__left-content">
-                        <i class="open-fav-menu icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-5"></i>
+                        <i class="new-profile__open-fav-menu fw-color-purple  icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-8"></i>
 
                         <div class="new-profile__favorite-menu-wrap fw-block fw-left-0  fw-absolute fw-width-1-1 fw-border-radius-5 fw-top-100-percent">
                             <ul class="new-profile__favorite-menu fw-relative fw-pl-14 fw-pr-14 fw-pt-10 fw-pb-10 fw-color-white">
@@ -951,21 +951,6 @@
 
         checkboxFunction();
         viewPopup();
-
-
-        $(function overlayCheckboxItem () {
-            var checkbox = $('.js-new-profile__album-item-checkbox-detector');
-            var overlay  = $('.js-new-profile__photo-overlay');
-
-            $(checkbox).mouseenter(function () {
-                $(this).parent().parent().find(overlay).addClass('active-overlay-hover-checkbox');
-            });
-
-            $(checkbox).mouseleave(function () {
-                $(this).parent().parent().find(overlay).removeClass('active-overlay-hover-checkbox');
-            });
-        });
-
 
     });
 

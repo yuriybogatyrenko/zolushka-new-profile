@@ -99,6 +99,14 @@
   max-width: 0px;
 }
 
+.fw-width-40 {
+  width: 40px;
+}
+
+.fw-max-width-40 {
+  max-width: 40px;
+}
+
 .fw-width-670 {
   width: 670px;
 }
@@ -197,6 +205,18 @@
 
 .fw-min-height-20 {
   min-height: 20px;
+}
+
+.fw-height-40 {
+  height: 40px;
+}
+
+.fw-max-height-40 {
+  max-height: 40px;
+}
+
+.fw-min-height-40 {
+  min-height: 40px;
 }
 
 .fw-grid {
@@ -302,6 +322,26 @@
 
 .fw-mr-5 {
   margin-right: 5px;
+}
+
+.fw-margin-9 {
+  margin: 9px;
+}
+
+.fw-mt-9 {
+  margin-top: 9px;
+}
+
+.fw-mb-9 {
+  margin-bottom: 9px;
+}
+
+.fw-ml-9 {
+  margin-left: 9px;
+}
+
+.fw-mr-9 {
+  margin-right: 9px;
 }
 
 .fw-margin-10 {
@@ -518,6 +558,26 @@
 
 .fw-pr-12 {
   padding-right: 12px;
+}
+
+.fw-padding-13 {
+  padding: 13px;
+}
+
+.fw-pt-13 {
+  padding-top: 13px;
+}
+
+.fw-pb-13 {
+  padding-bottom: 13px;
+}
+
+.fw-pl-13 {
+  padding-left: 13px;
+}
+
+.fw-pr-13 {
+  padding-right: 13px;
 }
 
 .fw-padding-14 {
@@ -1275,6 +1335,10 @@
 
 .fw-right-0 {
   right: 0px;
+}
+
+.fw-right-13 {
+  right: 13px;
 }
 
 .fw-right-15 {
@@ -3809,6 +3873,11 @@ label.parsley-error span {
   flex-grow: 1;
   flex-basis: 0;
 }
+.new-profile__album-item:hover .new-profile__photo-overlay {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .new-profile__album-item:hover .new-profile__album-item-checkbox-detector {
   opacity: 1;
 }
@@ -3967,22 +4036,27 @@ label.parsley-error span {
   opacity: 0;
   visibility: hidden;
   top: 130%;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
 }
 .new-profile__favorite-menu:before {
   content: "◆";
   position: absolute;
-  right: 8px;
+  right: 10px;
   top: -7px;
   color: #fff;
   z-index: 0;
   font-size: 20px;
 }
-
-.active-overlay-hover-checkbox {
-  opacity: 1;
-  visibility: visible;
-  background-color: rgba(0, 0, 0, 0.5);
+.new-profile__edit-photo {
+  transition: all 0.3s ease;
+}
+.new-profile__call-icon {
+  background-image: linear-gradient(to bottom, #86ec51, #349e0a);
+  border: solid 2px #d8d9d8;
+  transition: all 0.3s ease;
+}
+.new-profile__call-icon:hover {
+  border-color: #999;
 }
 
 .new-profile__view-photo {

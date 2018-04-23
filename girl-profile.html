@@ -1062,14 +1062,14 @@
     /></noscript>
 
 
-<div class="overlay new-profile__overlay-popup" style="display: block">
+<div class="overlay new-profile__overlay-popup" style="display: none">
     <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
         
-        <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: block;">
+        <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: none;">
             <div class="new-profile__gradient-overlay fw-border-radius-10 fw-absolute fw-left-0 fw-height-1-1 fw-width-1-1"></div>
 
             <div class="new-profile__close-photo-popup fw-right-26 fw-top-20"><span class="new-profile__close"></span></div>
-            <img src="web/sass_images/header_bg.jpg" class="new-profile__view-photo-img fw-width-1-1 fw-border-radius-10" alt="">
+            <img src="http://placehold.it/600x500" class="new-profile__view-photo-img fw-width-1-1 fw-border-radius-10" alt="">
 
             <div class="new-profile__img-status fw-absolute fw-bottom-70 fw-width-1-1 fw-flex fw-flex-center">
                 <div class="new-profile__img-status-title fw-fz-12 fw-pt-8 fw-pb-8 fw-pr-72 fw-pl-72 fw-relative">
@@ -1104,7 +1104,7 @@
                     <input type="file" accept="image/jpeg,image/png" multiple=""
                            class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
 
-                    <div class=" new-profile__new-popup-registration__mask-container-units ">
+                    <div class=" new-profile__new-popup-registration__mask-container-units fw-mt-64 ">
                         <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
                             <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon">
                                 <i class="icomoon icomoon-camera-add fw-fz-46 fw-color-red-light"></i></p>
@@ -1122,32 +1122,28 @@
 
                         <div class="new-profile__popup-reg-slider js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
                                                         <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
-                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                 <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
                                     <i class="icomoon icomoon-add fw-fz-22"></i>
                                 </div>
-                                slide
                             </div>
                                                         <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
-                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                 <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
                                     <i class="icomoon icomoon-add fw-fz-22"></i>
                                 </div>
-                                slide
                             </div>
                                                         <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
-                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                 <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
                                     <i class="icomoon icomoon-add fw-fz-22"></i>
                                 </div>
-                                slide
                             </div>
                                                         <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
-                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                 <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
                                     <i class="icomoon icomoon-add fw-fz-22"></i>
                                 </div>
-                                slide
                             </div>
                                                     </div>
                     </div>
@@ -1185,25 +1181,202 @@
 
         checkboxFunction();
 
-        $('.js-new-profile__popup-reg-slider').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
     });
 
 </script>
+
+
+
+<div class="overlay new-profile__overlay-popup" style="display: block">
+    <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
+
+        
+        <div class="new-profile-new-popup-registration new-popup-registration  tac hidden fw-max-width-610" data-popup-block="new-profile__load-photo" style="display: none;">
+            <div class="new-popup-registration__mask fw-mb-30">
+                <div class="new-profile__close-load-popup fw-relative fw-width-1-1 fw-pb-15">
+                    <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0">
+                        <span class="new-profile__close--close-load fw-relative"></span>
+                    </div>
+                </div>
+
+                <div class="new-popup-registration__mask-container ">
+                    <input type="file" accept="image/jpeg,image/png" multiple=""
+                           class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
+
+                    <div class=" new-profile__new-popup-registration__mask-container-units fw-mt-64">
+                        <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
+                            <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon">
+                                <i class="icomoon icomoon-camera-add fw-fz-46 fw-color-red-light"></i>
+                            </p>
+                        </div>
+
+                        <div class="new-popup-registration__mask-container__text new-profile__popup-registration__mask-container__text">
+                            Перетащите сюда свои фото или <br><span class="new-purple-link">выберите</span> файл
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-profile__popup-reg-slider-block fw-pt-30">
+                    <h3 class="fw-mb-28">Так же вы можете выбрать фото из альбома</h3>
+                    <div class="new-profile__popup-reg-slider-wrap fw-relative fw-width-454 fw-margin-auto fw-relative">
+
+                        <div class="new-profile__popup-reg-slider js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
+                                                        <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
+                                    <i class="icomoon icomoon-add fw-fz-22"></i>
+                                </div>
+                            </div>
+                                                        <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
+                                    <i class="icomoon icomoon-add fw-fz-22"></i>
+                                </div>
+                            </div>
+                                                        <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
+                                    <i class="icomoon icomoon-add fw-fz-22"></i>
+                                </div>
+                            </div>
+                                                        <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
+                                    <i class="icomoon icomoon-add fw-fz-22"></i>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div style="display: none" class="new-female-profile-popup fw-text-center fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-width-131 fw-height-131 fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+
+                <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-30 fw-line-height-25">Фото из альбома повторно не прошло модерацию. <br> Анкета заблокирована</p>
+
+            <button class="new-female-profile--button fw-fz-14 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                Розблокировать за 250 &#8381;
+            </button>
+        </div>
+        
+
+
+        
+        <div style="display: none" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+
+                <span class="icomoon icomoon-profile-moderation-canceled fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-12 fw-line-height-25">Фото из альбома не прошло модерацию и будет удалено</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-12 fw-line-height-22">
+                При повторном добавлении некорректной<br>
+                фотографии, анкета будет заблокирована. Добавляйте<br>
+                фотографии в соответствии с <a href="#" class="fw-color-purple">правилами</a>.
+            </p>
+        </div>
+        
+
+        
+        <div style="display: none" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-text-center fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+
+                <span class="icomoon icomoon-profile-moderation-pending new-female-profile-moderation-absolute fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-12 fw-line-height-25">Фото для потверджение<br>отправлено на модерацию</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-30 fw-line-height-22">
+                Как только фото пройдет модерацию<br>
+                на вашей анкете появиться значок указывающий<br>
+                о том что ваше фото подтверждено
+            </p>
+
+            <button class="new-female-profile--button fw-fz-14 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                Продолжить
+            </button>
+        </div>
+        
+
+
+        
+        <div style="display: block" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-50 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20 fw-text-center">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+
+                <span class="icomoon icomoon-profile-moderation-canceled fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-25 fw-line-height-25">Ваше фото подтверждения не прошло модерацию.<br>Загрузите другое фото.</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-35 fw-line-height-22">
+                Напишите ваш ID на бумаге и сделайте фото с ним,<br>
+                как показано на примере. Фотография нужна только для<br> подтверждения, без отображения в альбоме.
+            </p>
+
+            <div class="new-female-profile-block-images fw-margin-auto fw-width-131 fw-height-131 fw-relative fw-mb-20">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+            </div>
+
+            <span class="new-female-profile-id-title fw-block fw-text-center fw-fz-14 fw-mb-10"><b>Ваш ID</b></span>
+            <h2 class="new-female-profile-id fw-mb-30 fw-fz-35 fw-text-center">245503</h2>
+
+            <div class="new-female-profile-drop-file-input  new-popup-registration__mask-container">
+                <input type="file" accept="image/jpeg,image/png" multiple="" class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
+
+                <div class=" new-profile__new-popup-registration__mask-container-units fw-mt-10 ">
+                    <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
+                        <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon">
+                            <i class="icomoon icomoon-camera-add fw-fz-46 fw-color-purple"></i>
+                        </p>
+                    </div>
+
+                    <div class="new-popup-registration__mask-container__text new-profile__popup-registration__mask-container__text fw-fz-14">
+                        Перетащите сюда свои фото или <br><span class="new-purple-link">выберите</span> файл
+                    </div>
+                </div>
+            </div>
+
+            <button class="new-female-profile--button fw-mt-35 fw-fz-14 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                Отправить фото
+            </button>
+        </div>
+        
+
+    </div>
+</div>
 
 
 </body>

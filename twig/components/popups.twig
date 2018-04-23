@@ -1,12 +1,12 @@
 
-<div class="overlay new-profile__overlay-popup" style="display: block">
+<div class="overlay new-profile__overlay-popup" style="display: none">
     <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
         {# edit and view photo  popup #}
-        <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: block;">
+        <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: none;">
             <div class="new-profile__gradient-overlay fw-border-radius-10 fw-absolute fw-left-0 fw-height-1-1 fw-width-1-1"></div>
 
             <div class="new-profile__close-photo-popup fw-right-26 fw-top-20"><span class="new-profile__close"></span></div>
-            <img src="web/sass_images/header_bg.jpg" class="new-profile__view-photo-img fw-width-1-1 fw-border-radius-10" alt="">
+            <img src="http://placehold.it/600x500" class="new-profile__view-photo-img fw-width-1-1 fw-border-radius-10" alt="">
 
             <div class="new-profile__img-status fw-absolute fw-bottom-70 fw-width-1-1 fw-flex fw-flex-center">
                 <div class="new-profile__img-status-title fw-fz-12 fw-pt-8 fw-pb-8 fw-pr-72 fw-pl-72 fw-relative">
@@ -41,7 +41,7 @@
                     <input type="file" accept="image/jpeg,image/png" multiple=""
                            class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
 
-                    <div class=" new-profile__new-popup-registration__mask-container-units ">
+                    <div class=" new-profile__new-popup-registration__mask-container-units fw-mt-64 ">
                         <div class="new-profile__new-popup-registration__mask-item__added-photo add-button fw-text-center ">
                             <p class="new-popup-registration__mask-item__added-photo--top-icon new-profile__popup-registration__mask-item__added-photo--top-icon">
                                 <i class="icomoon icomoon-camera-add fw-fz-46 fw-color-red-light"></i></p>
@@ -60,11 +60,10 @@
                         <div class="new-profile__popup-reg-slider js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
                             {% for i in 1..4 %}
                             <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
-                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                 <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
                                     <i class="icomoon icomoon-add fw-fz-22"></i>
                                 </div>
-                                slide
                             </div>
                             {% endfor %}
                         </div>
@@ -103,22 +102,6 @@
 
         checkboxFunction();
 
-        $('.js-new-profile__popup-reg-slider').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
     });
 
 </script>

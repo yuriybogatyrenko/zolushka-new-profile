@@ -1,5 +1,5 @@
 
-<div class="overlay new-profile__overlay-popup">
+<div class="overlay new-profile__overlay-popup" style="display: block">
     <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
         {# edit and view photo  popup #}
         <div data-popup-block="new-profile__edit-view-photo" class="new-profile__view-photo fw-relative fw-width-610 fw-overflow-hidden fw-max-width-610" style="display: block;">
@@ -29,15 +29,15 @@
         {# End #}
 
         {# Load image popup #}
-        <div class="new-popup-registration tac hidden" data-popup-block="new-profile__load-photo" style="display: block;">
-            <div class="new-popup-registration__mask mb20">
+        <div class="new-profile-new-popup-registration new-popup-registration  tac hidden fw-max-width-610" data-popup-block="new-profile__load-photo" style="display: block;">
+            <div class="new-popup-registration__mask fw-mb-30">
                 <div class="new-profile__close-load-popup fw-relative fw-width-1-1 fw-pb-15">
                     <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0">
                         <span class="new-profile__close--close-load fw-relative"></span>
                     </div>
                 </div>
 
-                <div class="new-popup-registration__mask-container">
+                <div class="new-popup-registration__mask-container ">
                     <input type="file" accept="image/jpeg,image/png" multiple=""
                            class="news-popup-registration__mask-input" id="news-popup-registration__mask-input">
 
@@ -53,9 +53,24 @@
                     </div>
                 </div>
 
-                <div class="new-profile__popup-reg-slider-wrap">
-                    <div class="new-profile__popup-reg-slider">
-                        <div class="new-profile__popup-reg-slider--slide"></div>
+                <div class="new-profile__popup-reg-slider-block fw-pt-30">
+                    <h3 class="fw-mb-28">Так же вы можете выбрать фото из альбома</h3>
+                    <div class="new-profile__popup-reg-slider-wrap fw-relative fw-width-454 fw-margin-auto fw-relative">
+
+                        {#<div class="new-profile__popup-reg-slider-prev"><i class="icomoon icomoon-chevron-left fw-fz-27 fw-color-purple"></i></div>#}
+                        {#<div class="new-profile__popup-reg-slider-next"><i class="icomoon icomoon-chevron-right fw-fz-27 fw-color-purple"></i></div>#}
+
+                        <div class="new-profile__popup-reg-slider js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
+                            {% for i in 1..4 %}
+                            <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
+                                <img src="web/sass_images/header_bg.jpg" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
+                                    <i class="icomoon icomoon-add fw-fz-22"></i>
+                                </div>
+                                sadkjas
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,6 +105,23 @@
         };
 
         checkboxFunction();
+
+        $('.js-new-profile__popup-reg-slider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
     });
 
 </script>

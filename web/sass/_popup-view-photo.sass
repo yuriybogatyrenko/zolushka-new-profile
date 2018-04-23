@@ -77,7 +77,6 @@
 			width: 20px
 			height: 20px
 			opacity: 1
-			transition: all 1s ease
 			display: block
 			&:hover
 				&:before, &:after
@@ -85,6 +84,7 @@
 			&:before, &:after
 				position: absolute
 				left: 15px
+				transition: all .3s ease
 				content: ' '
 				height: 20px
 				width: 2px
@@ -112,3 +112,39 @@
 	&__popup-registration__mask-item__added-photo--top-icon
 		i
 			color: $colorRedLight
+
+	&__popup-reg-slider
+		display: flex
+		.picnic-navigation
+			.nav-prev
+				position: absolute
+				left: -60px
+				top: 50%
+				transform: translateY(-50%)
+				cursor: pointer
+				font-size: 28px
+				color: $colorPurple
+			.nav-next
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				cursor: pointer
+				right: -60px
+				font-size: 28px
+				color: $colorPurple
+
+		&--slide
+			&:first-child
+				margin-left: 0
+			&:hover
+				.new-profile__popup-reg-slider--slide-overlay
+					visibility: visible
+					opacity: 1
+			&-overlay
+				cursor: pointer
+				transition: all .3s ease
+				background-color: rgba($colorPurple, 0.5)
+				visibility: hidden
+				opacity: 0
+.new-profile-new-popup-registration
+	width: 570px !important

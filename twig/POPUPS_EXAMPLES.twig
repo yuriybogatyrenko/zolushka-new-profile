@@ -1,9 +1,42 @@
 {% extends 'layout/layout.twig' %}
 
 {% block content %}
-<p>Женский профиль</p> <br>
-<span>new-profile-new-popup-registration</span> <br><br>
-<button data-call-popup="#new-profile-new-popup-registration">открыть</button>
-<br><br> <hr> <br><br>
+    <h1>Женский профиль</h1> <br><br>
+    <span>Попап для загрузки изображений</span> <br><br>
+    <button data-call-popup="#new-profile-new-popup-registration">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото из альбома повторно не прошло модерацию.Анкета заблокирована</span> <br><br>
+    <button data-call-popup="#new-female-popup-block-profile-popup">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото из альбома не прошло модерацию и будет удалено</span> <br><br>
+    <button data-call-popup="#new-female-popup-not-moderation-delete">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото для потверджение отправлено на модерацию</span> <br><br>
+    <button data-call-popup="#new-female-popup-photo-for-confirmation">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Ваше фото подтверждения не прошло модерацию. Загрузите другое фото.</span> <br><br>
+    <button data-call-popup="#new-female-popup-confirmation-photo-not-moderated">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Ваша анкета неактивна по причине отсутствия основного фото</span> <br><br>
+    <button data-call-popup="#new-female-popup-profile-is-not-active-photo">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Ваше основное фото не прошло модерацию. Анкета временно неактивна</span> <br><br>
+    <button data-call-popup="#new-female-popup-main-photo-not-passed-moderation">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <h1>Мужской профиль</h1> <br><br>
+    <span>Фото на модерации, редактирование фото</span> <br><br>
+    <button data-call-popup="#new-profile__edit-view-photo">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Загрузка фото</span> <br><br>
+    <button data-call-popup="#new-profile-new-popup-registration">открыть</button>
+    <br><br> <hr> <br><br>
 
 {% endblock %}

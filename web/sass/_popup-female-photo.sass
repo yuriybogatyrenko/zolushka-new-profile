@@ -25,6 +25,34 @@
 			border-radius: 50%
 
 	&-rules-slider
+		position: relative
+		.owl-dots
+			padding-top: 18px
+			.owl-dot span
+				width: 5px !important
+				height: 5px !important
+		.owl-dots .active span
+			background-color: $colorPurple !important
+		.owl-nav
+			.owl-prev
+				position: absolute
+				left: 111px
+				top: 41px
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
+			.owl-next
+				position: absolute
+				right: 111px
+				top: 41px
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
+				//transform: translate(-50%,-50%)
 		&--slide
 			&-items
 				&-item

@@ -1,9 +1,8 @@
 
-<div class="overlay new-profile__overlay-popup" style="display: block">
+<div class="overlay new-profile__overlay-popup" style="display: none">
     <div class="popup-wrap  fw-flex fw-flex-middle fw-flex-center fw-height-1-1" >
-
         {# Load image popup #}
-        <div class="new-profile-new-popup-registration new-popup-registration  tac hidden fw-max-width-610" data-popup-block="new-profile__load-photo" style="display: none;">
+        <div class="new-profile-new-popup-registration new-popup-registration  tac hidden fw-max-width-610" data-popup-block="new-profile__load-photo" style="display: block;">
             <div class="new-popup-registration__mask fw-mb-30">
                 <div class="new-profile__close-load-popup fw-relative fw-width-1-1 fw-pb-15">
                     <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0">
@@ -54,7 +53,7 @@
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
 
-            <div class="new-female-profile-block-images fw-width-131 fw-height-131 fw-relative">
+            <div class="new-female-profile-block-images fw-width-131 fw-height-131 fw-relative fw-margin-auto">
                 <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
 
                 <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
@@ -69,7 +68,6 @@
             </button>
         </div>
         {# End #}
-
 
         {#  Photo from the album has not been moderated and will be deleted / info popup #}
         <div style="display: none" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
@@ -121,9 +119,8 @@
         </div>
         {# End #}
 
-
         {#  Your confirmation photo has not been moderated. Upload another photo./ info popup #}
-        <div style="display: block" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-50 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20 fw-text-center">
+        <div style="display: none" class="new-female-profile-popup fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-50 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20 fw-text-center">
             <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -171,7 +168,129 @@
         </div>
         {# End #}
 
+        {# Your profile is not active due to absence of the main photo / info popup + riles slider #}
+        <div style="display: none" class="new-female-profile-popup fw-text-center fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-width-131 fw-margin-auto fw-height-131 fw-flex fw-flex-middle fw-flex-center fw-relative">
+                <i class="icomoon icomoon-camera fw-fz-35 fw-color-white"></i>
+
+                <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-33 fw-line-height-25">Ваша анкета неактивна по причине<br>отсутствия основного фото</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-33 fw-line-height-22 fw-mb-10">
+                Чтобы активировать анкету, добавьте основное фото <br>
+                в соответствии с <a href="#" class="fw-color-purple fw-fz-14">правилами</a>:
+            </p>
+
+            <div class="new-female-profile-rules-slider owl-carousel owl-theme fw-width-2-3 fw-flex fw-flex-center fw-margin-auto ">
+                {% for i in 1..4 %}
+                    <div class="new-female-profile-rules-slider--slide">
+                        <div class="new-female-profile-rules-slider--slide-items fw-flex fw-flex-center">
+                            <div class="new-female-profile-rules-slider--slide-items-item fw-width-120 fw-height-120 fw-border-radius-7 fw-ml-10 fw-relative">
+                                <img src="http://placehold.it/200x200" alt="" class="fw-width-1-1 fw-height-1-1">
+
+                                <div class="new-female-profile-image-checked fw-absolute fw-right-7 fw-bottom-7 fw-width-24 fw-height-24 fw-flex fw-flex-center fw-flex-middle fw-border-radius-percent-50">
+                                    <i class="icomoon icomoon-check fw-fz-18 fw-color-white"></i>
+                                </div>
+                            </div>
+
+                            <div class="new-female-profile-rules-slider--slide-items-item fw-width-120 fw-height-120 fw-border-radius-7 fw-ml-10 fw-relative">
+                                <img src="http://placehold.it/200x200" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <span class="icomoon icomoon-profile-moderation-canceled fw-fz-24 fw-absolute fw-right-7 fw-bottom-7">
+                                <span class="path1"></span><span class="path2"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <p class="fw-fz-14 fw-text-center fw-mt-10">На фото должно быть Ваше лицо</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <button class="new-female-profile--button fw-fz-14 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5 fw-mt-35">
+                Назначить основное фото
+            </button>
+
+            <p class="fw-fz-12 fw-line-height-22 fw-mt-20">
+                Так же можете ознакомиться с более подробными правилами <a href="#" class="fw-fz-12 fw-color-purple">размещения фото</a>. <br>
+                Администрация вправе отклонить фотографии без объяснения причины
+            </p>
+        </div>
+        {# End #}
+
+        {# Your main photo has not passed the moderation. / info popup + riles slider #}
+        <div style="display: none" class="new-female-profile-popup fw-text-center fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <div class="new-female-profile-block-images fw-width-131 fw-margin-auto fw-height-131 fw-flex fw-flex-middle fw-flex-center fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+
+                <span class="icomoon icomoon-profile-moderation-canceled fw-absolute  fw-right-0 fw-bottom-10 fw-fz-30">
+                <span class="path1"></span><span class="path2"></span>
+                </span>
+            </div>
+
+            <p class="fw-text-center fw-fz-19 fw-mt-30 fw-mb-30 fw-line-height-25">Ваше основное фото не прошло модерацию.<br>Анкета временно неактивна</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-33 fw-line-height-22 fw-mb-10">
+                Чтобы активировать анкету, добавьте основное фото <br>
+                в соответствии с <a href="#" class="fw-color-purple fw-fz-14">правилами</a>:
+            </p>
+
+            <div class="new-female-profile-rules-slider owl-carousel owl-theme fw-width-2-3 fw-flex fw-flex-center fw-margin-auto ">
+                {% for i in 1..4 %}
+                    <div class="new-female-profile-rules-slider--slide">
+                        <div class="new-female-profile-rules-slider--slide-items fw-flex fw-flex-center">
+                            <div class="new-female-profile-rules-slider--slide-items-item fw-width-120 fw-height-120 fw-border-radius-7 fw-ml-10 fw-relative">
+                                <img src="http://placehold.it/200x200" alt="" class="fw-width-1-1 fw-height-1-1">
+
+                                <div class="new-female-profile-image-checked fw-absolute fw-right-7 fw-bottom-7 fw-width-24 fw-height-24 fw-flex fw-flex-center fw-flex-middle fw-border-radius-percent-50">
+                                    <i class="icomoon icomoon-check fw-fz-18 fw-color-white"></i>
+                                </div>
+                            </div>
+
+                            <div class="new-female-profile-rules-slider--slide-items-item fw-width-120 fw-height-120 fw-border-radius-7 fw-ml-10 fw-relative">
+                                <img src="http://placehold.it/200x200" alt="" class="fw-width-1-1 fw-height-1-1">
+                                <span class="icomoon icomoon-profile-moderation-canceled fw-fz-24 fw-absolute fw-right-7 fw-bottom-7">
+                                <span class="path1"></span><span class="path2"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <p class="fw-fz-14 fw-text-center fw-mt-10">На фото должно быть Ваше лицо</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <button class="new-female-profile--button fw-fz-14 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5 fw-mt-35">
+                Заменить основное фото
+            </button>
+
+            <p class="fw-fz-12 fw-line-height-22 fw-mt-20">
+                Так же можете ознакомиться с более подробными правилами <a href="#" class="fw-fz-12 fw-color-purple">размещения фото</a>. <br>
+                Администрация вправе отклонить фотографии без объяснения причины
+            </p>
+        </div>
+        {# End #}
     </div>
 </div>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: true,
+        dotsEach: true,
+        navText: ['<i class="icomoon icomoon-chevron-left">\n' + ' \n' + ' </i>' , '<i class="icomoon icomoon-chevron-right">\n' + ' \n' + ' </i>']
+    });
+</script>
 
 

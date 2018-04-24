@@ -4634,6 +4634,43 @@ label.parsley-error span {
 .new-female-profile-block-images img {
   border-radius: 50%;
 }
+.new-female-profile-rules-slider {
+  position: relative;
+}
+.new-female-profile-rules-slider .owl-dots {
+  padding-top: 18px;
+}
+.new-female-profile-rules-slider .owl-dots .owl-dot span {
+  width: 5px !important;
+  height: 5px !important;
+}
+.new-female-profile-rules-slider .owl-dots .active span {
+  background-color: #ba78c0 !important;
+}
+.new-female-profile-rules-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 111px;
+  top: 41px;
+}
+.new-female-profile-rules-slider .owl-nav .owl-prev:hover {
+  background-color: transparent !important;
+}
+.new-female-profile-rules-slider .owl-nav .owl-prev i {
+  font-size: 35px;
+  color: #ba78c0;
+}
+.new-female-profile-rules-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 111px;
+  top: 41px;
+}
+.new-female-profile-rules-slider .owl-nav .owl-next:hover {
+  background-color: transparent !important;
+}
+.new-female-profile-rules-slider .owl-nav .owl-next i {
+  font-size: 35px;
+  color: #ba78c0;
+}
 .new-female-profile-rules-slider--slide-items-item {
   overflow: hidden;
 }

@@ -111,7 +111,29 @@
 
 	&__popup-reg-slider
 		display: flex
-		.picnic-navigation
+		.owl-nav
+			display: block !important
+			.owl-next
+				position: absolute
+				right: -60px
+				top: 50%
+				transform: translateY(-50%)
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
+
+			.owl-prev
+				position: absolute
+				left: -60px
+				top: 50%
+				transform: translateY(-50%)
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
 			.nav-prev
 				position: absolute
 				left: -60px

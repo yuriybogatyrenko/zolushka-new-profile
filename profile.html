@@ -825,7 +825,6 @@
         });
 
         $('.picnic_carousel').picnic();
-        $('.new-profile__popup-reg-slider').picnic();
 
         $(".chosen-select").chosen({no_results_text: "Ничего не найдено по запросу"});
 
@@ -1095,7 +1094,7 @@
                     <h3 class="fw-mb-28">Так же вы можете выбрать фото из альбома</h3>
                     <div class="new-profile__popup-reg-slider-wrap fw-relative fw-width-454 fw-margin-auto fw-relative">
 
-                        <div class="new-profile__popup-reg-slider js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
+                        <div class="new-profile__popup-reg-slider owl-carousel owl-theme js-new-profile__popup-reg-slider fw-width-454 fw-margin-auto fw-flex fw-flex-space-between">
                                                             <div class="new-profile__popup-reg-slider--slide fw-height-106 fw-width-106 fw-border-radius-7 fw-ml-10 fw-overflow-hidden fw-relative">
                                     <img src="http://placehold.it/106x106" alt="" class="fw-width-1-1 fw-height-1-1">
                                     <div class="new-profile__popup-reg-slider--slide-overlay fw-width-1-1 fw-height-1-1 fw-absolute fw-flex fw-flex-center fw-flex-middle fw-top-0 ">
@@ -1512,7 +1511,7 @@
 
     $(document).ready(function () {
 
-        $('.owl-carousel').owlCarousel({
+        $('.new-female-profile-rules-slider').owlCarousel({
             items: 1,
             loop: true,
             nav: true,
@@ -1520,6 +1519,18 @@
             dotsEach: true,
             navText: ['<i class="icomoon icomoon-chevron-left">\n' + ' \n' + ' </i>' , '<i class="icomoon icomoon-chevron-right">\n' + ' \n' + ' </i>']
         });
+
+        $(function(){
+            $('.new-profile__popup-reg-slider').owlCarousel({
+                items: 4,
+                loop: true,
+                nav: true,
+                dots: true,
+                dotsEach: true,
+                navText: ['<i class="icomoon icomoon-chevron-left">\n' + ' \n' + ' </i>' , '<i class="icomoon icomoon-chevron-right">\n' + ' \n' + ' </i>']
+            });
+        });
+
 
         // Hide all popups then show needle popup
         $('button').on('click', function () {

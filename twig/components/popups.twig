@@ -670,10 +670,147 @@
     </div>
 </div>
 
+{# Mailing popups #}
+<div class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
+    <div class="fw-flex fw-flex-middle fw-flex-center fw-width-1-1 fw-height-1-1">
+        {#  mailing-send-for-moderation/ famale/ info popup #}
+        <div style="display: none" id="mailing-send-for-moderation" class="fw-bg-color-white fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
+            <div class="fw-width-60 fw-height-60 fw-border-radius-percent-50 fw-flex fw-flex-center fw-flex-middle fw-bg-color-green fw-margin-auto">
+                <i class="icomoon icomoon-moderation fw-color-white fw-fz-60"></i>
+            </div>
+
+            <p class="fw-text-center fw-fz-18 fw-mt-12 fw-mb-20 fw-line-height-25 fw-font-light">Рассылка отправлена на модерацию</p>
+            <p class="fw-text-center fw-fz-14 fw-mb-30 fw-line-height-22">
+                Модерация длиться от 15 минут до пары часов. <br>
+                Если рассылка не пройдет модерацию, средства на оплату рассылки <br>
+                будут возвращены на баланс анкеты
+            </p>
+
+            <a href="#" class="fw-fz-14 fw-block fw-text-center fw-color-gray-purple">Просмотреть рассылку</a>
+        </div>
+        {# End #}
+
+        {#  mailing activated / famale/ info popup #}
+        <div style="display: none" id="mailing-send-activated" class="fw-bg-color-white fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-50 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
+            <i class="icomoon icomoon-new-check fw-fz-60 fw-color-green-light2 fw-margin-auto fw-block fw-text-center"></i>
+
+            <p class="fw-text-center fw-fz-18 fw-mt-20 fw-mb-40 fw-line-height-25 fw-font-light">Рассылка активирована</p>
+
+            <a href="#" class="fw-fz-14 fw-block fw-text-center fw-color-gray-purple">Просмотреть рассылку</a>
+        </div>
+        {# End #}
+
+        {# mailing blocked rules  / info popup #}
+        <div style="display: none" id="mailing-blocked-rules" class="fw-bg-color-white fw-width-560 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <h3 class="fw-fz-18">Правила рассылки</h3>
+
+            <p class="fw-text-center fw-fz-14 fw-mt-20 fw-mb-30 fw-line-height-25">
+                Чтобы оградить пользователей от неуместных материалов и спама, <br>
+                рассылки проходят модерацию. При составлении рассылки <br>
+                придерживайтесь следующих правил:
+            </p>
+
+            <ul class="fw-text-left fw-width-405 fw-margin-auto fw-list-style-none">
+                <li class="fw-fz-14"><span class="fw-mr-9">•</span>	Пишите по теме проекта</li>
+                <li class="fw-fz-14"><span class="fw-mr-9">•</span> Не используйте ненормативную лексику</li>
+                <li class="fw-fz-14"><span class="fw-mr-9">•</span> Не размещайте ссылки на сторонние ресурсы</li>
+                <li class="fw-fz-14"><span class="fw-mr-9">•</span> Не указывайте контактные данные</li>
+                <li class="fw-fz-14"><span class="fw-mr-9">•</span> Не предлагайте коммерческие услуги или товары</li>
+            </ul>
+
+            <button class="new-female-profile--button fw-fz-14 fw-mt-40 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                Продолжить
+            </button>
+        </div>
+        {# End #}
+
+        {# mailing-black-list-popup  / info popup #}
+        <div style="display: none" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <h3 class="fw-fz-18 fw-mb-20">Выберите пользователей <br> которые не будут видеть рассылку</h3>
+
+            <input class="fw-height-40 input-style fw-width-1-1 fw-mb-15 fw-text-left fw-fz-14 fw-pt-13 fw-pb-13 fw-pl-10 fw-pr-10" placeholder="Поиск" type="text">
+            <button class="js-selection-all-profile-for-black-list fw-mb-15 fw-width-1-1 fw-bg-color-green fw-height-40 fw-flex fw-text-center fw-flex-center fw-fz-14 fw-color-white mailing-btn-style fw-oun no-style fw-flex-middle">Выбрать всех</button>
+
+            <form action="" id="mailing-black-list-form">
+                <ul class="mailing-list fw-relative">
+                    {% for i in 1..15 %}
+                    <li class="fw-mb-20">
+                        <div class="mailing-checkbox">
+                            <input type="checkbox" class="no-style js-black-list-checkbox" id="check1">
+                            <label for="check1" class="fw-flex fw-flex-space-between fw-flex-middle fw-pr-20">
+                                <div class="left fw-flex fw-flex-left fw-flex-middle">
+                                    <div class="fw-width-34 fw-height-34"><img src="http://placehold.it/100x100" class="fw-border-radius-5 fw-width-1-1 fw-height-1-1" alt=""></div>
+                                    <p class="fw-margin-0 fw-fz-14"><span>Катя</span>, <span>27</span></p>
+                                </div>
+
+                                <div class="fake-label fw-flex fw-flex-middle fw-flex-center">
+                                    <i class="icomoon icomoon-check fw-color-green"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <button type="submit" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                    Сохранить
+                </button>
+            </form>
+        </div>
+        {# End #}
+
+        {# mailing-have-shown-interest  / info popup #}
+        <div style="display: none" id="mailing-have-shown-interest" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <h3 class="fw-fz-18 fw-mb-20">Проявили интерес</h3>
+
+            <ul id="mailing-have-shown-interest-list" class="mailing-list fw-relative fw-margin-0">
+                {% for i in 1..15 %}
+                    <li class="fw-mb-20">
+                        <div class="mailing-checkbox">
+                            <a href="#"
+                               class="mailing-have-shown-interest-link fw-flex fw-flex-space-between fw-flex-middle fw-pr-20">
+                                <div class="left fw-flex fw-flex-left fw-flex-middle">
+                                    <div class="fw-width-34 fw-height-34"><img src="http://placehold.it/100x100"
+                                                                               class="fw-border-radius-5 fw-width-1-1 fw-height-1-1"
+                                                                               alt=""></div>
+                                    <p class="fw-margin-0 fw-fz-14"><span>Катя</span>, <span>27</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {# End #}
+    </div>
+</div>
 
 <script>
 
     $(document).ready(function () {
+        // mailing checkboxes black list
+        $('.js-selection-all-profile-for-black-list').on('click', function() {
+            var mailingListCheckbox = $('.js-black-list-checkbox');
+
+            if(mailingListCheckbox.filter(':checked').length === mailingListCheckbox.length){
+                mailingListCheckbox.prop('checked', false);
+            }else{
+                mailingListCheckbox.prop('checked', true);
+            }
+        });
+
 
         $('.new-female-profile-rules-slider').owlCarousel({
             items: 1,
@@ -697,14 +834,14 @@
 
 
         // Hide all popups then show needle popup
-        $('button').on('click', function () {
-            var dataPopup = $(this).attr('data-call-popup');
-            var overlay = $('.overlay');
-
-            $(dataPopup).show();
-            $(overlay).show();
-
-        });
+        // $('button').on('click', function () {
+        //     var dataPopup = $(this).attr('data-call-popup');
+        //     var overlay = $('.overlay');
+        //
+        //     $(dataPopup).show();
+        //     $(overlay).show();
+        //
+        // });
 
         $('.js-new-profile-close-this-popup-button').on('click',function () {
             var dataPopup = $(this).parent();
@@ -736,7 +873,6 @@
         };
 
         checkboxFunction();
-
     });
 
 </script>

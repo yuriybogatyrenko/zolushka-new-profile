@@ -1,6 +1,112 @@
+.fw-pointer
+	cursor: pointer
+.fw-line-height-20
+	line-height: 20px
 .new-mailing-container
+	.white-overlay
+		background-color: rgba(#fff, .77)
+		height: 105%
+		z-index: 105
+	.mailing-archive-item
+		&:nth-child(n + 7)
+			display: none
+	.mailing-absolute-icon
+		left: -37px
+		top: -8px
+	.mailings-archive-wrap .open
+		&:nth-child(n + 7)
+			display: block
+	.border-bottom
+		border-bottom: 1px solid $colorGrayLight
+	.white-border
+		border: 1px solid $colorWhite
+	textarea,input
+		border: 1px solid #b8b8b8
+		&:focus
+			border-color: #b263b8
+			box-shadow: 0 0 0 1px #b263b8 inset
+	.citysearch__new-select,.search_filters .select_wrap, .search_filters .select, .search_filters .ui-state-default
+		margin: 0
+		width: 300px
+		background-color: $colorWhite
+		color: #9c9385
+	.create-inputs-line-age
+		&:after
+			position: absolute
+			content: 'лет'
+			font-size: 12px
+			color: #b3b3b3
+			right: 12px
+			top: 50%
+			transform: translateY(-50%)
+	textarea
+		box-shadow: none
+		border: 1px solid $colorInputBorder
+
+	a
+		transition: all .3s ease
+		text-decoration: none
+		text-transform: none
+		&:focus
+			outline: none
+			color: $colorPurple
+		&:hover
+			color: $colorPurple
+			text-decoration: none
+			text-transform: none
+	button
+		cursor: pointer
+		&:focus
+			outline: none
 	ul
 		list-style-type: none
+
+	.fw-mr--50
+		margin-right: -50px
+
+	.mailing-black-list-users-row
+		position: relative
+		li
+			position: absolute
+			&:nth-child(n + 10)
+				display: none
+			&:nth-child(2)
+				left: 22px
+			&:nth-child(3)
+				left: calc(2 * 22px)
+			&:nth-child(4)
+				left: calc(3 * 22px)
+			&:nth-child(5)
+				left: calc(4 * 22px)
+			&:nth-child(6)
+				left: calc(5 * 22px)
+			&:nth-child(7)
+				left: calc(6 * 22px)
+			&:nth-child(8)
+				left: calc(7 * 22px)
+			&:nth-child(9)
+				left: calc(8 * 22px)
+			&:first-child
+				transform: translateX(0) !important
+				z-index: 100
+				left: 0
+	.mailing-list-profiles-row-interest
+		position: relative
+		li
+			position: absolute
+			&:nth-child(2)
+				left: 22px
+			&:nth-child(3)
+				left: calc(2 * 22px)
+			&:nth-child(4)
+				left: calc(3 * 22px)
+			&:nth-child(5)
+				left: calc(4 * 22px)
+			&:nth-child(n + 6)
+				display: none
+			&:first-child
+				transform: translateX(0)
+				z-index: 100
 	.mailing-shadow
 		box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2)
 	.fw-border-radius-18
@@ -22,15 +128,21 @@
 		background-image: linear-gradient(to bottom, #cb83d2, #8b5a8f)
 		border: solid 2px #d8d9d8
 	.new-mailing-profiles-line
+		&:nth-child(n + 6)
+			display: none
 		.avatar
 			img
 				border-radius: 7px
+	.new-mailing-profiles-line-wrap .open
+		&:nth-child(n + 6)
+			display: flex
 
 .black-overlay
 	background-color: rgba(#000,.5)
 .new-mailing-overlay
 	position: fixed
 	height: 100vh
+	z-index: 120
 
 	a
 		text-decoration: none
@@ -57,7 +169,68 @@
 .fw-oun
 	outline: none !important
 	outline-style: none
+
 .mailing-popup
+	z-index: 111
+	.citysearch__new-select,.search_filters .select_wrap, .search_filters .select, .search_filters .ui-state-default
+		margin: 0
+		width: 300px
+		background-color: $colorWhite
+		color: #9c9385
+	.a-hover-purple
+		&:hover
+			color: $colorPurple
+	textarea
+		box-shadow: none
+		border: 1px solid $colorInputBorder
+	.buy_form .selectbox .select, .get_in_top .selectbox .select
+		padding-left: 10px
+	textarea,input
+		border: 1px solid #b8b8b8
+		padding-left: 10px!important
+		&:focus
+			border-color: #b263b8
+			box-shadow: 0 0 0 1px #b263b8 inset
+	.translateX-35
+		transform: translateX(-35px)
+	.mailing-list-profiles-row
+		li
+			position: absolute
+			&:nth-child(n + 10)
+				display: none
+			&:nth-child(2)
+				left: 22px
+			&:nth-child(3)
+				left: calc(2 * 22px)
+			&:nth-child(4)
+				left: calc(3 * 22px)
+			&:nth-child(5)
+				left: calc(4 * 22px)
+			&:nth-child(6)
+				left: calc(5 * 22px)
+			&:nth-child(7)
+				left: calc(6 * 22px)
+			&:nth-child(8)
+				left: calc(7 * 22px)
+			&:nth-child(9)
+				left: calc(8 * 22px)
+			&:first-child
+				transform: translateX(0) !important
+				z-index: 100
+				left: 0
+
+	.white-border
+		border: 1px solid $colorWhite
+	.activate-inputs-line-age
+		&:after
+			position: absolute
+			content: 'лет'
+			font-size: 12px
+			color: #b3b3b3
+			right: 12px
+			top: 50%
+			transform: translateY(-50%)
+
 	#mailing-have-shown-interest-list
 		border-bottom: none
 		&::-webkit-scrollbar

@@ -1,0 +1,237 @@
+{% extends 'layout/layout.twig' %}
+
+{% block content %}
+    <div class="new-mailing-container fw-pt-40 fw-pl-15 fw-pr-15 fw-pb-82 fw-text-center">
+        <nav class="fw-margin-auto fw-mb-42">
+            <ul class="fw-flex fw-flex-middle fw-flex-center">
+                <li><a href="#" class="fw-color-black fw-fz-16">Все рассылки</a></li>
+                <li><a href="#" class="fw-color-black fw-fz-16 fw-ml-30">Интересы</a></li>
+                <li><a href="#" class="fw-color-black fw-fz-16 fw-ml-30">Мои рассылки</a></li>
+            </ul>
+        </nav>
+
+        <div class="fw-mt-20">
+            <img src="/web/images/capa-1.svg" alt="" class="fw-margin-auto">
+            <span class="fw-fz-20 fw-pt-18 fw-block">У вас нет активных рассылок</span>
+        </div>
+        {# mailing #}
+        <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-40 fw-pb-54 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
+            <span class="fw-fz-20 fw-text-left fw-block fw-mb-40">Текущая рассылка</span>
+            <p class="fw-fz-16 fw-mb-30 fw-relative">
+                <span class="mailing-absolute-icon fw-block fw-absolute fw-width-30 fw-flex fw-flex-middle fw-flex-center fw-height-30 fw-border-radius-percent-50 fw-bg-color-green">
+                    <i class="fw-color-white fw-fz-28 icomoon icomoon-moderation"></i>
+                </span>
+                Рассылка отправлена на модерацию. Модерация длиться от 15 минут до 2 часов.
+            </p>
+            <div class="fw-mb-33">
+                <div class="fw-flex fw-flex-left fw-flex-middle">
+                    <span class="fw-fz-16">21-25, Москва, провести вечер</span>
+                    <span class="js- fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
+                </div>
+
+                <form action="" class="js-edit-mailing-objectives fw-mt-20 fw-hidden">
+                    <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
+                    <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
+                </form>
+            </div>
+
+            <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
+
+            <div class="fw-text-left fw-width-272">
+                <p class="fw-fz-14 fw-mb-13 fw-text-left">Исключенные пользователи:</p>
+                <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                    <ul class="fw-list-style-none js-mailing-black-list-users-row mailing-black-list-users-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                        {% for i in 1..12 %}
+                            <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                        {% endfor %}
+                    </ul>
+                    <div><a href="#" class="a-hover-purple mailing-black-list-users-row-a  fw-width-60 translateX-35 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                </div>
+            </div>
+        </div>
+
+        {# Blocked mailing #}
+        <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-40 fw-pb-54 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
+            <span class="fw-fz-20 fw-text-left fw-block fw-mb-40">Текущая рассылка</span>
+            <p class="fw-fz-16 fw-mb-30 fw-relative">
+                <span class="mailing-absolute-icon fw-block fw-absolute">
+                    <i class="fw-fz-28 fw-color-gray-light icomoon icomoon-block2"></i>
+                </span>
+                Ваша рассылка заблокирована за повторное нарушение правил и будет удалена
+            </p>
+
+            <div class="fw-relative">
+                <div class="white-overlay fw-absolute fw-width-1-1 fw-height-1-1"></div>
+                <div class="fw-mb-33">
+                    <p class="fw-fz-14 fw-color-gray fw-mb-8">До окончания рассылки осталось 8 часов 59 минут</p>
+                    <div class="fw-flex fw-flex-left fw-flex-middle">
+                        <span class="fw-fz-16">21-25, Москва, провести вечер</span>
+                        <span class="js- fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
+                    </div>
+
+                    <form action="" class="js-edit-mailing-objectives fw-mt-20 fw-hidden">
+                        <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
+                        <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
+                    </form>
+                </div>
+
+                <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
+
+                <div class="fw-text-left fw-width-272">
+                    <p class="fw-fz-14 fw-mb-13 fw-text-left">Исключенные пользователи:</p>
+                    <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                        <ul class="fw-list-style-none js-mailing-black-list-users-row mailing-black-list-users-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                            {% for i in 1..12 %}
+                                <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                            {% endfor %}
+                        </ul>
+                        <div><a href="#" class="a-hover-purple mailing-black-list-users-row-a  fw-width-60 translateX-35 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# mailing status #}
+        <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-40 fw-pb-54 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
+            <span class="fw-fz-20 fw-text-left fw-block fw-mb-40">Текущая рассылка</span>
+            <p class="fw-fz-16 fw-mb-30 fw-relative">
+                <span class="mailing-absolute-icon fw-block fw-absolute fw-width-30 fw-flex fw-flex-middle fw-flex-center fw-height-30 fw-border-radius-percent-50 fw-bg-color-green">
+                    <img src="/web/images/capa-1.svg" class="fw-width-1-1 fw-height-1-1" alt="">
+                </span>
+                Пока ни одной девушки не откликнулось
+            </p>
+            <div class="fw-mb-33">
+                <p class="fw-fz-14 fw-color-gray fw-mb-8">До окончания рассылки осталось 8 часов 59 минут</p>
+                <div class="fw-flex fw-flex-left fw-flex-middle">
+                    <span class="fw-fz-16">21-25, Москва, провести вечер</span>
+                    <span class="js- fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
+                </div>
+
+                <form action="" class="js-edit-mailing-objectives fw-mt-20 fw-hidden">
+                    <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
+                    <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
+                </form>
+            </div>
+
+            <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
+            <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                <div class="fw-text-left fw-width-272">
+                    <p class="fw-fz-14 fw-mb-13 fw-text-left">Исключенные пользователи:</p>
+                    <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                        <ul class="fw-list-style-none js-mailing-black-list-users-row mailing-black-list-users-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                            {% for i in 1..12 %}
+                                <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                            {% endfor %}
+                        </ul>
+                        <div><a href="#" class="a-hover-purple mailing-black-list-users-row-a  fw-width-60 translateX-35 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                    </div>
+                </div>
+                <a href="#" class="fw-fz-14 fw-color-purple fw-block fw-mt-28">Продлить рассылку</a>
+            </div>
+        </div>
+
+        {# mailing_moderation_negative #}
+        <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-40 fw-pb-54 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
+            <span class="fw-fz-20 fw-text-left fw-block fw-mb-40">Текущая рассылка</span>
+            <p class="fw-fz-16 fw-line-height-22 fw-mb-15 fw-relative">
+                <span class="mailing-absolute-icon fw-top-10 fw-block fw-absolute">
+                    <span class="fw-mt-8 fw-block fw-fz-28 icomoon icomoon-profile-photo-warning">
+                    <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                    </span>
+                </span>
+                Ваша текущая рассылка остановлена за несоответствие <a href="#" class="fw-color-purple fw-fz-16">правилам</a> сервиса<br>
+                Чтобы возобновить рассылку отредактируйте ее в соответствии с правилами и отправьте снова. <br>
+                Повторное нарушение приведет к блокировке рассылки без возврата средств
+            </p>
+
+            <span class="fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-mb-30"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
+
+            <div class="fw-relative">
+                <div class="white-overlay fw-absolute fw-width-1-1 fw-height-1-1"></div>
+                <div class="fw-mb-33">
+                    <p class="fw-fz-14 fw-color-gray fw-mb-8">До окончания рассылки осталось 8 часов 59 минут</p>
+                    <div class="fw-flex fw-flex-left fw-flex-middle">
+                        <span class="fw-fz-16">21-25, Москва, провести вечер</span>
+                    </div>
+
+                    <form action="" class="js-edit-mailing-objectives fw-mt-20 fw-hidden">
+                        <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
+                        <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
+                    </form>
+                </div>
+
+                <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
+
+                <div class="fw-text-left fw-width-272">
+                    <p class="fw-fz-14 fw-mb-13 fw-text-left">Исключенные пользователи:</p>
+                    <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                        <ul class="fw-list-style-none js-mailing-black-list-users-row mailing-black-list-users-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                            {% for i in 1..12 %}
+                                <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                            {% endfor %}
+                        </ul>
+                        <div><a href="#" class="a-hover-purple mailing-black-list-users-row-a  fw-width-60 translateX-35 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-50 fw-pb-40 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
+            <span class="fw-fz-20 fw-text-left fw-block fw-mb-64">Архив рассылок</span>
+
+            <div class="mailings-archive-wrap fw-text-center">
+                {% for i in 1..10 %}
+                <div class="mailing-archive-item fw-text-left js-mailing-archive-item border-bottom fw-pb-30 fw-mb-33">
+                    <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                        <div class="">
+                            <span class="fw-block fw-fz-14 fw-color-gray-light fw-mb-15">11.02.2018</span>
+                            <span class="fw-fz-16 fw-block">21-25, <span>Москва</span></span>
+                        </div>
+
+                        <div class="fw-flex fw-flex-middle fw-flex-left">
+                            <div class="fw-width-182 fw-mr-62">
+                                <p class="fw-fz-14 fw-mb-13">Проявили интерес:</p>
+                                <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                                    <ul class="fw-list-style-none js-mailing-list-profiles-row mailing-list-profiles-row-interest fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                                        {% for i in 1..12 %}
+                                            <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div><a href="#" class="a-hover-purple mailing-list-profiles-row-interest-a fw-width-60 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 4</a></div>
+                                </div>
+                            </div>
+
+                            <div class="fw-text-left fw-width-272">
+                                <p class="fw-fz-14 fw-mb-13 fw-text-left">Исключенные пользователи:</p>
+                                <div class="fw-flex fw-flex-middle fw-flex-space-between">
+                                    <ul class="fw-list-style-none js-mailing-black-list-users-row mailing-black-list-users-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                                        {% for i in 1..12 %}
+                                            <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div><a href="#" class="a-hover-purple mailing-black-list-users-row-a  fw-width-60 translateX-35 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="fw-fz-14 fw-mt-35 fw-font-light fw-mb-30 fw-line-height-20">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
+
+                    <div class="fw-flex fw-flex-space-between fw-flex-middle">
+                        <button type="submit" name="-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-131 fw-border-radius-5">
+                            Активировать
+                        </button>
+
+                        <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
+                            <li><a href="#" class="fw-fz-13 fw-color-gray">#постоянные отношения</a></li>
+                            <li><a href="#" class="fw-fz-13 fw-color-gray">#путешествие</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+                <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-200 fw-margin-auto fw-border-radius-5">Показать еще</button>
+            </div><!-- /.mailings-archive-wrap -->
+        </div><!-- /.new-mailing-main-->
+    </div><!-- /.new-mailing-container -->
+{% endblock %}

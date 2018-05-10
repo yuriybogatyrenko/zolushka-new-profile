@@ -58,8 +58,8 @@
     <link rel="stylesheet" href="web/css/owl/owl.carousel.css">
     <link rel="stylesheet" href="web/css/owl/owl.theme.default.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!--[if lte IE 8]>
     <script>
@@ -1763,7 +1763,7 @@
 </div>
 
 
-<div class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
+<div style="display: none" class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
     <div class="fw-flex fw-flex-middle fw-flex-center fw-width-1-1 fw-height-1-1">
         
         <div style="display: none" id="mailing-send-for-moderation" class="fw-bg-color-white fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
@@ -2274,12 +2274,106 @@
                             </ul>
         </div>
         
+
+        
+        <div style="display: none" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <h3 class="fw-fz-18 fw-mb-40">Активация рассылки</h3>
+
+            <form action="" method="">
+                <div class="fw-flex activate-inputs-line activate-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                    <label for="mailing-age" class="fw-margin-0 fw-fz-14">Возраст</label>
+                    <input name="activate-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" placeholder="от 18 – до 35" type="number" required>
+                </div>
+
+                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                    <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                    <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                </div>
+
+                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                    <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
+                    <div class="search_filters get_in_top tac">
+                        <div class="select_wrap dib select_wrap_ vam tal">
+                            <select name="" id="">
+                                <option value="1" selected data-type="sponsor">Ищу спонсора</option>
+                                <option value="2" data-type="constantRelationship">Постоянные отношения</option>
+                                <option value="3" data-type="spendTheEvening">Провести вечер</option>
+                                <option value="4" data-type="travel">Совместное путешествие</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                    <label class="fw-margin-0 fw-fz-14">Исключить пользователей</label>
+                    <div class="fw-width-300 fw-relative fw-flex fw-flex-middle fw-flex-space-between">
+                        <ul class="fw-list-style-none js-mailing-list-profiles-row mailing-list-profiles-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                        <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
+                                                    </ul>
+                        <div><a href="#" class="a-hover-purple fw-width-60 fw-fz-14 fw-color-purple fw-ml-10 fw-block">и еще 23</a></div>
+                    </div>
+                </div>
+
+                <div class="fw-flex activate-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
+                    <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                    <textarea name="activate-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" required placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок"></textarea>
+                </div>
+
+                <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
+                    <button type="submit" name="activate-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-234 fw-border-radius-5">
+                        Активировать
+                    </button>
+
+                    <a href="#" class="a-hover-purple fw-color-purple fw-fz-14 fw-block fw-ml-64">Удалить рассылку</a>
+                </div>
+            </form>
+        </div>
+        
     </div>
 </div>
 
 <script>
 
     $(document).ready(function () {
+        $('.js-open-items-mailing-profiles').on('click',function(){
+            $('.new-mailing-profiles-line,.js-mailing-archive-item').toggleClass('open');
+        });
+
+        // mailing partially hidden
+        $(function () {
+            var list = $('.js-mailing-list-profiles-row li');
+
+            for(i = 0; i < list.length; i ++){
+                var zIndex = 100;
+                $(list[i]).css({'z-index' : + zIndex - i });
+            }
+        });
+
+        $(function () {
+            var list = $('.js-mailing-black-list-users-row li');
+
+            for(i = 0; i < list.length; i ++){
+                var zIndex = 100;
+                $(list[i]).css({'z-index' : + zIndex - i });
+            }
+        });
+
+
+
         // mailing checkboxes black list
         $('.js-selection-all-profile-for-black-list').on('click', function() {
             var mailingListCheckbox = $('.js-black-list-checkbox');

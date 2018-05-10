@@ -23,6 +23,22 @@
   display: block;
 }
 
+.fw-bg-color-black {
+  background-color: #000;
+}
+
+.fw-color-black {
+  color: #000;
+}
+
+.fw-bg-color-input {
+  background-color: #b3b3b3;
+}
+
+.fw-color-input {
+  color: #b3b3b3;
+}
+
 .fw-bg-color-green-light2 {
   background-color: #59d9b7;
 }
@@ -163,6 +179,22 @@
   max-width: 24px;
 }
 
+.fw-width-27 {
+  width: 27px;
+}
+
+.fw-max-width-27 {
+  max-width: 27px;
+}
+
+.fw-width-30 {
+  width: 30px;
+}
+
+.fw-max-width-30 {
+  max-width: 30px;
+}
+
 .fw-width-34 {
   width: 34px;
 }
@@ -219,12 +251,44 @@
   max-width: 131px;
 }
 
+.fw-width-155 {
+  width: 155px;
+}
+
+.fw-max-width-155 {
+  max-width: 155px;
+}
+
+.fw-width-182 {
+  width: 182px;
+}
+
+.fw-max-width-182 {
+  max-width: 182px;
+}
+
 .fw-width-200 {
   width: 200px;
 }
 
 .fw-max-width-200 {
   max-width: 200px;
+}
+
+.fw-width-234 {
+  width: 234px;
+}
+
+.fw-max-width-234 {
+  max-width: 234px;
+}
+
+.fw-width-272 {
+  width: 272px;
+}
+
+.fw-max-width-272 {
+  max-width: 272px;
 }
 
 .fw-width-300 {
@@ -265,6 +329,14 @@
 
 .fw-max-width-560 {
   max-width: 560px;
+}
+
+.fw-width-575 {
+  width: 575px;
+}
+
+.fw-max-width-575 {
+  max-width: 575px;
 }
 
 .fw-width-670 {
@@ -397,6 +469,30 @@
 
 .fw-min-height-24 {
   min-height: 24px;
+}
+
+.fw-height-27 {
+  height: 27px;
+}
+
+.fw-max-height-27 {
+  max-height: 27px;
+}
+
+.fw-min-height-27 {
+  min-height: 27px;
+}
+
+.fw-height-30 {
+  height: 30px;
+}
+
+.fw-max-height-30 {
+  max-height: 30px;
+}
+
+.fw-min-height-30 {
+  min-height: 30px;
 }
 
 .fw-height-34 {
@@ -618,6 +714,26 @@
 
 .fw-mr-6 {
   margin-right: 6px;
+}
+
+.fw-margin-8 {
+  margin: 8px;
+}
+
+.fw-mt-8 {
+  margin-top: 8px;
+}
+
+.fw-mb-8 {
+  margin-bottom: 8px;
+}
+
+.fw-ml-8 {
+  margin-left: 8px;
+}
+
+.fw-mr-8 {
+  margin-right: 8px;
 }
 
 .fw-margin-9 {
@@ -880,6 +996,26 @@
   margin-right: 42px;
 }
 
+.fw-margin-45 {
+  margin: 45px;
+}
+
+.fw-mt-45 {
+  margin-top: 45px;
+}
+
+.fw-mb-45 {
+  margin-bottom: 45px;
+}
+
+.fw-ml-45 {
+  margin-left: 45px;
+}
+
+.fw-mr-45 {
+  margin-right: 45px;
+}
+
 .fw-margin-53 {
   margin: 53px;
 }
@@ -900,6 +1036,26 @@
   margin-right: 53px;
 }
 
+.fw-margin-62 {
+  margin: 62px;
+}
+
+.fw-mt-62 {
+  margin-top: 62px;
+}
+
+.fw-mb-62 {
+  margin-bottom: 62px;
+}
+
+.fw-ml-62 {
+  margin-left: 62px;
+}
+
+.fw-mr-62 {
+  margin-right: 62px;
+}
+
 .fw-margin-64 {
   margin: 64px;
 }
@@ -918,6 +1074,26 @@
 
 .fw-mr-64 {
   margin-right: 64px;
+}
+
+.fw-margin-70 {
+  margin: 70px;
+}
+
+.fw-mt-70 {
+  margin-top: 70px;
+}
+
+.fw-mb-70 {
+  margin-bottom: 70px;
+}
+
+.fw-ml-70 {
+  margin-left: 70px;
+}
+
+.fw-mr-70 {
+  margin-right: 70px;
 }
 
 .fw-margin-92 {
@@ -1376,6 +1552,26 @@
   padding-right: 86px;
 }
 
+.fw-padding-200 {
+  padding: 200px;
+}
+
+.fw-pt-200 {
+  padding-top: 200px;
+}
+
+.fw-pb-200 {
+  padding-bottom: 200px;
+}
+
+.fw-pl-200 {
+  padding-left: 200px;
+}
+
+.fw-pr-200 {
+  padding-right: 200px;
+}
+
 .fw-flex {
   display: flex;
 }
@@ -1746,6 +1942,14 @@
   border-radius: 60%;
 }
 
+.fw-border-color-black {
+  border-color: #000;
+}
+
+.fw-border-color-input {
+  border-color: #b3b3b3;
+}
+
 .fw-border-color-green-light2 {
   border-color: #59d9b7;
 }
@@ -2011,6 +2215,10 @@
 
 .fw-top-0 {
   top: 0px;
+}
+
+.fw-top-5 {
+  top: 5px;
 }
 
 .fw-top-10 {
@@ -5047,8 +5255,149 @@ label.parsley-error span {
   margin-left: 0;
 }
 
+.fw-pointer {
+  cursor: pointer;
+}
+
+.fw-line-height-20 {
+  line-height: 20px;
+}
+
+.new-mailing-container .white-overlay {
+  background-color: rgba(255, 255, 255, 0.77);
+  height: 105%;
+  z-index: 105;
+}
+.new-mailing-container .mailing-archive-item:nth-child(n + 7) {
+  display: none;
+}
+.new-mailing-container .mailing-absolute-icon {
+  left: -37px;
+  top: -8px;
+}
+.new-mailing-container .mailings-archive-wrap .open:nth-child(n + 7) {
+  display: block;
+}
+.new-mailing-container .border-bottom {
+  border-bottom: 1px solid #d8d8d8;
+}
+.new-mailing-container .white-border {
+  border: 1px solid #fff;
+}
+.new-mailing-container textarea, .new-mailing-container input {
+  border: 1px solid #b8b8b8;
+}
+.new-mailing-container textarea:focus, .new-mailing-container input:focus {
+  border-color: #b263b8;
+  box-shadow: 0 0 0 1px #b263b8 inset;
+}
+.new-mailing-container .citysearch__new-select, .new-mailing-container .search_filters .select_wrap, .new-mailing-container .search_filters .select, .new-mailing-container .search_filters .ui-state-default {
+  margin: 0;
+  width: 300px;
+  background-color: #fff;
+  color: #9c9385;
+}
+.new-mailing-container .create-inputs-line-age:after {
+  position: absolute;
+  content: "лет";
+  font-size: 12px;
+  color: #b3b3b3;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.new-mailing-container textarea {
+  box-shadow: none;
+  border: 1px solid #b3b3b3;
+}
+.new-mailing-container a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: none;
+}
+.new-mailing-container a:focus {
+  outline: none;
+  color: #ba78c0;
+}
+.new-mailing-container a:hover {
+  color: #ba78c0;
+  text-decoration: none;
+  text-transform: none;
+}
+.new-mailing-container button {
+  cursor: pointer;
+}
+.new-mailing-container button:focus {
+  outline: none;
+}
 .new-mailing-container ul {
   list-style-type: none;
+}
+.new-mailing-container .fw-mr--50 {
+  margin-right: -50px;
+}
+.new-mailing-container .mailing-black-list-users-row {
+  position: relative;
+}
+.new-mailing-container .mailing-black-list-users-row li {
+  position: absolute;
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(n + 10) {
+  display: none;
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(2) {
+  left: 22px;
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(3) {
+  left: calc(2 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(4) {
+  left: calc(3 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(5) {
+  left: calc(4 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(6) {
+  left: calc(5 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(7) {
+  left: calc(6 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(8) {
+  left: calc(7 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:nth-child(9) {
+  left: calc(8 * 22px);
+}
+.new-mailing-container .mailing-black-list-users-row li:first-child {
+  transform: translateX(0) !important;
+  z-index: 100;
+  left: 0;
+}
+.new-mailing-container .mailing-list-profiles-row-interest {
+  position: relative;
+}
+.new-mailing-container .mailing-list-profiles-row-interest li {
+  position: absolute;
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:nth-child(2) {
+  left: 22px;
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:nth-child(3) {
+  left: calc(2 * 22px);
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:nth-child(4) {
+  left: calc(3 * 22px);
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:nth-child(5) {
+  left: calc(4 * 22px);
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:nth-child(n + 6) {
+  display: none;
+}
+.new-mailing-container .mailing-list-profiles-row-interest li:first-child {
+  transform: translateX(0);
+  z-index: 100;
 }
 .new-mailing-container .mailing-shadow {
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
@@ -5076,8 +5425,14 @@ label.parsley-error span {
   background-image: linear-gradient(to bottom, #cb83d2, #8b5a8f);
   border: solid 2px #d8d9d8;
 }
+.new-mailing-container .new-mailing-profiles-line:nth-child(n + 6) {
+  display: none;
+}
 .new-mailing-container .new-mailing-profiles-line .avatar img {
   border-radius: 7px;
+}
+.new-mailing-container .new-mailing-profiles-line-wrap .open:nth-child(n + 6) {
+  display: flex;
 }
 
 .black-overlay {
@@ -5087,6 +5442,7 @@ label.parsley-error span {
 .new-mailing-overlay {
   position: fixed;
   height: 100vh;
+  z-index: 120;
 }
 .new-mailing-overlay a {
   text-decoration: none;
@@ -5121,6 +5477,83 @@ label.parsley-error span {
   outline-style: none;
 }
 
+.mailing-popup {
+  z-index: 111;
+}
+.mailing-popup .citysearch__new-select, .mailing-popup .search_filters .select_wrap, .mailing-popup .search_filters .select, .mailing-popup .search_filters .ui-state-default {
+  margin: 0;
+  width: 300px;
+  background-color: #fff;
+  color: #9c9385;
+}
+.mailing-popup .a-hover-purple:hover {
+  color: #ba78c0;
+}
+.mailing-popup textarea {
+  box-shadow: none;
+  border: 1px solid #b3b3b3;
+}
+.mailing-popup .buy_form .selectbox .select, .mailing-popup .get_in_top .selectbox .select {
+  padding-left: 10px;
+}
+.mailing-popup textarea, .mailing-popup input {
+  border: 1px solid #b8b8b8;
+  padding-left: 10px !important;
+}
+.mailing-popup textarea:focus, .mailing-popup input:focus {
+  border-color: #b263b8;
+  box-shadow: 0 0 0 1px #b263b8 inset;
+}
+.mailing-popup .translateX-35 {
+  transform: translateX(-35px);
+}
+.mailing-popup .mailing-list-profiles-row li {
+  position: absolute;
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(n + 10) {
+  display: none;
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(2) {
+  left: 22px;
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(3) {
+  left: calc(2 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(4) {
+  left: calc(3 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(5) {
+  left: calc(4 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(6) {
+  left: calc(5 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(7) {
+  left: calc(6 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(8) {
+  left: calc(7 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:nth-child(9) {
+  left: calc(8 * 22px);
+}
+.mailing-popup .mailing-list-profiles-row li:first-child {
+  transform: translateX(0) !important;
+  z-index: 100;
+  left: 0;
+}
+.mailing-popup .white-border {
+  border: 1px solid #fff;
+}
+.mailing-popup .activate-inputs-line-age:after {
+  position: absolute;
+  content: "лет";
+  font-size: 12px;
+  color: #b3b3b3;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .mailing-popup #mailing-have-shown-interest-list {
   border-bottom: none;
 }

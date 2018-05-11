@@ -122,10 +122,51 @@
                     <span class="js-edit-mailing-objectives fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
                 </div>
 
-                <form action="" class="js-edit-mailing-objectives-form fw-mt-20 fw-hidden">
-                    <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
-                    <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
-                </form>
+                <div class="js-edit-mailing-objectives-form fw-pt-40 fw-hidden create-new-mailing fw-width-475">
+                    <form action="">
+                        <div class="fw-flex create-inputs-line create-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Возраст</label>
+                            <input name="create-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" type="number"  placeholder="от 18 – до 35" required>
+                        </div>
+
+                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                            <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                        </div>
+
+                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
+                            <div class="search_filters get_in_top tac">
+                                <div class="select_wrap dib select_wrap_ vam tal">
+                                    <select name="" id="">
+                                        <option value="1" selected data-type="sponsor">Ищу спонсора</option>
+                                        <option value="2" data-type="constantRelationship">Постоянные отношения</option>
+                                        <option value="3" data-type="spendTheEvening">Провести вечер</option>
+                                        <option value="4" data-type="travel">Совместное путешествие</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fw-flex create-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-45">
+                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                            <a href="#" class="fw-block fw-text-left fw-color-purple fw-pt-10 fw-pb-10 fw-text-left fw-fz-14 fw-pr-10 fw-fz-14 fw-width-300">Выбрать</a>
+                        </div>
+
+                        <div class="fw-flex create-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                            <textarea name="create-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок" required></textarea>
+                        </div>
+
+                        <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
+                            <button type="submit" name="save-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-234 fw-border-radius-5">
+                                Сохранить
+                            </button>
+
+                            <a href="#" class="a-hover-purple fw-color-purple fw-fz-14 fw-block fw-ml-64">Удалить рассылку</a>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
@@ -217,11 +258,52 @@
                     <span class="fw-fz-16">21-25, Москва, провести вечер</span>
                     <span class="js-edit-mailing-objectives fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
                 </div>
+                
+                <div class="js-edit-mailing-objectives-form fw-pt-40 fw-hidden create-new-mailing fw-width-475">
+                    <form action="">
+                        <div class="fw-flex create-inputs-line create-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Возраст</label>
+                            <input name="create-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" type="number"  placeholder="от 18 – до 35" required>
+                        </div>
 
-                <form action="" class="js-edit-mailing-objectives-form fw-mt-20 fw-hidden">
-                    <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
-                    <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
-                </form>
+                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                            <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                        </div>
+
+                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
+                            <div class="search_filters get_in_top tac">
+                                <div class="select_wrap dib select_wrap_ vam tal">
+                                    <select name="" id="">
+                                        <option value="1" selected data-type="sponsor">Ищу спонсора</option>
+                                        <option value="2" data-type="constantRelationship">Постоянные отношения</option>
+                                        <option value="3" data-type="spendTheEvening">Провести вечер</option>
+                                        <option value="4" data-type="travel">Совместное путешествие</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fw-flex create-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-45">
+                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                            <a href="#" class="fw-block fw-text-left fw-color-purple fw-pt-10 fw-pb-10 fw-text-left fw-fz-14 fw-pr-10 fw-fz-14 fw-width-300">Выбрать</a>
+                        </div>
+
+                        <div class="fw-flex create-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
+                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                            <textarea name="create-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок" required></textarea>
+                        </div>
+
+                        <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
+                            <button type="submit" name="save-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-234 fw-border-radius-5">
+                                Сохранить
+                            </button>
+
+                            <a href="#" class="a-hover-purple fw-color-purple fw-fz-14 fw-block fw-ml-64">Удалить рассылку</a>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
@@ -265,10 +347,52 @@
             </p>
 
             <span class="js-edit-mailing-objectives fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-mb-30"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
-            <form action="" class="js-edit-mailing-objectives-form fw-mt-20 fw-hidden">
-                <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
-                <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
-            </form>
+            
+            <div class="js-edit-mailing-objectives-form fw-pt-20 fw-pb-30 fw-hidden create-new-mailing fw-width-475">
+                <form action="">
+                    <div class="fw-flex create-inputs-line create-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                        <label class="fw-margin-0 fw-fz-14">Возраст</label>
+                        <input name="create-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" type="number"  placeholder="от 18 – до 35" required>
+                    </div>
+
+                    <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                        <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                        <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                    </div>
+
+                    <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                        <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
+                        <div class="search_filters get_in_top tac">
+                            <div class="select_wrap dib select_wrap_ vam tal">
+                                <select name="" id="">
+                                    <option value="1" selected data-type="sponsor">Ищу спонсора</option>
+                                    <option value="2" data-type="constantRelationship">Постоянные отношения</option>
+                                    <option value="3" data-type="spendTheEvening">Провести вечер</option>
+                                    <option value="4" data-type="travel">Совместное путешествие</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fw-flex create-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-45">
+                        <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                        <a href="#" class="fw-block fw-text-left fw-color-purple fw-pt-10 fw-pb-10 fw-text-left fw-fz-14 fw-pr-10 fw-fz-14 fw-width-300">Выбрать</a>
+                    </div>
+
+                    <div class="fw-flex create-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
+                        <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                        <textarea name="create-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок" required></textarea>
+                    </div>
+
+                    <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
+                        <button type="submit" name="save-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-234 fw-border-radius-5">
+                            Сохранить
+                        </button>
+
+                        <a href="#" class="a-hover-purple fw-color-purple fw-fz-14 fw-block fw-ml-64">Удалить рассылку</a>
+                    </div>
+                </form>
+            </div>
 
             <div class="fw-relative">
                 <div class="white-overlay fw-absolute fw-width-1-1 fw-height-1-1"></div>
@@ -330,11 +454,6 @@
                     <div class="fw-flex fw-flex-left fw-flex-middle">
                         <span class="fw-fz-16">21-25, Москва, провести вечер</span>
                     </div>
-
-                    <form action="" class="js-edit-mailing-objectives fw-mt-20 fw-hidden">
-                        <input type="text" class="fw-width-1-1 fw-height-40 input-style fw-mb-10">
-                        <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
-                    </form>
                 </div>
 
                 <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
@@ -684,10 +803,52 @@
                             <span class="js-edit-mailing-objectives fw-fz-14 fw-pointer fw-flex fw-flex-middle fw-color-purple fw-pl-10"><i class="fw-fz-14 fw-color-red-light icomoon icomoon-edit-pencil fw-mr-5"></i>Редактировать</span>
                         </div>
 
-                        <form action="" class="js-edit-mailing-objectives-form fw-mt-20 fw-hidden">
-                            <input type="text" class="fw-pl-10 fw-pr-10 fw-width-1-1 fw-height-40 input-style fw-mb-10">
-                            <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-1-1 fw-margin-auto fw-border-radius-5">Сохранить</button>
-                        </form>
+                        
+                        <div class="js-edit-mailing-objectives-form fw-pt-40 fw-hidden create-new-mailing fw-width-475">
+                            <form action="">
+                                <div class="fw-flex create-inputs-line create-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                                    <label class="fw-margin-0 fw-fz-14">Возраст</label>
+                                    <input name="create-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" type="number"  placeholder="от 18 – до 35" required>
+                                </div>
+
+                                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                                    <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                                    <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                                </div>
+
+                                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                                    <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
+                                    <div class="search_filters get_in_top tac">
+                                        <div class="select_wrap dib select_wrap_ vam tal">
+                                            <select name="" id="">
+                                                <option value="1" selected data-type="sponsor">Ищу спонсора</option>
+                                                <option value="2" data-type="constantRelationship">Постоянные отношения</option>
+                                                <option value="3" data-type="spendTheEvening">Провести вечер</option>
+                                                <option value="4" data-type="travel">Совместное путешествие</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-flex create-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-45">
+                                    <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                                    <a href="#" class="fw-block fw-text-left fw-color-purple fw-pt-10 fw-pb-10 fw-text-left fw-fz-14 fw-pr-10 fw-fz-14 fw-width-300">Выбрать</a>
+                                </div>
+
+                                <div class="fw-flex create-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
+                                    <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
+                                    <textarea name="create-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок" required></textarea>
+                                </div>
+
+                                <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
+                                    <button type="submit" name="save-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-234 fw-border-radius-5">
+                                        Сохранить
+                                    </button>
+
+                                    <a href="#" class="a-hover-purple fw-color-purple fw-fz-14 fw-block fw-ml-64">Удалить рассылку</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
 
                     <p class="fw-fz-14 fw-line-height-25 fw-mb-40">Привет! Предлагаю встретиться 04.11, вечером. Хочу познакомиться с пермским гостеприимством и темпераментом. Жду ответа и надеюсь на продолжение общения. Юлиан</p>
@@ -1086,7 +1247,6 @@
                 </div>
             </div>
         </div>
-
 
         
         <div class="new-mailing-main fw-flex fw-flex-column fw-text-left fw-width-1260 fw-pt-50 fw-pb-40 fw-pl-200 fw-pr-200 fw-mt-70 fw-margin-auto mailing-shadow fw-border-radius-18">
@@ -1746,6 +1906,7 @@
                                 <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-200 fw-margin-auto fw-border-radius-5">Показать еще</button>
             </div><!-- /.mailings-archive-wrap -->
         </div><!-- /.new-mailing-main-->
+
     </div><!-- /.new-mailing-container -->
     </div>
 
@@ -2795,7 +2956,7 @@
 </div>
 
 
-<div style="display: none" class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
+<div style="display: block" class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
     <div class="fw-flex fw-flex-middle fw-flex-center fw-width-1-1 fw-height-1-1">
         
         <div style="display: none" id="mailing-send-for-moderation" class="fw-bg-color-white fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
@@ -2853,12 +3014,12 @@
         
 
         
-        <div style="display: block" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+        <div style="display: none" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
 
-            <h3 class="fw-fz-18 fw-mb-20">Выберите пользователей <br> которые не будут видеть рассылку</h3>
+            <h3 class="fw-fz-18 fw-mb-20 fw-line-height-22">Выберите пользователей <br> которые не будут видеть рассылку</h3>
 
             <input class="fw-height-40 input-style fw-width-1-1 fw-mb-15 fw-text-left fw-fz-14 fw-pt-13 fw-pb-13 fw-pl-10 fw-pr-10" placeholder="Поиск" type="text">
             <button class="js-selection-all-profile-for-black-list fw-mb-15 fw-width-1-1 fw-bg-color-green fw-height-40 fw-flex fw-text-center fw-flex-center fw-fz-14 fw-color-white mailing-btn-style fw-oun no-style fw-flex-middle">Выбрать всех</button>
@@ -3100,7 +3261,7 @@
         
 
         
-        <div style="display: none" id="mailing-have-shown-interest" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+        <div style="display: block" id="mailing-have-shown-interest" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -3308,7 +3469,7 @@
         
 
         
-        <div style="display: block" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+        <div style="display: none" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -3381,6 +3542,8 @@
 <script>
 
     $(document).ready(function () {
+
+
         $('.js-open-items-mailing-profiles').on('click',function(){
             $('.new-mailing-profiles-line,.js-mailing-archive-item').toggleClass('open');
         });
@@ -3444,14 +3607,14 @@
 
 
         // Hide all popups then show needle popup
-        // $('button').on('click', function () {
-        //     var dataPopup = $(this).attr('data-call-popup');
-        //     var overlay = $('.overlay');
-        //
-        //     $(dataPopup).show();
-        //     $(overlay).show();
-        //
-        // });
+        $('.js-popup-view-button-12').on('click', function () {
+            var dataPopup = $(this).attr('data-call-popup');
+            var overlay = $('.overlay');
+
+            $(dataPopup).show();
+            $(overlay).show();
+
+        });
 
         $('.js-new-profile-close-this-popup-button').on('click',function () {
             var dataPopup = $(this).parent();
@@ -3459,6 +3622,24 @@
 
             $(dataPopup).hide();
             $(overlay).hide();
+            $('.new-mailing-overlay').hide();
+        });
+
+        // mailing popups
+
+        $('.js-view-mailing-btn').on("click", function (e) {
+            var dataPopup = $(this).attr('data-call-popup');
+            var overlay = $('.new-mailing-overlay');
+
+            $(dataPopup).show();
+            $(overlay).show();
+        });
+        $('.mailing-popup').on("click", function (e) {
+            e.stopPropagation()
+        });
+        $('.new-mailing-overlay').on("click", function () {
+            $(this).children().children().hide();
+            $(this).hide();
         });
 
         // checkbox

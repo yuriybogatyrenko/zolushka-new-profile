@@ -5279,6 +5279,9 @@ label.parsley-error span {
   line-height: 20px;
 }
 
+.new-mailing-container .buy_form .selectbox .trigger, .new-mailing-container .get_in_top .selectbox .trigger {
+  border-top: 8px solid #b263b8;
+}
 .new-mailing-container .mailing-popup .mailing-item-hover-link:hover p {
   color: #ba78c0;
 }
@@ -5520,6 +5523,9 @@ label.parsley-error span {
 
 .mailing-popup {
   z-index: 111;
+}
+.mailing-popup .trigger {
+  border-top: 8px solid #b263b8 !important;
 }
 .mailing-popup .citysearch__new-select, .mailing-popup .search_filters .select_wrap, .mailing-popup .search_filters .select, .mailing-popup .search_filters .ui-state-default {
   margin: 0;

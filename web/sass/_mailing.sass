@@ -3,10 +3,10 @@
 .fw-line-height-20
 	line-height: 20px
 .new-mailing-container
+	.buy_form .selectbox .trigger, .get_in_top .selectbox .trigger
+		border-top: 8px solid #b263b8
 	.mailing-popup
 		.mailing-item-hover-link
-			p
-				//transition: all .3s ease
 			&:hover
 				p
 					color: $colorPurple
@@ -198,6 +198,8 @@
 
 .mailing-popup
 	z-index: 111
+	.trigger
+		border-top: 8px solid #b263b8 !important
 	.citysearch__new-select,.search_filters .select_wrap, .search_filters .select, .search_filters .ui-state-default
 		margin: 0
 		width: 300px
@@ -270,7 +272,6 @@
 			-webkit-border-radius: 10px
 			border-radius: 100px
 			background: #b075b6
-			//-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
 			&:window-inactive
 				background: #b075b6
 
@@ -299,7 +300,6 @@
 			-webkit-border-radius: 10px
 			border-radius: 100px
 			background: #b075b6
-			//-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
 			&:window-inactive
 				background: #b075b6
 		.mailing-checkbox

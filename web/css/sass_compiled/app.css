@@ -299,6 +299,14 @@
   max-width: 300px;
 }
 
+.fw-width-320 {
+  width: 320px;
+}
+
+.fw-max-width-320 {
+  max-width: 320px;
+}
+
 .fw-width-405 {
   width: 405px;
 }
@@ -313,6 +321,14 @@
 
 .fw-max-width-454 {
   max-width: 454px;
+}
+
+.fw-width-475 {
+  width: 475px;
+}
+
+.fw-max-width-475 {
+  max-width: 475px;
 }
 
 .fw-width-500 {
@@ -5263,6 +5279,28 @@ label.parsley-error span {
   line-height: 20px;
 }
 
+.new-mailing-container .mailing-popup .mailing-item-hover-link:hover p {
+  color: #ba78c0;
+}
+.new-mailing-container .mailing-popup #mailing-profiles-list-2 {
+  max-height: 464px;
+  border-bottom: none;
+}
+.new-mailing-container .mailing-popup #mailing-profiles-list-2::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.new-mailing-container .mailing-popup #mailing-profiles-list-2::-webkit-scrollbar-track {
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.new-mailing-container .mailing-popup #mailing-profiles-list-2::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 100px;
+  background: #b075b6;
+}
+.new-mailing-container .mailing-popup #mailing-profiles-list-2::-webkit-scrollbar-thumb:window-inactive {
+  background: #b075b6;
+}
 .new-mailing-container .white-overlay {
   background-color: rgba(255, 255, 255, 0.77);
   height: 105%;
@@ -5309,6 +5347,9 @@ label.parsley-error span {
 .new-mailing-container textarea {
   box-shadow: none;
   border: 1px solid #b3b3b3;
+}
+.new-mailing-container .a-hover-purple:hover {
+  color: #ba78c0;
 }
 .new-mailing-container a {
   transition: all 0.3s ease;

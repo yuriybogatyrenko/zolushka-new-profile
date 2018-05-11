@@ -106,11 +106,31 @@
             <div class="new-mailing-main--left fw-width-1-2 fw-pt-62 fw-pl-86 fw-pr-30 fw-pb-38">
                 <div class="fw-flex fw-flex-space-between fw-pb-23">
                     <h3 class="fw-fz-18">Рассылки в вашем городе</h3>
-                    <span class="fw-fz-14 fw-flex fw-flex-middle fw-color-purple">Фильтр <i class="fw-ml-10 icomoon icomoon-chevron-right"></i></span>
+                    <span class="fw-fz-14 fw-flex fw-flex-middle fw-pointer fw-color-purple">Фильтр <i class="fw-ml-10 icomoon icomoon-chevron-right"></i></span>
                 </div>
 
                 <div class="new-mailing-filter fw-pb-40">
-                    <form action=""></form>
+                    <form action="">
+                        <div class="f-left">
+                            <div class="line">
+                                <span>Пол</span>
+                            </div>
+
+                            <div class="line">
+                                <span>Возраст</span>
+                            </div>
+                            <div class="line">
+                                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
+                                    <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
+                                    <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f-right">
+                            <span></span>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="new-mailing-profiles-line-wrap">
@@ -1537,7 +1557,7 @@
         
 
         
-        <div style="display: none" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+        <div style="display: block" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -1776,7 +1796,7 @@
                     </li>
                                     </ul>
 
-                <button type="submit" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                <button type="submit" class="new-female-profile--button fw-fz-14 fw-mt-20 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
                     Сохранить
                 </button>
             </form>
@@ -1992,7 +2012,7 @@
         
 
         
-        <div style="display: none" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+        <div style="display: block" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -2067,6 +2087,10 @@
     $(document).ready(function () {
         $('.js-open-items-mailing-profiles').on('click',function(){
             $('.new-mailing-profiles-line,.js-mailing-archive-item').toggleClass('open');
+        });
+
+        $('.js-edit-mailing-objectives').on("click", function () {
+           $(".js-edit-mailing-objectives-form").slideToggle();
         });
 
         // mailing partially hidden

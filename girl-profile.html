@@ -1821,7 +1821,7 @@
         
 
         
-        <div style="display: none" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
+        <div style="display: block" id="mailing-black-list-popup" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -2060,7 +2060,7 @@
                     </li>
                                     </ul>
 
-                <button type="submit" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
+                <button type="submit" class="new-female-profile--button fw-fz-14 fw-mt-20 fw-color-white fw-pb-8 fw-pt-8 fw-pl-30 fw-pr-30 fw-border-radius-5">
                     Сохранить
                 </button>
             </form>
@@ -2276,7 +2276,7 @@
         
 
         
-        <div style="display: none" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+        <div style="display: block" id="activate-mailing-popup" class="mailing-popup fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -2351,6 +2351,10 @@
     $(document).ready(function () {
         $('.js-open-items-mailing-profiles').on('click',function(){
             $('.new-mailing-profiles-line,.js-mailing-archive-item').toggleClass('open');
+        });
+
+        $('.js-edit-mailing-objectives').on("click", function () {
+           $(".js-edit-mailing-objectives-form").slideToggle();
         });
 
         // mailing partially hidden

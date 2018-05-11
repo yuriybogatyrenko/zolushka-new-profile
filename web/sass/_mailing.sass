@@ -3,6 +3,30 @@
 .fw-line-height-20
 	line-height: 20px
 .new-mailing-container
+	.mailing-popup
+		.mailing-item-hover-link
+			p
+				//transition: all .3s ease
+			&:hover
+				p
+					color: $colorPurple
+		#mailing-profiles-list-2
+			max-height: 464px
+			border-bottom: none
+			&::-webkit-scrollbar
+				width: 4px
+				background-color: rgba(216, 216, 216, 0.5)
+
+			&::-webkit-scrollbar-track
+				background-color: rgba(216, 216, 216, 0.5)
+
+			&::-webkit-scrollbar-thumb
+				-webkit-border-radius: 10px
+				border-radius: 100px
+				background: #b075b6
+				//-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
+				&:window-inactive
+					background: #b075b6
 	.white-overlay
 		background-color: rgba(#fff, .77)
 		height: 105%
@@ -42,7 +66,9 @@
 	textarea
 		box-shadow: none
 		border: 1px solid $colorInputBorder
-
+	.a-hover-purple
+		&:hover
+			color: $colorPurple
 	a
 		transition: all .3s ease
 		text-decoration: none

@@ -2,7 +2,59 @@
 	cursor: pointer
 .fw-line-height-20
 	line-height: 20px
+.fw-left--28
+	transform: translateX(-28px)
+.mailing-filter-btn
+	i
+		transform: rotate(90deg)
+		transition: all .3s ease
+.filter-arrow-rotate
+	transform: rotate(270deg) !important
 .new-mailing-container
+	.gender-input:checked + .radio-gender-label
+		background-color: $colorPurple
+		color: $colorWhite
+
+	.radio-gender-label
+		border: 1px solid $colorPurple
+		transition: 500ms all
+		cursor: pointer
+		border-radius: 14.5px
+	.mailing-filter-tag-label
+		&:before
+			content: ''
+			position: absolute
+			left: -26px
+			top: 0
+			width: 16px
+			height: 16px
+			border-radius: 2px
+			box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5)
+			background-color: #ffffff
+			border: solid 1px #979797
+	.mailing-filter-checkbox:checked + .mailing-filter-tag-label
+		&:before
+			border-color: $colorPurple
+			content: "✓"
+			color: $colorPurple
+			font-size: 22px
+			text-align: center
+			box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0)
+	.filter-mailing-line
+		.citysearch__new-select,.search_filters .select_wrap, .search_filters .select, .search_filters .ui-state-default
+			margin: 0
+			width: 213px
+			padding-right: 10px
+			background-color: $colorWhite
+			color: #9c9385
+			&::-webkit-input-placeholder
+				font-size: 12px
+			&::-moz-placeholder
+				font-size: 12px
+			&:-moz-placeholder
+				font-size: 12px
+			&:-ms-input-placeholder
+				font-size: 12px
 	.buy_form .selectbox .trigger, .get_in_top .selectbox .trigger
 		border-top: 8px solid #b263b8
 	.mailing-popup
@@ -195,6 +247,10 @@
 .fw-oun
 	outline: none !important
 	outline-style: none
+.input-hidden
+	position: absolute
+	left: -9999px
+
 
 .mailing-popup
 	z-index: 111

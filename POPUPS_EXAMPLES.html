@@ -140,27 +140,28 @@
     <br><br> <hr> <br>
 
     <h1>Попапы рассылки</h1> <br><br>
-    <span>1</span> <br><br>
+    <span>Рассылка отправлена на модерацию</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#mailing-send-for-moderation">открыть</button>
     <br><br> <hr> <br><br>
 
-    <span>2</span> <br><br>
+    <span>Рассылка активирована</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#mailing-send-activated">открыть</button>
     <br><br> <hr> <br><br>
 
-    <span>3</span> <br><br>
+    <span>Правила рассылки</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#mailing-blocked-rules">открыть</button>
     <br><br> <hr> <br><br>
 
-    <span>4</span> <br><br>
+    <span>Выберите пользователей
+которые не будут видеть рассылку</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#mailing-black-list-popup">открыть</button>
     <br><br> <hr> <br><br>
 
-    <span>5</span> <br><br>
+    <span>Проявили интерес</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#mailing-have-shown-interest">открыть</button>
     <br><br> <hr> <br><br>
 
-    <span>6</span> <br><br>
+    <span>Активация рассылки</span> <br><br>
     <button class="js-view-mailing-btn" data-call-popup="#activate-mailing-popup">открыть</button>
     <br><br> <hr> <br><br>
 
@@ -1213,7 +1214,7 @@
 </div>
 
 
-<div style="display: block" class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
+<div style="display: none" class="black-overlay new-mailing-overlay fw-width-1-1 fw-top-0 fw-left-0">
     <div class="fw-flex fw-flex-middle fw-flex-center fw-width-1-1 fw-height-1-1">
         
         <div style="display: none" id="mailing-send-for-moderation" class="fw-bg-color-white fw-width-610 fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-54 fw-pb-40 fw-border-radius-10 fw-relative fw-pl-20 fw-pr-20">
@@ -1281,7 +1282,7 @@
             <input class="fw-height-40 input-style fw-width-1-1 fw-mb-15 fw-text-left fw-fz-14 fw-pt-13 fw-pb-13 fw-pl-10 fw-pr-10" placeholder="Поиск" type="text">
             <button class="js-selection-all-profile-for-black-list fw-mb-15 fw-width-1-1 fw-bg-color-green fw-height-40 fw-flex fw-text-center fw-flex-center fw-fz-14 fw-color-white mailing-btn-style fw-oun no-style fw-flex-middle">Выбрать всех</button>
 
-            <form action="" id="mailing-black-list-form">
+            <form action="" class="fw-width-1-1" id="mailing-black-list-form">
                 <ul class="mailing-list fw-relative">
                                         <li class="fw-mb-20">
                         <div class="mailing-checkbox">
@@ -1518,14 +1519,14 @@
         
 
         
-        <div style="display: block" id="mailing-have-shown-interest" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+        <div style="display: none" id="mailing-have-shown-interest" class="mailing-popup fw-bg-color-white fw-width-500 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
             <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
 
             <h3 class="fw-fz-18 fw-mb-20">Проявили интерес</h3>
 
-            <ul id="mailing-have-shown-interest-list" class="mailing-list fw-relative fw-margin-0">
+            <ul id="mailing-have-shown-interest-list" class="fw-width-1-1 mailing-list fw-relative fw-margin-0">
                                     <li class="fw-mb-20">
                         <div class="mailing-checkbox">
                             <a href="#"
@@ -1759,7 +1760,7 @@
                 </div>
                 <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
                     <label class="fw-margin-0 fw-fz-14">Исключить пользователей</label>
-                    <div class="fw-width-300 fw-relative fw-flex fw-flex-middle fw-flex-space-between">
+                    <div class="fw-width-300 fw-z-index-1 fw-relative fw-flex fw-flex-middle fw-flex-space-between">
                         <ul class="fw-list-style-none js-mailing-list-profiles-row mailing-list-profiles-row fw-flex fw-flex-middle fw-flex-left fw-margin-0">
                                                         <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
                                                         <li class="fw-width-27 fw-height-27 fw-border-radius-5 fw-overflow-hidden white-border"><img class="fw-block fw-width-1-1 fw-height-1-1" src="http://placehold.it/100x100" alt=""></li>
@@ -1800,6 +1801,15 @@
 
     $(document).ready(function () {
 
+        $('.js-mailing-filter-btn').on('click', function () {
+            $(".js-new-mailing-filter").slideToggle();
+            $('.js-mailing-filter-arrow').toggleClass('filter-arrow-rotate');
+        });
+
+        $('.js-reset-mailing-filter').on('click', function () {
+            $('.mailing-filter-checkbox,.gender-input').prop('checked', false);
+            $('.js-mail-filter-search-city ').val('');
+        });
 
         $('.js-open-items-mailing-profiles').on('click',function(){
             $('.new-mailing-profiles-line,.js-mailing-archive-item').toggleClass('open');

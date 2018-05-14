@@ -35,27 +35,26 @@
                                 </div>
                             </div>
 
-                            <div class="line  fw-mb-40">
+                            <div class="line fw-flex fw-flex-middle fw-flex-space-between fw-mb-40">
                                 <span>Возраст</span>
-
-                                <div class="dib vam tal slider_age_wrapper">
-                                    <div class="slider_wrap vam dib slider_age_range_wrap">
-                                        <div class="slider-range slider_age_range slider_range_style ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                            <span class="first_num"></span>
-                                            <span class="last_num"></span>
-                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;">
+                                <div class="dib vam tal fw-width-201 slider_age_wrapper">
+                                    <div class="slider_wrap vam dib fw-width-1-1 slider_age_range_wrap">
+                                        <div id="slider-range2" class="fw-width-1-1 slider-range slider_age_range slider_range_style">
+                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0">
                                                 <span class="tap_area"></span>
-                                                <input type="text" name="ageFrom" value="18" class="amount1 amount">
+                                                <input type="text" name="ageFrom" disabled value="0" class="filter-amount1 amount">
                                             </span>
 
-                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 19.2308%;">
+                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="1">
                                                 <span class="tap_area"></span>
-                                                <input type="text" name="ageTo" value="28" class="amount2 amount">
+                                                <input type="text" name="ageTo" disabled value="100" class="filter-amount2 amount">
                                             </span>
-                                            <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 19.2308%;"></div>
                                         </div>
                                     </div>
                                 </div>
+
+
+
                             </div>
 
                             <div class="line filter-mailing-line fw-width-300 fw-text-left fw-mb-30">

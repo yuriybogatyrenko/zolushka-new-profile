@@ -2350,6 +2350,19 @@
 
     $(document).ready(function () {
 
+        $( function() {
+            $( "#slider-range2" ).slider({
+                range: true,
+                min: 0,
+                max: 100,
+                values: [ 0, 100 ],
+                slide: function( event, ui ) {
+                    $( ".filter-amount1" ).val(ui.values[0]);
+                    $( ".filter-amount2" ).val(ui.values[1]);
+                }
+            });
+        } );
+
         $('.js-mailing-filter-btn').on('click', function () {
             $(".js-new-mailing-filter").slideToggle();
             $('.js-mailing-filter-arrow').toggleClass('filter-arrow-rotate');
@@ -2358,6 +2371,7 @@
         $('.js-reset-mailing-filter').on('click', function () {
             $('.mailing-filter-checkbox,.gender-input').prop('checked', false);
             $('.js-mail-filter-search-city ').val('');
+
         });
 
         $('.js-open-items-mailing-profiles').on('click',function(){

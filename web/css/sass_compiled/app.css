@@ -5714,24 +5714,6 @@ label.parsley-error span {
   top: 50%;
   transform: translateY(-50%);
 }
-.mailing-popup #mailing-have-shown-interest-list {
-  border-bottom: none;
-}
-.mailing-popup #mailing-have-shown-interest-list::-webkit-scrollbar {
-  width: 4px;
-  background-color: rgba(216, 216, 216, 0.5);
-}
-.mailing-popup #mailing-have-shown-interest-list::-webkit-scrollbar-track {
-  background-color: rgba(216, 216, 216, 0.5);
-}
-.mailing-popup #mailing-have-shown-interest-list::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 100px;
-  background: #b075b6;
-}
-.mailing-popup #mailing-have-shown-interest-list::-webkit-scrollbar-thumb:window-inactive {
-  background: #b075b6;
-}
 .mailing-popup .mailing-have-shown-interest-link {
   transition: all 0.3s ease;
   color: #000;
@@ -5804,6 +5786,29 @@ label.parsley-error span {
 }
 .mailing-popup .mailing-list .mailing-checkbox input[type="checkbox"]:checked + label:before, .mailing-popup .mailing-list .mailing-checkbox input[type="checkbox"]:checked + label:after {
   display: none;
+}
+
+.fw-max-height-480px {
+  max-height: 480px !important;
+}
+
+.new-mailing-main .mailing-popup .mailing-have-shown-interest-list {
+  border-bottom: none;
+}
+.new-mailing-main .mailing-popup .mailing-have-shown-interest-list::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.new-mailing-main .mailing-popup .mailing-have-shown-interest-list::-webkit-scrollbar-track {
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.new-mailing-main .mailing-popup .mailing-have-shown-interest-list::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 100px;
+  background: #b075b6;
+}
+.new-mailing-main .mailing-popup .mailing-have-shown-interest-list::-webkit-scrollbar-thumb:window-inactive {
+  background: #b075b6;
 }
 
 /*# sourceMappingURL=app.css.map */

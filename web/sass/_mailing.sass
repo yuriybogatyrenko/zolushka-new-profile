@@ -329,22 +329,6 @@
 			top: 50%
 			transform: translateY(-50%)
 
-	#mailing-have-shown-interest-list
-		border-bottom: none
-		&::-webkit-scrollbar
-			width: 4px
-			background-color: rgba(216, 216, 216, 0.5)
-
-		&::-webkit-scrollbar-track
-			background-color: rgba(216, 216, 216, 0.5)
-
-		&::-webkit-scrollbar-thumb
-			-webkit-border-radius: 10px
-			border-radius: 100px
-			background: #b075b6
-			&:window-inactive
-				background: #b075b6
-
 	.mailing-have-shown-interest-link
 		transition: all .3s ease
 		color: #000
@@ -405,4 +389,22 @@
 				&:checked + label
 					&:before, &:after
 						display: none
+.fw-max-height-480px
+	max-height: 480px !important
+.new-mailing-main
+	.mailing-popup
+		.mailing-have-shown-interest-list
+			border-bottom: none
+			&::-webkit-scrollbar
+				width: 4px
+				background-color: rgba(216, 216, 216, 0.5)
 
+			&::-webkit-scrollbar-track
+				background-color: rgba(216, 216, 216, 0.5)
+
+			&::-webkit-scrollbar-thumb
+				-webkit-border-radius: 10px
+				border-radius: 100px
+				background: #b075b6
+				&:window-inactive
+					background: #b075b6

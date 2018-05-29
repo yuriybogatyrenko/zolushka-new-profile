@@ -5,28 +5,17 @@
     <div class="cont_wrap">
         <div class="new-profile">
             <div class="new-profile__left">
+                {# empty photo #}
                 <div class="new-profile__image-wrapper fw-flex fw-flex-center fw-flex-middle new-profile__image-wrapper--placeholder fz0 fw-relative">
-                    {# AVATAR ON MODERATION, BLUR #}
-                    <div class="new-profile__blur-wrap fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0 fw-padding-10">
-                        <div class="new-profile__blur fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0">
-                            <img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt="">
-                        </div>
-
-                        <div class="new-profile__img-status-title fw-fz-12 fw-pt-8 fw-pb-8 fw-text-center fw-absolute fw-bottom-10 ">
-                            <span class="new-profile__moderation-title">Фото на модерации</span>
-
-                            <span class="icomoon fw-fz-28 fw-right-0 fw-top-0 icomoon-profile-moderation-pending new-profile__moderation-icon fw-absolute">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                            </span>
-                        </div>
+                    <div class="fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0 fw-padding-10">
+                        <span class="fw-absolute fw-bottom-10 fw-right-10 fw-fz-30 icomoon icomoon-profile-photo-warning">
+                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                        </span>
                     </div>
-                    {# END #}
+
                     <i class="icomoon icomoon-camera fw-color-white" style="font-size: 100px;"></i>
-                    <div class="new-profile__image-notify">
-                        <span class="icomoon icomoon-profile-photo-canceled"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                    </div>
                 </div>
+                {# end #}
                 <div class="fw-mt-40 fw-text-center fw-mb-10 fw-fz-12">
                     У вас осталось 30 минут пробного аккаунта
                 </div>

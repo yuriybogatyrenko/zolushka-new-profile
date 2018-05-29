@@ -90,25 +90,28 @@
 
     <div id='main_cont' class="card_page fw-pt-20 fw-pb-20">
         
-    <div class="cont_wrap content_wrap_shadow in_top_page calls_list_page">
-        <div class="new-profile fw-pt-40 fw-pl-40 fw-pr-40 fw-pb-40">
+    <div class="cont_wrap">
+        <div class="new-profile">
             <div class="new-profile__left">
-                <div class="new-profile__image-wrapper fz0">
-                    <img src="http://placehold.it/300x300" class="new-profile__avatar w100" alt="">
-                    <div class="new-profile__image-notify new-profile__image-notify--blue">
-                        <div class="fw-margin-auto">Фото на стадии модерации</div>
-                        <div>
-                            <span class="icomoon icomoon-profile-moderation-pending">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                            </span>
-                        </div>
+                
+                <div class="new-profile__image-wrapper fw-flex fw-flex-center fw-flex-middle new-profile__image-wrapper--placeholder fz0 fw-relative">
+                    <div class="fw-absolute fw-width-1-1 fw-height-1-1 fw-left-0 fw-top-0 fw-padding-10">
+                        <span class="fw-absolute fw-bottom-10 fw-right-10 fw-fz-30 icomoon icomoon-profile-photo-warning">
+                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                        </span>
                     </div>
 
-                    <div class="fw-absolute fw-bottom-10 fw-left-10 fw-flex fw-flex-left fw-flex-middle">
-                        <img src="web/images/confirmed.png" alt="">
-                        <p class="fw-fz-14 fw-ml-5">Фото проверено</p>
-                    </div>
+                    <i class="icomoon icomoon-camera fw-color-white" style="font-size: 100px;"></i>
+                </div>
+                
+                <div class="fw-mt-40 fw-text-center fw-mb-10 fw-fz-12">
+                    У вас осталось 30 минут пробного аккаунта
+                </div>
+                <div>
+                    <a href="#" class="violet_btn w100 fw-flex fw-flex-middle fw-flex-center">
+                        <i class="icomoon icomoon-crown fw-color-white fw-fz-20 fw-mr-10"></i>
+                        <span>Подключить премиум</span>
+                    </a>
                 </div>
                 <div class="new-profile__parameters">
                     <div class="w50">
@@ -122,36 +125,27 @@
                     Блондин, Глаза синие, Спортивное
                     телосложение, Европейская внешность
                 </div>
-                <div class="fw-flex">
-                    <a href="#" class="violet_btn w100">Написать</a>
-                    <a href="#" class="new-profile__call-icon fw-pl-10 fw-pr-13  fw-flex fw-flex-middle fw-flex-center fw-ml-9 fw-border-radius-5 "><i class="icomoon icomoon-phone  fw-color-white fw-fz-20"></i></a>
 
-                </div>
-                
-                <div class="fw-pt-15 fw-pb-10 fw-pl-10">
-                    <a href="#" class="fw-color-purple">
-                        <i class="icomoon icomoon-gift fw-fz-20 fw-color-red-light"></i> <span class="fw-fz-14 fw-color-red-light fw-mr-5">0</span> | Подарить ей комплимент
-                    </a>
-                </div>
-
-                
-                <div class="new-profile__favorites-wrap fw-relative fw-flex fw-flex-space-between fw-flex-middle fw-pt-10 fw-pb-10">
-                    <a class="fw-pl-12" href=""><i class="icomoon icomoon-heart fw-mr-10 fw-color-red-light fw-fz-16"> <span class="fw-fz-14 fw-color-purple">В избранное</span></i></a>
-                    <div class="new-profile__left-content">
-                        <i class="new-profile__open-fav-menu fw-color-purple  icomoon fw-fz-5 icomoon-more-dots fw-ml-auto fw-pt-10 fw-pb-10 fw-pr-8"></i>
-
-                        <div class="new-profile__favorite-menu-wrap fw-block fw-left-0  fw-absolute fw-width-1-1 fw-border-radius-5 fw-top-100-percent">
-                            <ul class="new-profile__favorite-menu fw-relative fw-pl-14 fw-pr-14 fw-pt-10 fw-pb-10 fw-color-white">
-                                <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-pad-lock fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Добавить в игнор</span></a></li>
-                                <li class="fw-block"><a class="fw-pt-10 fw-pb-10 fw-flex fw-flex-baseline " href="#"><i class="fw-fz-16 fw-color-gray fw-mr-13 icomoon icomoon-writing-message fw-mr-13"></i> <span class="fw-fz-14 fw-color-purple">Пожаловаться</span></a></li>
-                            </ul>
-                        </div>
+                <div class="new-profile__invisible fw-mt-15 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle">
+                    <div>
+                        <a href="#" class="fw-flex fw-flex-middle fw-color-purple">
+                            <i class="icomoon icomoon-invisible-hat fw-fz-25 fw-mr-10 fw-color-red-light"></i>
+                            <span>Стать невидимкой</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="fw-reset new-profile__invisible-question">?</a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="new-profile__about">
-                <div class="new-profile__name">Аполлинарий 27 лет <i class="circle-status online ml10"></i></div>
+                <div class="new-profile__name fw-flex fw-flex-middle fw-flex-space-between">
+                    <div>Аполлинарий 27 лет <i class="circle-status online ml10"></i></div>
+                    <div>
+                        <a href="#" class="fw-reset fw-color-red-light"><i class="icomoon icomoon-edit-pencil"></i></a>
+                    </div>
+                </div>
                 <div class="new-profile__city color-light">Овен, Москва</div>
                 <div class="new-profile__about-comment fw-mt-20">
                     <div class="fw-fz-18 fw-mb-10">О себе</div>
@@ -222,8 +216,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="js-new-profile__album new-profile__album">
                 <div class="fw-flex fw-flex-middle fw-relative fw-flex-space-between fw-mb-20 fw-height-20">
                     <div class="fw-fz-18">Общий альбом</div>
@@ -705,7 +697,6 @@
                     <a href="#" class="js-profile-show-more-pictures fw-color-purple">еще +15 фото</a>
                 </div>
             </div>
-
         </div>
     </div>
     <script>

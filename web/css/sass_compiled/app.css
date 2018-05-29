@@ -5051,6 +5051,10 @@ label.parsley-error span {
   border-color: #999;
 }
 
+.content_wrap_shadow {
+  max-width: 1260px !important;
+}
+
 .new-profile__view-photo {
   height: auto;
   line-height: normal;

@@ -1,0 +1,36 @@
+.-info-plate {
+  background: rgba(188, 121, 195, 0.1);
+  color: #000;
+  font-family: TruthCYR-R;
+  font-size: 12px;
+  padding: 16px 0;
+}
+
+.icon-plate-notice {
+  background-image: url('../../sass_images/icons-s16f53748dc.png');
+  background-position: 0 -907px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .icon-plate-notice {
+    background-image: url('../../sass_images/icons-2x-se0ca870f14.png');
+    background-size: 217px auto;
+    background-position: 0 -840px;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.icon-photo-mask-moderation {
+  margin-right: 3px;
+}
+
+/*# sourceMappingURL=info-plate.css.map */

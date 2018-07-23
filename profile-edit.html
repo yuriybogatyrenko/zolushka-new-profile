@@ -2624,8 +2624,23 @@
         };
 
         checkboxFunction();
+
+
+
     });
 
+
+    $(document).ready(function() {
+        //прикрепляем клик по заголовкам acc-head
+        $('#accordeon .acc-head').on('click', f_acc);
+    });
+
+    function f_acc(){
+        $(this).toggleClass('head-accordeon-active');
+        $('#accordeon .acc-body').not($(this).next()).slideUp(300);
+        $('.acc-head').not($(this)).removeClass('head-accordeon-active');
+        $(this).next().slideToggle(300);
+    }
 </script>
 
 

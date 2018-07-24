@@ -11,7 +11,7 @@
                         <img src="/web/images/DTC/DTC_icon.png" class="fw-mr-10" alt="">
 
                         <div class="wallet-menu__premium-text ffr">
-                            <p class="ffm fw-text-600 fw-fz-16">Платите токенами DTC</p>
+                            <p class="ffm fw-text-600 fw-fz-14">Платите токенами DTC</p>
                             <p class="fw-fz-14 fw-text-600">Выгода до 50%</p>
                         </div>
                     </a>
@@ -35,7 +35,8 @@
                 </div>
 
                 <div class="wallet_content">
-                    <div class="unlocking" id="wallet-add">
+                    {% include '../twig/components/buy-dtc.twig' %}
+                    <div class="unlocking js-toggle-show-for-dtc" id="wallet-add">
                         <a href="#" id="display-wallet-history">Показать архив платежей</a>
                         <p class="b-wallet--current--money mb25">На вашем счете: <span>35745</span> DTC</p>
                         <div class="fw-flex fw-flex-middle fw-flex-space-between fw-pt-15 fw-pb-15 fw-pl-10 fw-pr-10 fw-bg-color-gray2">
@@ -43,10 +44,10 @@
                                 <img src="/web/images/DTC/logo_dtc.svg" alt="">
                                 <p class="fw-white-space-no fw-ml-15 fw-min-width-106 fw-fz-14 fw-text-600">Токены DTC</p>
                             </div>
-                            <p class="fw-pl-35 fw-max-width-360 fw-fz-12">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
-                            <a href="#" class="main_red_btn small dtc-small-button" data-open--tr="true">Выбрать</a>
+                            <p class="fw-pl-35 fw-max-width-360 fw-fz-12 ffr">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
+                            <a href="#" class="js-show-dtc-block main_red_btn small dtc-small-button">Выбрать</a>
                         </div>
-                        <a href="#" class="fw-block fw-text-left fw-color-purple fw-fz-14 fw-mt-10">Как купить токены DTC</a>
+                        <a href="#" class="js-show-dtc-block fw-block fw-text-left fw-color-purple fw-fz-14 fw-mt-10 ffr">Как купить токены DTC</a>
 
                         <p class="b-wallet--current--money fw-mt-35 ">На Вашем счёте: 0 рублей</p>
                         <div id="w1widget"></div>
@@ -75,7 +76,7 @@
 
                             <tr class="hidden" data-the--tr="">
                                 <td colspan="4">
-                                    <form action="/payment/connectum/redirect" class="ng-pristine ng-valid">
+                                    <form action="/payment/connectum/redirect" class="ng-pristine ng-valid fw-flex">
                                         <div class="dib vam b-wallet--input--wrapper">
                                             <input type="text" name="amount" placeholder="0" class="input_border_gray">
                                         </div>
@@ -92,12 +93,9 @@
                                         </div>
 
                                         <div class="dib vam" style="width: 340px; margin-top: 10px; margin-left: 20px;">
-                                            <span class="checkbox agree-about-rules icon-ok active">
-                                                <input type="checkbox" id="first-checkbox" class="" checked="">
-                                            </span>
-                                            <label for="first-checkbox">Я ознакомился и принимаю<br>
-                                                <a href="http://zolushka-project.ru/rules" target="_blank" style="color: #f2535c;">условия соглашения</a>
-                                                Золушка project
+                                            <input type="checkbox" id="first-checkbox" class="agree-about-rules icon-ok" checked>
+                                            <label for="first-checkbox">Я ознакомился и принимаю<br/>
+                                                <a href="http://zolushka-project.ru/rules" target="_blank" style="color: #f2535c;">условия соглашения</a> Золушка project
                                             </label>
                                         </div>
                                     </form>
@@ -131,15 +129,19 @@
                                 <td class="txt_left">От 15 минут до 8 часов</td>
                                 <td><a href="#" data-open--tr="true" class="main_red_btn small">Выбрать</a></td>
                             </tr>
-
                             <tr class="hidden" data-the--tr="">
                                 <td colspan="4">
                                     <div class="dib vam b-wallet--input--wrapper yandex-money-wallet">
-                                        <p style="color: red;"><strong>НИЧЕГО НЕ УКАЗЫВАЙТЕ В КОММЕНТАРИИ К ПЕРЕВОДУ.</strong><br>
-                                            <strong>Тем более не нужно указывать в комментарии ссылку на свой профиль.</strong><br>
-                                            После оплаты напишите в
+                                        <p style="color: red;">
+                                            <strong>
+                                                НИЧЕГО НЕ УКАЗЫВАЙТЕ В КОММЕНТАРИИ К
+                                                ПЕРЕВОДУ.
+                                            </strong><br/>
+                                            <strong>Тем более не нужно указывать в
+                                                комментарии ссылку на свой профиль.
+                                            </strong><br/>После оплаты напишите в
                                             <a href="/feedback?from=yandex">нашу службу поддержки</a> сумму, дату и
-                                            номер платежа.<br>Платежи обрабатывается в ручную ежедневно с 8:00 до
+                                            номер платежа.<br/>Платежи обрабатывается в ручную ежедневно с 8:00 до
                                             23:00.
                                         </p>
 
@@ -148,10 +150,10 @@
                                         </div>
 
                                         <p>
-                                            <span class="checkbox icon-ok">
-                                                <input type="checkbox" class="" id="agree-yandex">
-                                            </span>
-                                            <label for="agree-yandex">Я прочитал и понял что нужно сделать, чтобы деньги успешно зачислились на мой счёт</label>
+                                            <input type="checkbox" class="icon-ok" id="agree-yandex"/>
+                                            <label for="agree-yandex">
+                                                Я прочитал и понял что нужно сделать, чтобы деньги успешно зачислились на мой счёт
+                                            </label>
                                         </p>
                                     </div>
                                 </td>
@@ -162,12 +164,17 @@
                             Adress: Summit house 4-5 Mitchell street, Edinburgh EH6 7BD
                             Reg: SL21291 dated 02.07.2015</p>
                         <p> Bonoos software EU Adress: Narva mnt 7-634,Tallin Eesti 10117 Reg: 14259799 dated
-                            15.05.2017</p></div>
+                            15.05.2017</p>
+                    </div>
 
                     <div class="balance_movements clearfix" id="wallet-history" style="display: none;">
-                        <div style="padding-bottom: 50px;"><p class="b-wallet--current--money mb25"
-                                                              style="float: left;">На Вашем
-                                счёте: 0 рублей</p><a href="#" id="display-wallet-add">Скрыть архив платежей</a></div>
+                        <div style="padding-bottom: 50px;">
+                            <p class="b-wallet--current--money mb25" style="float: left;">
+                                На Вашем счёте: 0 рублей
+                            </p>
+                            <a href="#" id="display-wallet-add">Скрыть архив платежей</a>
+                        </div>
+
                         <div class="l_bl"><p class="table_title">Поступления</p>
                             <table id="income-table">
                                 <tbody>
@@ -194,197 +201,11 @@
                         </div>
                     </div>
 
-                    <div id="how-buy-dtc">
-                        <h2 class="fw-fz-18 fw-text-400 fw-pb-15">Чтобы пополнить баланс DTC в приложении, переведите DTC со своего ETH <br> кошелька на этот адрес:</h2>
-
-                        <div class="fw-flex fw-flex-top fw-flex-left">
-                            <div class="">
-                                <img src="/web/images/DTC/qr.png" alt="">
-                            </div>
-
-                            <div class="fw-flex fw-flex-top fw-flex-column fw-pl-20">
-                                <p class="fw-mb-15 fw-fz-14 fw-color-gray3">1GZcSFw3onsfusWBqvTZSCg5BTiQXYpS3h</p>
-                                <button type="submit" name="create-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-1-1 fw-border-radius-5">
-                                    Скопировать адрес
-                                </button>
-                            </div>
-                        </div>
-
-                        <a href="#" class="fw-pt-20 fw-fz-14 fw-color-purple fw-mb-35">Выбрать другой способ оплаты</a>
-
-                        <h3 class="fw-fz-19 fw-text-600 fw-mb-10">Как купить токены DTC</h3>
-                        <div id="accordeon">
-                            <div class="acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
-                                Как купить токены  DTC  <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
-                            </div>
-                            <div class="acc-body fw-hidden fw-pt-15 fw-pb-40">
-                                Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
-                                <br><br>
-                                Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
-                            </div>
-
-                            <div class="acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
-                                Как завести ETH кошелек  <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
-                            </div>
-                            <div class="acc-body fw-hidden fw-pt-15 fw-pb-40">
-                                Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
-                                <br><br>
-                                Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
-                            </div>
-
-                            <div class="acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
-                                На какой бирже купить токен <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
-                            </div>
-                            <div class="acc-body fw-hidden fw-pt-15 fw-pb-40">
-                                Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
-                                <br><br>
-                                Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
-                            </div>
-
-                            <div class="acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
-                                Сколько времени занимает зачисление токена <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
-                            </div>
-                            <div class="acc-body fw-hidden fw-pt-15 fw-pb-40">
-                                Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
-                                <br><br>
-                                Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wallet_content buy_premium">
-                    <p class="bold_txt">
-                        Премиум-аккаунт служит не только для
-                        увеличения возможностей, <br> но также
-                        позволяет бороться со спамом и несерьезными посетителями.
-                    </p>
-
-                    <div class="premium_adv_separator">
-                        <ul class="premium_advantages">
-                            <li><p class="ttl">Общение без ограничений</p>
-                                <p class="descr">Получите возможность получать и отправлять сообщения, а также
-                                    осуществлять анонимные звонки через сервис.</p></li>
-                            <li><p class="ttl">Дополнительные критерии поиска</p>
-                                <p class="descr">Удобная фильтрация девушек по городу проживания, параметрам внешности и
-                                    сексуальным предпочтениям.</p></li>
-                            <li><p class="ttl">Обмен контактными данными</p>
-                                <p class="descr">Вы сможете получать телефоны и e-mail девушек без ограничений.</p></li>
-                        </ul>
-                    </div>
-
-                    <div class="account_descr">
-                        <p class="big ttu" style="display: none;">
-                            ОСТАЛОСЬ <span id="premium-expires"></span>
-                        </p>
-                    </div>
-
-                    <p class="fw-fz-35 fw-text-uppercase fw-pb-20">Осталось 24 часа 16 минут</p>
-                    <form action="#" id="buy-premium" class="buy-premium buy-premium-popup" method="POST">
-                        <div class="buy-form__suggestions mb20 ">
-                            <label class="buy-form__suggestions-item dtc-item fw-padding-15">
-                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
-                                    <span class="input-wrapper premium-page__checkbox">
-                                        <input type="radio" name="premium-service" class="checkbox-round" checked value="6" data-price="810"/>
-                                    </span>
-
-                                    <span class="buy-form__suggestions-content db">
-                                        <span class="db">Премиум доступ навсегда, доступно только за токены  DTC</span>
-                                    </span>
-
-                                    <span class="buy-form__suggestion-sell-text">
-                                         <span class="fw-pb-5 fw-block fw-color-dark-blue">Бесконечный доступ</span>
-                                         <span class="db fw-color-black">4000 DTC</span>
-                                    </span>
-                                </span>
-                            </label>
-
-                            <label class="buy-form__suggestions-item fw-pt-15 fw-pb-15">
-                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
-                                    <span class="input-wrapper premium-page__checkbox">
-                                        <input type="radio" name="premium-service" class="checkbox-round" checked value="6" data-price="810"/>
-                                    </span>
-
-                                    <span class="buy-form__suggestions-content db">
-                                        <span class="ffr db">Премиум-доступ на 3 дня</span>
-                                    </span>
-
-                                    <span class="buy-form__suggestion-sell-text">
-                                         <span class="fw-pb-5 fw-block">Пакет «Здесь и сейчас»</span>
-                                         <span class="db fw-color-black">810 руб.</span>
-                                    </span>
-                                </span>
-                            </label>
-
-                            <label class="buy-form__suggestions-item minimal-item">
-                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
-                                    <span class="input-wrapper premium-page__checkbox">
-                                        <input type="radio" name="premium-service" class="checkbox-round" value="7" data-price="1950"/>
-                                    </span>
-
-                                    <span class="buy-form__suggestions-content db">
-                                        <span class="ffr db">Премиум-доступ на 2 недели + 1 рассылка</span>
-                                    </span>
-
-                                    <span class="buy-form__suggestion-sell-text">
-                                        <span class="sell-text__minimal fw-block fw-pb-5">Пакет «Спонсор»</span>
-                                        <span class="db fw-color-black">1 950 руб.</span>
-                                    </span>
-                                </span>
-                            </label>
-
-                            <label class="buy-form__suggestions-item prefered-item">
-                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
-                                    <span class="input-wrapper premium-page__checkbox">
-                                        <input type="radio" name="premium-service" class="checkbox-round" value="21" data-price="3400"/>
-                                    </span>
-
-                                    <span class="buy-form__suggestions-content db">
-                                        <span class="ffr db">Премиум-доступ на 1 месяц + 1 подъем анкеты + 2 рассылки</span>
-                                    </span>
-
-                                    <span class="buy-form__suggestion-sell-text">
-                                        <span class="sell-text__prefered fw-block fw-pb-5">Пакет «Казанова»</span>
-                                        <span class="db fw-color-black">3 400 руб.</span>
-                                    </span>
-                                </span>
-                            </label>
-                            
-                            <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-23 fw-pb-23 fw-pl-15 fw-pr-15 fw-border-width-1 fw-border-style-solid fw-border-color-purple fw-border-radius-3">
-                                <p class="fw-fz-14 fw-color-black fw-text-600">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
-                                <a href="#" class="fw-ml-20 fw-flex fw-color-purple fw-fz-14 fw-flex-middle fw-flex-center fw-white-space-no fw-border-width-2 fw-border-style-solid fw-border-color-gray-light fw-pl-15 fw-pr-15 fw-pt-10 fw-pb-10 fw-border-radius-5">
-                                    <img src="/web/images/DTC/logo_dtc.svg" class="fw-mr-15 fw-width-100 fw-block" alt="">Купить за 3 DTC = 300 руб.
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="dib vam">
-                            <button class="violet_btn db">Купить за 1950 рублей</button>
-                        </div>
-                    </form>
-
-                    <ul class="fw-pt-40 fw-list-style-none fw-pl-30">
-                        <li class="fw-pb-15">1. При покупке премиум аккаунта во время действия пробного аккаунта все
-                            <br> неизрасходованое время добавляется к времени действия премиум <br> аккаунта в двойном размере.</li>
-                        <li>2. При продлении премиум аккаунта оплаченный период добавляется к <br> имеющемуся. Таким образом оплаченные периоды не теряются.</li>
-                    </ul>
+                    {# ______________________________________ HOW BUY DTC________________________________ #}
+                    {% include '../twig/components/buy-dtc.twig' %}
+                    {# _______________________________________/___________________________________________ #}
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function() {
-            //прикрепляем клик по заголовкам acc-head
-            $('#accordeon .acc-head').on('click', f_acc);
-        });
-
-        function f_acc(){
-//скрываем все кроме того, что должны открыть
-            $('#accordeon .acc-body').not($(this).next()).slideUp(100);
-// открываем или скрываем блок под заголовоком, по которому кликнули
-            $(this).next().slideToggle(200);
-        }
-    </script>
 {% endblock %}

@@ -89,419 +89,136 @@
 <div id="wrapper">
 
     <div id='main_cont' class="card_page fw-pt-20 fw-pb-20">
-            <div class="new-mailing-container fw-pt-40 fw-pl-15 fw-pr-15 fw-pb-82 fw-text-center">
-        <nav class="fw-margin-auto fw-mb-42">
-            <ul class="fw-flex fw-flex-middle fw-flex-center">
-                <li><a href="#" class="fw-color-black fw-fz-16">Все рассылки</a></li>
-                <li><a href="#" class="fw-color-black fw-fz-16 fw-ml-30">Интересы</a></li>
-                <li><a href="#" class="fw-color-black fw-fz-16 fw-ml-30">Мои рассылки</a></li>
-            </ul>
-        </nav>
+            <div class="content_wrap_shadow"><h1 class="page_title">Кошелек</h1>
+        <div class="page_inside_content">
+            <div class="clearfix">
+                <div class="l_bl wallet_menu trans_all">
+                    <!-- START new premuim plate -->
+                    <a href="/payment/club-card" class="wallet-menu__premium-present">
+                        <i class="icon-premium-present"></i>
+                        <div class="wallet-menu__premium-text ffr">
+                            <p class="ffm">Получить скидку до <span class="wallet-menu__red-text">15%</span></p>
+                            <p>и стать членом VIP клуба</p>
+                        </div>
+                    </a>
+                    <!-- // END new premuim plate -->
 
-        <div class="new-mailing-main fw-flex fw-width-1260 fw-margin-auto mailing-shadow fw-border-radius-18">
-            <div class="new-mailing-main--left fw-width-1-2 fw-pt-62 fw-pl-86 fw-pr-30 fw-pb-38">
-                <div class="fw-flex fw-flex-space-between fw-pb-23">
-                    <h3 class="fw-fz-18">Рассылки в вашем городе</h3>
-                    <span class="fw-fz-14 fw-flex js-mailing-filter-btn mailing-filter-btn fw-flex-middle fw-pointer fw-color-purple">Фильтр <i class="js-mailing-filter-arrow fw-ml-10 icomoon icomoon-chevron-right"></i></span>
+                    <ul>
+                        <li class="fill_balance_li ffr active"><a href="/payment">Пополнить счёт</a></li>
+                        <li><a href="/payment/promo-code">Промокоды</a></li>
+                        <li class="ffr "><a href="/payment/premium">Купить премиум</a></li>
+                        <li class="ffr "><a href="/payment/club-card">Клубные карты</a></li>
+                        <li><a href="/payment/top-elevated">Поднятие анкеты в ТОП</a></li>
+                        <li><a href="/payment/minutes">Купить минуты</a></li>
+                        <li><a href="/payment/contacts">Купить контакты</a></li>
+                        <li><a href="/payment/photo-place">Место в фотоленте</a></li>
+                        <li><a href="/payment/online">Кто онлайн</a></li>
+                        <li><a href="/payment/invisible">Скрыть статус онлайн (инвизибл)</a></li>
+                        <li><a href="/payment/confirmed">Подтвержденные фото</a></li>
+                        <li><a href="/payment/top-fixed">Закрепление анкеты в ТОП</a></li>
+                        <li class="inactive "><a href="/payment/unblock">Разблокировать анкету</a></li>
+                    </ul>
                 </div>
 
-                <div class="js-new-mailing-filter fw-hidden fw-pb-40">
-                    <form action="" class="fw-flex fw-flex-top fw-flex-space-between">
-                        <div class="f-left fw-width-300 fw-text-left">
-                            <div class="line fw-mb-40 fw-flex fw-flex-middle fw-flex-space-between">
-                                <span>Пол</span>
-                                <div class="fw-flex">
-                                    <input type="radio" name="gender" id="male" class="no-style fw-hidden gender-input" />
-                                    <label class="radio-gender-label fw-width-100 fw-flex fw-flex-middle fw-flex-center fw-fz-14 fw-color-purple fw-height-28" for="male">
-                                        Мужчины
-                                    </label>
+                <div class="wallet_content">
+                    <div class="js-toggle-show-for-dtc fix_profile">
+                        <h2 class="black_sub_title">Поднятие анкеты</h2>
 
-                                    <input type="radio" name="gender" id="female" class="no-style fw-hidden gender-input" />
-                                    <label class="radio-gender-label fw-ml-15 fw-width-100 fw-flex fw-flex-middle fw-flex-center fw-fz-14 fw-color-purple fw-height-28" for="female">
-                                        Девушки
-                                    </label>
-                                </div>
+                        <p class="fw-fz-14 ffr fw-mb-20">
+                            <b>Вы на 102 месте.</b> Посмотреть свою анкету в <a href="#" class="fw-color-purple">поиске</a><br>
+                            Повысьте вашу популярность и получите больше внимания. Ваша анкета будет находиться первой после пользователей с ТОП.<br>
+                            Если у вас подключен ТОП, то поднятие анкеты зафиксирует вашу позицию выше всех в ТОП.
+                        </p>
+
+                        <div class="faq_img"><img src="/web/images/DTC/in_top_img3.png" alt=""></div>
+
+                        <form class="buy_form ng-pristine ng-valid" id="buy-top-elevated" method="POST" action="#">
+                            <p class="fw-fz-14 ffr fw-mb-25">У вас есть бесплатное поднятие анкеты в топ</p>
+                            <div class="select_wrap_ dib vam fw-mb-20">
+                                <select name="top-elevated-service" id="top-elevated-service">
+                                    <option value="14" data-price="150">Купить за 150.00 руб.</option>
+                                </select>
                             </div>
 
-                            <div class="line fw-flex fw-flex-middle fw-flex-space-between fw-mb-40">
-                                <span>Возраст</span>
-                                <div class="dib vam tal fw-width-201 slider_age_wrapper">
-                                    <div class="slider_wrap vam dib fw-width-1-1 slider_age_range_wrap">
-                                        <div id="slider-range2" class="fw-width-1-1 slider-range slider_age_range slider_range_style">
-                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0">
-                                                <span class="tap_area"></span>
-                                                <input type="text" name="ageFrom" disabled value="0" class="filter-amount1 amount">
-                                            </span>
-
-                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="1">
-                                                <span class="tap_area"></span>
-                                                <input type="text" name="ageTo" disabled value="100" class="filter-amount2 amount">
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-23 fw-pb-23 fw-pl-15 fw-pr-15 fw-border-width-1 fw-border-style-solid fw-border-color-purple fw-border-radius-3">
+                                <p class="fw-fz-14 fw-color-black fw-text-600">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
+                                <a href="#" class="js-show-dtc-block fw-ml-20 fw-flex ffr fw-color-purple fw-fz-14 fw-flex-middle fw-flex-center fw-white-space-no fw-border-width-2 fw-border-style-solid fw-border-color-gray-light fw-pl-15 fw-pr-15 fw-pt-10 fw-pb-10 fw-border-radius-5">
+                                    <img src="/web/images/DTC/logo_dtc.svg" class="fw-mr-15 fw-width-120 fw-block" alt="">Купить за 3 DTC = 300 руб.
+                                </a>
                             </div>
 
-                            <div class="line filter-mailing-line fw-width-300 fw-text-left fw-mb-30">
-                                <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
-                                    <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
-                                    <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen"><div class="citysearch__new-select__wrapper"><div class="no-style easy-autocomplete"><input type="text" class="citysearch__new-select js-mail-filter-search-city fw-pl-10 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
-                                </div>
-                            </div>
+                            <button type="submit"  class="fw-mt-20 new-female-profile--button fw-inline-block fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pl-30 fw-pr-30 fw-pt-8 fw-border-radius-5">
+                                Купить за 250 рублей
+                            </button>
+                        </form>
+                    </div>
 
-                            <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-10">
-                                <button type="submit" name="activate-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-131 fw-border-radius-5">
-                                    Применить
-                                </button>
-
-                                <a class="a-hover-purple js-reset-mailing-filter fw-pointer fw-color-purple fw-fz-14 fw-block fw-ml-20">Сбросить все</a>
-                            </div>
-                        </div>
-
-                        <div class="fw-text-left">
-                            <span class="fw-mb-40 fw-block fw-left--28">Теги</span>
-                            <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
-                                <input id="sponsor" class="no-style fw-hidden mailing-filter-checkbox" type="checkbox">
-                                <label for="sponsor" class="fw-fz-14 fw-width-120 fw-relative mailing-filter-tag-label">Ищу спонсора</label>
-                            </div>
-
-                            <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
-                                <input id="relations" class="no-style fw-hidden mailing-filter-checkbox" type="checkbox">
-                                <label for="relations" class="fw-fz-14 fw-width-120 fw-relative mailing-filter-tag-label">Постоянные <br> отношения</label>
-                            </div>
-
-                            <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
-                                <input id="spend-evening" class="no-style fw-hidden mailing-filter-checkbox" type="checkbox">
-                                <label for="spend-evening" class="fw-fz-14 fw-width-120 fw-relative mailing-filter-tag-label">Провести вечер</label>
-                            </div>
-
-                            <div class="fw-flex fw-flex-middle fw-flex-space-between fw-mb-20">
-                                <input id="travel" class="no-style fw-hidden mailing-filter-checkbox" type="checkbox">
-                                <label for="travel" class="fw-fz-14 fw-width-120 fw-relative mailing-filter-tag-label">Cовместное <br> путешествие</label>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-
-                <div class="new-mailing-profiles-line-wrap">
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
-                                        <div class="new-mailing-profiles-line fw-flex fw-flex-top fw-flex-left fw-mb-30">
-                        <div class="avatar fw-width-87 fw-height-87"><img src="http://placehold.it/100x100" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-
-                        <div class="mailing-profile-information fw-max-width-405 fw-text-left fw-ml-20">
-                            <p class="last-visit fw-fz-10 fw-color-gray fw-pb-10 fw-margin-0">Сегодня 16:00</p>
-                            <span class="fw-block fw-fz-14 fw-mb-6 fw-flex fw-flex-left fw-flex-middle">
-                                <span>Алина</span>,
-                                <span>24</span>,
-                                <span>Киев</span>
-                                <span class="online-id-online fw-ml-10 fw-width-6 fw-height-6 fw-border-radius-percent-50 fw-block"></span>
-                            </span>
-                            <p class="fw-fz-12 fw-line-height-25 fw-pb-15">
-                                Я учусь и работаю ) я в одно время романтичная и дерзкая девушка) Ищу отношений с материальной поддержкой.
-                                Мозг не выношу ) Голова не болит )
-                            </p>
-
-                            <div class="fw-flex fw-flex-space-between fw-pb-18 fw-flex-middle">
-                                <ul class="mailing-profile-tags fw-flex fw-max-width-300 fw-margin-0">
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#постоянные отношения</a></li>
-                                    <li><a href="#" class="fw-fz-10 fw-color-gray">#путешествие</a></li>
-                                </ul>
-
-                                <a href="#" class="fw-fz-12 fw-color-purple">Проявить интерес</a>
-                            </div>
-                        </div>
-                    </div><!-- /.new-mailing-profiles-line -->
                     
-                    <button class="js-open-items-mailing-profiles purple-btn fw-fz-14 fw-color-white fw-pb-12 fw-pt-12 fw-width-200 fw-border-radius-5">Еще 6</button>
-                </div><!-- /.new-mailing-profiles-line-wrap -->
-            </div><!-- /.new-mailing-main--left -->
+                    
+<div id="how-buy-dtc" class="js-how-buy-dtc fw-hidden">
+    <h2 class="fw-fz-18 fw-text-400 fw-pb-15">Чтобы пополнить баланс DTC в приложении, переведите DTC со своего ETH <br> кошелька на этот адрес:</h2>
 
-            <div class="new-mailing-main--right fw-width-1-2 fw-pt-62 fw-pl-40 fw-pr-86 fw-pb-38 fw-text-center">
-                <div class="fw-flex fw-flex-space-between fw-pb-23 fw-mb-92">
-                    <span class="fw-fz-18 fw-block fw-text-center fw-mb-9 fw-margin-auto">Найди мужчину, который тебе подходит</span>
+    <div class="fw-flex fw-flex-top fw-flex-left">
+        <div class="fw-width-120 fw-height-120">
+            <img src="/web/images/DTC/qr.png" class="fw-width-1-1 fw-height-1-1 fw-min-width-120" alt="">
+        </div>
+
+        <div class="fw-flex fw-flex-top fw-flex-column fw-pl-20">
+            <p id="DTC-address" class="fw-mb-15 fw-fz-14 ffr fw-color-gray3">1GZcSFw3onsfusWBqvTZSCg5BTiQXYpS3h</p>
+            <button  title="" data-clipboard-target="#DTC-address" class="js-copy-dtc-address new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-1-1 fw-border-radius-5">
+                Скопировать адрес
+            </button>
+        </div>
+    </div>
+
+    <a href="#" class="js-dtc-block-hide fw-pt-20 fw-fz-14 fw-color-purple ffr fw-mb-35">Выбрать другой способ оплаты</a>
+
+    <h3 class="fw-fz-19 fw-text-600 fw-mb-10">Как купить токены DTC</h3>
+
+    <div id="dtc-accordeon" class="js-dtc-accordeon">
+        <div class="dtc-accordeon--head js-dtc-acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
+            Как купить токены  DTC  <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
+        </div>
+        <div class="dtc-accordeon--body js-dtc-acc-body fw-hidden fw-pt-15 fw-pb-40">
+            Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
+            <br><br>
+            Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
+        </div>
+
+        <div class="dtc-accordeon--head js-dtc-acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
+            Как завести ETH кошелек  <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
+        </div>
+        <div class="dtc-accordeon--body js-dtc-acc-body fw-hidden fw-pt-15 fw-pb-40">
+            Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
+            <br><br>
+            Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
+        </div>
+
+        <div class="dtc-accordeon--head js-dtc-acc-head fw-text-600 fw-border-bottom fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
+            На какой бирже купить токен <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
+        </div>
+        <div class="dtc-accordeon--body js-dtc-acc-body fw-hidden fw-pt-15 fw-pb-40">
+            Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
+            <br><br>
+            Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
+        </div>
+
+        <div class="dtc-accordeon--head js-dtc-acc-head fw-text-600 fw-fz-14 fw-pt-15 fw-pb-15 fw-flex fw-flex-space-between fw-flex-middle fw-pointer fw-pr-10">
+            Сколько времени занимает зачисление токена <span class="icomoon icomoon-chevron-right dtc-head-row fw-fz-20 fw-color-gray4"></span>
+        </div>
+        <div class="dtc-accordeon--body js-dtc-acc-body fw-hidden fw-pt-15 fw-pb-40">
+            Для покупки токенов Вам необходимо перевести биткоины или эфиры на приведённые адреса. Адреса сгенерированны индивидуально для приёма ваших платежей, поэтому когда средства на них поступят система поймёт что это перевод именно от вас.
+            <br><br>
+            Токены будут доступны для перевода на любой удобный вам счёт, когда закончится token sale.
+        </div>
+
+    </div>
+</div>
+                    
                 </div>
-
-                <div class="create-new-mailing">
-                    <h3 class="fw-fz-18 fw-mb-35">Создать рассылку</h3>
-
-                    <form action="">
-                        <div class="fw-flex create-inputs-line create-inputs-line-age fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
-                            <label class="fw-margin-0 fw-fz-14">Возраст</label>
-                            <input name="create-mailing-age" class="fw-text-left fw-pl-10 fw-pr-54 fw-fz-14 fw-width-300 fw-height-40" type="number"  placeholder="от 18 – до 35" required>
-                        </div>
-
-                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
-                            <label for="mailing-city" class="fw-margin-0 fw-fz-14">Город</label>
-                            <div class="select_wrap dib select_wrap_ vam tal select-wrap-chosen fw-width-300"><div class="citysearch__new-select__wrapper fw-width-300"><div class="easy-autocomplete fw-width-300"><input type="text" class="citysearch__new-select fw-pl-10 fw-width-300 city-search" id="search-city" placeholder="Укажите город или страну" value="" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-search-city"><ul style="display: none;"></ul></div></div><input class="hidden-city-search" name="city" type="hidden" value="1766"><i class="icon--new-select__clean"></i><div class="citysearch__new-select__tooltip-error top-side">Неизвестный город</div></div></div>
-                        </div>
-
-                        <div class="fw-flex activate-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-20">
-                            <label class="fw-margin-0 fw-fz-14">Цели знакомства</label>
-                            <div class="search_filters get_in_top tac">
-                                <div class="select_wrap dib select_wrap_ vam tal">
-                                    <select name="" id="">
-                                        <option value="1" selected data-type="sponsor">Ищу спонсора</option>
-                                        <option value="2" data-type="constantRelationship">Постоянные отношения</option>
-                                        <option value="3" data-type="spendTheEvening">Провести вечер</option>
-                                        <option value="4" data-type="travel">Совместное путешествие</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fw-flex create-inputs-line fw-relative fw-flex-middle fw-flex-space-between fw-mb-45">
-                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
-                            <a href="#" class="fw-block fw-text-left fw-color-purple fw-pt-10 fw-pb-10 fw-text-left fw-fz-14 fw-pr-10 fw-fz-14 fw-width-300">Выбрать</a>
-                        </div>
-
-                        <div class="fw-flex create-inputs-line fw-relative fw-flex-top fw-flex-space-between fw-mb-20">
-                            <label class="fw-margin-0 fw-fz-14">Текст рассылки</label>
-                            <textarea name="create-mailing-text" class="fw-text-left fw-pt-10 fw-pb-10 fw-pl-10 fw-pr-10 fw-fz-14 fw-width-300 fw-height-106 fw-min-height-106 fw-max-height-106" type="text" placeholder="Пример: втречусь сегодня с очаровашкой модельной внешности, в Вас ласка, с меня подарок" required></textarea>
-                        </div>
-
-                        <button type="submit" name="create-mailing-btn" class="new-female-profile--button fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pt-8 fw-width-1-1 fw-border-radius-5">
-                            Создать рассылку за 200₽
-                        </button>
-                    </form>
-                </div>
-            </div><!-- /.new-mailing-main--right -->
-
-        </div><!-- /.new-mailing-main-->
-    </div><!-- /.new-mailing-container -->
+            </div>
+        </div>
+    </div>
     </div>
 
 </div>

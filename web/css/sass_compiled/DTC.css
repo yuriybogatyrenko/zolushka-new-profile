@@ -11,19 +11,29 @@
   transition: all 0.3s ease;
 }
 
-#accordeon {
+.dtc-accordeon {
   position: relative;
 }
-#accordeon:last-child {
+.dtc-accordeon:last-child {
   border-bottom: none;
 }
-
-.acc-head:not(.head-accordeon-active) span {
+.dtc-accordeon--head:not(.head-accordeon-active) span {
   transform: rotate(90deg);
 }
 
-.dtc-item:after {
-  border-color: #00019B;
+.buy_premium .premium_advantages {
+  width: auto;
+  margin: 0 55px 0 0;
+  background-size: 155px auto;
+  background-position: right 10px;
+}
+
+.dtc-token-popup {
+  background-image: url("/web/images/DTC/popup-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 }
 
 /*# sourceMappingURL=DTC.css.map */

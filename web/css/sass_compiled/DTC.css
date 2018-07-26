@@ -1,0 +1,39 @@
+.content_wrap_shadow .wallet_content .dtc-small-button {
+  margin-bottom: 0;
+}
+
+.fw-white-space-no {
+  white-space: nowrap;
+}
+
+.dtc-head-row {
+  transform: rotate(-90deg);
+  transition: all 0.3s ease;
+}
+
+.dtc-accordeon {
+  position: relative;
+}
+.dtc-accordeon:last-child {
+  border-bottom: none;
+}
+.dtc-accordeon--head:not(.head-accordeon-active) span {
+  transform: rotate(90deg);
+}
+
+.buy_premium .premium_advantages {
+  width: auto;
+  margin: 0 55px 0 0;
+  background-size: 155px auto;
+  background-position: right 10px;
+}
+
+.dtc-token-popup {
+  background-image: url("/web/images/DTC/popup-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=DTC.css.map */

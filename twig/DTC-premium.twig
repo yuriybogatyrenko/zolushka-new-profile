@@ -1,0 +1,162 @@
+{% extends 'layout/layout.twig' %}
+
+{% block content %}
+    <div class="content_wrap_shadow"><h1 class="page_title">Кошелек</h1>
+        <div class="page_inside_content">
+            <div class="clearfix">
+                <div class="l_bl wallet_menu trans_all">
+                    <!-- START new premuim plate -->
+                    <a href="/payment/club-card" class="wallet-menu__premium-present">
+                        {#<i class="icon-premium-present"></i>#}
+                        <img src="/web/images/DTC/DTC_icon.png" class="fw-mr-10" alt="">
+
+                        <div class="wallet-menu__premium-text ffr">
+                            <p class="ffm fw-text-600 fw-fz-14">Платите токенами DTC</p>
+                            <p class="fw-fz-14 fw-text-600">Выгода до 50%</p>
+                        </div>
+                    </a>
+                    <!-- // END new premuim plate -->
+
+                    <ul>
+                        <li class="fill_balance_li ffr active"><a href="/payment">Пополнить счёт</a></li>
+                        <li><a href="/payment/promo-code">Промокоды</a></li>
+                        <li class="ffr "><a href="/payment/premium">Купить премиум</a></li>
+                        <li class="ffr "><a href="/payment/club-card">Клубные карты</a></li>
+                        <li><a href="/payment/top-elevated">Поднятие анкеты в ТОП</a></li>
+                        <li><a href="/payment/minutes">Купить минуты</a></li>
+                        <li><a href="/payment/contacts">Купить контакты</a></li>
+                        <li><a href="/payment/photo-place">Место в фотоленте</a></li>
+                        <li><a href="/payment/online">Кто онлайн</a></li>
+                        <li><a href="/payment/invisible">Скрыть статус онлайн (инвизибл)</a></li>
+                        <li><a href="/payment/confirmed">Подтвержденные фото</a></li>
+                        <li><a href="/payment/top-fixed">Закрепление анкеты в ТОП</a></li>
+                        <li class="inactive "><a href="/payment/unblock">Разблокировать анкету</a></li>
+                    </ul>
+                </div>
+
+                <div class="wallet_content">
+                    <div class="js-toggle-show-for-dtc buy_premium">
+                        <p class="bold_txt fw-mb-30">
+                            Премиум-аккаунт служит не только для
+                            увеличения возможностей, <br> но также
+                            позволяет бороться со спамом и несерьезными посетителями.
+                        </p>
+
+                        <div class="premium_adv_separator">
+                            <ul class="premium_advantages">
+                                <li><p class="ttl">Общение без ограничений</p>
+                                    <p class="descr">Получите возможность получать и отправлять сообщения, а также
+                                        осуществлять анонимные звонки через сервис.</p></li>
+                                <li><p class="ttl">Дополнительные критерии поиска</p>
+                                    <p class="descr">Удобная фильтрация девушек по городу проживания, параметрам внешности и
+                                        сексуальным предпочтениям.</p></li>
+                                <li><p class="ttl">Обмен контактными данными</p>
+                                    <p class="descr">Вы сможете получать телефоны и e-mail девушек без ограничений.</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="account_descr fw-pt-20">
+                            <p class="big ttu" style="display: none;">
+                                ОСТАЛОСЬ <span id="premium-expires"></span>
+                            </p>
+                        </div>
+
+                        <p class="fw-fz-35 fw-text-uppercase fw-pb-20">Осталось 24 часа 16 минут</p>
+                        <form action="#" id="buy-premium" class="buy-premium buy-premium-popup" method="POST">
+                            <div class="buy-form__suggestions mb20 ">
+                                <label class="buy-form__suggestions-item dtc-item fw-padding-15">
+                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
+                                    <span class="input-wrapper premium-page__checkbox">
+                                        <input type="radio" name="premium-service" class="checkbox-round" checked value="6" data-price="810"/>
+                                    </span>
+
+                                    <span class="buy-form__suggestions-content db">
+                                        <span class="db ffr">Премиум доступ навсегда, доступно только за токены  DTC</span>
+                                    </span>
+
+                                    <span class="buy-form__suggestion-sell-text">
+                                         <span class="fw-pb-5 fw-block fw-color-dark-blue">Бесконечный доступ</span>
+                                         <span class="db fw-color-black">4000 DTC</span>
+                                    </span>
+                                </span>
+                                </label>
+
+                                <label class="buy-form__suggestions-item fw-pt-15 fw-pb-15">
+                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
+                                    <span class="input-wrapper premium-page__checkbox">
+                                        <input type="radio" name="premium-service" class="checkbox-round" checked value="6" data-price="810"/>
+                                    </span>
+
+                                    <span class="buy-form__suggestions-content db">
+                                        <span class="ffr db">Премиум-доступ на 3 дня</span>
+                                    </span>
+
+                                    <span class="buy-form__suggestion-sell-text">
+                                         <span class="fw-pb-5 fw-block">Пакет «Здесь и сейчас»</span>
+                                         <span class="db fw-color-black">810 руб.</span>
+                                    </span>
+                                </span>
+                                </label>
+
+                                <label class="buy-form__suggestions-item minimal-item">
+                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
+                                    <span class="input-wrapper premium-page__checkbox">
+                                        <input type="radio" name="premium-service" class="checkbox-round" value="7" data-price="1950"/>
+                                    </span>
+
+                                    <span class="buy-form__suggestions-content db">
+                                        <span class="ffr db">Премиум-доступ на 2 недели + 1 рассылка</span>
+                                    </span>
+
+                                    <span class="buy-form__suggestion-sell-text">
+                                        <span class="sell-text__minimal fw-block fw-pb-5">Пакет «Спонсор»</span>
+                                        <span class="db fw-color-black">1 950 руб.</span>
+                                    </span>
+                                </span>
+                                </label>
+
+                                <label class="buy-form__suggestions-item prefered-item">
+                                <span class="fw-flex fw-width-1-1 fw-pt-5 fw-pb-5 fw-flex-middle fw-flex-space-between">
+                                    <span class="input-wrapper premium-page__checkbox">
+                                        <input type="radio" name="premium-service" class="checkbox-round" value="21" data-price="3400"/>
+                                    </span>
+
+                                    <span class="buy-form__suggestions-content db">
+                                        <span class="ffr db">Премиум-доступ на 1 месяц + 1 подъем анкеты + 2 рассылки</span>
+                                    </span>
+
+                                    <span class="buy-form__suggestion-sell-text">
+                                        <span class="sell-text__prefered fw-block fw-pb-5">Пакет «Казанова»</span>
+                                        <span class="db fw-color-black">3 400 руб.</span>
+                                    </span>
+                                </span>
+                                </label>
+
+                                <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-23 fw-pb-23 fw-pl-15 fw-pr-15 fw-border-width-1 fw-border-style-solid fw-border-color-purple fw-border-radius-3">
+                                    <p class="fw-fz-14 fw-color-black fw-text-600">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
+                                    <a href="#" class="js-show-dtc-block fw-ml-20 fw-flex ffr fw-color-purple fw-fz-14 fw-flex-middle fw-flex-center fw-white-space-no fw-border-width-2 fw-border-style-solid fw-border-color-gray-light fw-pl-15 fw-pr-15 fw-pt-10 fw-pb-10 fw-border-radius-5">
+                                        <img src="/web/images/DTC/logo_dtc.svg" class="fw-mr-15 fw-width-120 fw-block" alt="">Купить за 3 DTC = 300 руб.
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="dib vam">
+                                <button class="violet_btn db">Купить за 1950 рублей</button>
+                            </div>
+                        </form>
+
+                        <ul class="fw-pt-40 fw-list-style-none fw-pl-30">
+                            <li class="fw-pb-15">1. При покупке премиум аккаунта во время действия пробного аккаунта все
+                                <br> неизрасходованое время добавляется к времени действия премиум <br> аккаунта в двойном размере.</li>
+                            <li>2. При продлении премиум аккаунта оплаченный период добавляется к <br> имеющемуся. Таким образом оплаченные периоды не теряются.</li>
+                        </ul>
+                    </div>
+
+                    {# ______________________________________ HOW BUY DTC________________________________ #}
+                    {% include '../twig/components/buy-dtc.twig' %}
+                    {# _______________________________________/___________________________________________ #}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

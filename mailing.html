@@ -643,10 +643,7 @@
 <script src="https://zolushka-project.ru/js/gos_socket.js?v=0.11"></script>
 <script src="https://zolushka-project.ru/js/parsley.min.js"></script>
 <script src="web/js/owl.carousel.min.js"></script>
-
-
-
-
+<script src="web/js/clipboard.min.js"></script>
 
 <script type="text/javascript">
     if ($('.parsley-validate').length) {
@@ -2127,6 +2124,57 @@
         </div>
         
 
+
+
+        
+        
+
+        
+        <div id="token-popup" class="dtc-token-popup fw-hidden js-stop-hide-popup mailing-popup fw-bg-color-white fw-width-670 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+           <div class="fw-pt-86 fw-pb-40 fw-flex fw-flex-middle fw-flex-center">
+               <img class="fw-width-72 fw-mr-5" src="/web/images/DTC/logo_dtc.svg" alt="">
+               <img src="/web/images/DTC/wallet.png" alt="">
+           </div>
+
+            <p class="fw-fz-19 fw-line-height-25 fw-color-black ffr fw-mb-35">
+                Оплачивайте опции токенами DTC с выгодой до 50%,
+                а так же получите доступ к уникальным услугам
+            </p>
+
+            <a class="new-female-profile--button ffr fw-inline-block fw-fz-14 fw-mt-0 fw-color-white fw-pb-12 fw-pl-30 fw-pr-30 fw-pt-12 fw-border-radius-5">
+                Оплатить токенами
+            </a>
+
+            <a href="#" class="fw-fz-14 ffr fw-color-purple fw-mb-92 fw-mt-25 fw-block">
+                Узнать больше о токенах DTC
+            </a>
+        </div>
+        
+
+        
+        <div id="dtc-premium-activated" class="js-stop-hide-popup mailing-popup fw-hidden fw-bg-color-white fw-width-575 fw-pl-40 fw-pr-40 fw-text-center fw-margin-auto fw-flex fw-flex-center fw-flex-column fw-flex-middle fw-pt-28 fw-pb-30 fw-border-radius-10 fw-relative">
+            <div class="new-profile__close-photo-popup js-new-profile-close-this-popup-button fw-flex fw-flex-right fw-right-18 fw-top-10">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+
+            <p class="fw-mt-92 fw-fz-19 fw-line-height-25 fw-color-black ffr fw-mb-53">
+                Спасибо! Премиум доступ активирован!
+            </p>
+
+            <a href="#" class="new-female-profile--button ffr fw-inline-block fw-fz-14 fw-mt-0 fw-color-white fw-pb-12 fw-pl-30 fw-pr-30 fw-pt-12 fw-border-radius-5">
+                Перейти в поиск
+            </a>
+
+            <a href="#" class="js-new-profile-close-this-popup-button fw-fz-14 ffr fw-color-purple fw-mb-92 fw-mt-25 fw-block">
+                Закрыть
+            </a>
+        </div>
+        
+        
     </div>
 </div>
 
@@ -2278,10 +2326,51 @@
         };
 
         checkboxFunction();
+
+
+        // DTC-accordeon
+        $(function DtcAccordeon(){
+            $('.js-dtc-accordeon .js-dtc-acc-head').on('click', f_acc);
+
+            function f_acc(){
+                $(this).toggleClass('head-accordeon-active');
+                $('.js-dtc-accordeon .js-dtc-acc-body').not($(this).next()).slideUp(300);
+                $('.js-dtc-acc-head').not($(this)).removeClass('head-accordeon-active');
+                $(this).next().slideToggle(300);
+            }
+        });
+
+
+        // How buy DTC show/hide
+        $(function HideShowDTC(){
+            var DTCblock = $('#how-buy-dtc');
+            var HiddenSections = $('.js-toggle-show-for-dtc');
+
+           $('.js-show-dtc-block').on('click',function(){
+               $(DTCblock).removeClass('fw-hidden');
+               $(HiddenSections).addClass('fw-hidden');
+           });
+
+           $('.js-dtc-block-hide').on('click', function(){
+               $(HiddenSections).removeClass('fw-hidden');
+               $(DTCblock).addClass('fw-hidden');
+           });
+        });
+
+    //    Copy DTC-address
+        new ClipboardJS('.js-copy-dtc-address');
+
+        $('.js-copy-dtc-address').on('click', function(){
+            $(this).text(function(){
+                return 'Скопировано';
+            });
+        });
     });
 
-</script>
 
+
+
+</script>
 
 
 </body>

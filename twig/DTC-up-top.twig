@@ -1,0 +1,75 @@
+{% extends 'layout/layout.twig' %}
+
+{% block content %}
+    <div class="content_wrap_shadow"><h1 class="page_title">Кошелек</h1>
+        <div class="page_inside_content">
+            <div class="clearfix">
+                <div class="l_bl wallet_menu trans_all">
+                    <!-- START new premuim plate -->
+                    <a href="/payment/club-card" class="wallet-menu__premium-present">
+                        <i class="icon-premium-present"></i>
+                        <div class="wallet-menu__premium-text ffr">
+                            <p class="ffm">Получить скидку до <span class="wallet-menu__red-text">15%</span></p>
+                            <p>и стать членом VIP клуба</p>
+                        </div>
+                    </a>
+                    <!-- // END new premuim plate -->
+
+                    <ul>
+                        <li class="fill_balance_li ffr active"><a href="/payment">Пополнить счёт</a></li>
+                        <li><a href="/payment/promo-code">Промокоды</a></li>
+                        <li class="ffr "><a href="/payment/premium">Купить премиум</a></li>
+                        <li class="ffr "><a href="/payment/club-card">Клубные карты</a></li>
+                        <li><a href="/payment/top-elevated">Поднятие анкеты в ТОП</a></li>
+                        <li><a href="/payment/minutes">Купить минуты</a></li>
+                        <li><a href="/payment/contacts">Купить контакты</a></li>
+                        <li><a href="/payment/photo-place">Место в фотоленте</a></li>
+                        <li><a href="/payment/online">Кто онлайн</a></li>
+                        <li><a href="/payment/invisible">Скрыть статус онлайн (инвизибл)</a></li>
+                        <li><a href="/payment/confirmed">Подтвержденные фото</a></li>
+                        <li><a href="/payment/top-fixed">Закрепление анкеты в ТОП</a></li>
+                        <li class="inactive "><a href="/payment/unblock">Разблокировать анкету</a></li>
+                    </ul>
+                </div>
+
+                <div class="wallet_content">
+                    <div class="js-toggle-show-for-dtc fix_profile">
+                        <h2 class="black_sub_title">Поднятие анкеты</h2>
+
+                        <p class="fw-fz-14 ffr fw-mb-20">
+                            <b>Вы на 102 месте.</b> Посмотреть свою анкету в <a href="#" class="fw-color-purple">поиске</a><br>
+                            Повысьте вашу популярность и получите больше внимания. Ваша анкета будет находиться первой после пользователей с ТОП.<br>
+                            Если у вас подключен ТОП, то поднятие анкеты зафиксирует вашу позицию выше всех в ТОП.
+                        </p>
+
+                        <div class="faq_img"><img src="/web/images/DTC/in_top_img3.png" alt=""></div>
+
+                        <form class="buy_form ng-pristine ng-valid" id="buy-top-elevated" method="POST" action="#">
+                            <p class="fw-fz-14 ffr fw-mb-25">У вас есть бесплатное поднятие анкеты в топ</p>
+                            <div class="select_wrap_ dib vam fw-mb-20">
+                                <select name="top-elevated-service" id="top-elevated-service">
+                                    <option value="14" data-price="150">Купить за 150.00 руб.</option>
+                                </select>
+                            </div>
+
+                            <div class="fw-flex fw-flex-middle fw-flex-left fw-pt-23 fw-pb-23 fw-pl-15 fw-pr-15 fw-border-width-1 fw-border-style-solid fw-border-color-purple fw-border-radius-3">
+                                <p class="fw-fz-14 fw-color-black fw-text-600">Оплачивайте опции токенами DTC c выгодой  до 50%, а так же получите доступ к уникальным услугам</p>
+                                <a href="#" class="js-show-dtc-block fw-ml-20 fw-flex ffr fw-color-purple fw-fz-14 fw-flex-middle fw-flex-center fw-white-space-no fw-border-width-2 fw-border-style-solid fw-border-color-gray-light fw-pl-15 fw-pr-15 fw-pt-10 fw-pb-10 fw-border-radius-5">
+                                    <img src="/web/images/DTC/logo_dtc.svg" class="fw-mr-15 fw-width-120 fw-block" alt="">Купить за 3 DTC = 300 руб.
+                                </a>
+                            </div>
+
+                            <button type="submit"  class="fw-mt-20 new-female-profile--button fw-inline-block fw-fz-14 fw-mt-0 fw-color-white fw-pb-8 fw-pl-30 fw-pr-30 fw-pt-8 fw-border-radius-5">
+                                Купить за 250 рублей
+                            </button>
+                        </form>
+                    </div>
+
+                    {# ______________________________________ HOW BUY DTC________________________________ #}
+                    {% include '../twig/components/buy-dtc.twig' %}
+                    {# _______________________________________/___________________________________________ #}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

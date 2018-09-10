@@ -5432,8 +5432,35 @@ label.parsley-error span {
   width: 570px !important;
 }
 
+.js-create-male-album-slider {
+  z-index: 10 !important;
+}
+.js-create-male-album-slider .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 41px;
+}
+.js-create-male-album-slider .owl-nav .owl-next:hover {
+  background-color: transparent !important;
+}
+.js-create-male-album-slider .owl-nav .owl-next i {
+  font-size: 35px;
+  color: #ba78c0;
+}
+.js-create-male-album-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 41px;
+}
+.js-create-male-album-slider .owl-nav .owl-prev:hover {
+  background-color: transparent !important;
+}
+.js-create-male-album-slider .owl-nav .owl-prev i {
+  font-size: 35px;
+  color: #ba78c0;
+}
+
 .overlay .popup-wrap .new-female-profile-drop-file-input {
-  height: 166px;
   min-height: 166px;
 }
 

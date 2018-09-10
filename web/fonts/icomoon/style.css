@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hmqt2a');
-  src:  url('fonts/icomoon.eot?hmqt2a#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hmqt2a') format('truetype'),
-    url('fonts/icomoon.woff?hmqt2a') format('woff'),
-    url('fonts/icomoon.svg?hmqt2a#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?yx7a83');
+  src:  url('fonts/icomoon.eot?yx7a83#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yx7a83') format('truetype'),
+    url('fonts/icomoon.woff?yx7a83') format('woff'),
+    url('fonts/icomoon.svg?yx7a83#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,104 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-edit-small .path1:before {
+  content: "\e91c";
+  color: rgb(0, 0, 0);
+  opacity: 0.72;
+}
+.icomoon-edit-small .path2:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path3:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path4:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path5:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path6:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path7:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path8:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path9:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path10:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path11:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path12:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path13:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-edit-small .path14:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icomoon-rubbish-bin-delete-button .path1:before {
+  content: "\e92a";
+  color: rgb(0, 0, 0);
+}
+.icomoon-rubbish-bin-delete-button .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icomoon-icon-closed:before {
+  content: "\e91a";
+}
+.icomoon-phone2:before {
+  content: "\e912";
+}
 .icomoon-gift:before {
   content: "\e91b";
 }
@@ -141,7 +239,4 @@
 }
 .icomoon-cross:before {
   content: "\ea0f";
-}
-.icomoon-phone2:before {
-  content: "\e912";
 }

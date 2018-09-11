@@ -22,7 +22,6 @@
 		border-radius: 50%
 		img
 			border-radius: 50%
-
 	&-rules-slider
 		position: relative
 		.owl-dots
@@ -52,6 +51,21 @@
 					font-size: 35px
 					color: $colorPurple
 		&--slide
+			.create-album-item
+				transition: all .3s ease
+				&:hover
+					.create-album-item-edit-photo
+						visibility: visible
+						opacity: 1
+				&-edit-photo
+					transition: all .3s ease
+					visibility: hidden
+					opacity: 0
+					position: relative
+					width: 116%
+					left: -8%
+					top: 13px
+
 			&-items
 				&-item
 					overflow: hidden

@@ -2134,6 +2134,14 @@
   border-radius: 7%;
 }
 
+.fw-border-radius-8 {
+  border-radius: 8px;
+}
+
+.fw-border-radius-percent-8 {
+  border-radius: 8%;
+}
+
 .fw-border-radius-10 {
   border-radius: 10px;
 }
@@ -5434,11 +5442,12 @@ label.parsley-error span {
 
 .js-create-male-album-slider {
   z-index: 10 !important;
+  display: flex !important;
 }
 .js-create-male-album-slider .owl-nav .owl-next {
   position: absolute;
   right: 0;
-  top: 41px;
+  top: 54px;
 }
 .js-create-male-album-slider .owl-nav .owl-next:hover {
   background-color: transparent !important;
@@ -5450,7 +5459,7 @@ label.parsley-error span {
 .js-create-male-album-slider .owl-nav .owl-prev {
   position: absolute;
   left: 0;
-  top: 41px;
+  top: 54px;
 }
 .js-create-male-album-slider .owl-nav .owl-prev:hover {
   background-color: transparent !important;
@@ -5526,6 +5535,22 @@ label.parsley-error span {
 .new-female-profile-rules-slider .owl-nav .owl-next i {
   font-size: 35px;
   color: #ba78c0;
+}
+.new-female-profile-rules-slider--slide .create-album-item {
+  transition: all 0.3s ease;
+}
+.new-female-profile-rules-slider--slide .create-album-item:hover .create-album-item-edit-photo {
+  visibility: visible;
+  opacity: 1;
+}
+.new-female-profile-rules-slider--slide .create-album-item-edit-photo {
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  width: 116%;
+  left: -8%;
+  top: 13px;
 }
 .new-female-profile-rules-slider--slide-items-item {
   overflow: hidden;

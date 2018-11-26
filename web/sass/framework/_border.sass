@@ -12,6 +12,11 @@
   .fw-border-radius-percent-#{$value}
     border-radius: unquote("#{$value}%")
 
+  .fw-border-radius-right-#{$value}
+    border-radius: 0 #{$value}px #{$value}px 0
+
+  .fw-border-radius-left-#{$value}
+    border-radius: #{$value}px 0 0 #{$value}px
 @each $color in $colors
   $key: inspect(nth($color, 1))
   $value: nth($color, 2)
@@ -27,6 +32,12 @@
 
 .fw-border-style-solid
   border-style: solid
+
+.fw-border-right-none
+  border-right: none
+
+.fw-border-left-none
+  border-left: none
 
 .fw-border-style-solid-top
   border-style: solid none none none

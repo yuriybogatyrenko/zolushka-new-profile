@@ -81,6 +81,8 @@
 @each $value in $left
   .fw-left-#{$value}
     left: #{$value}px
+  .fw-left-inverse-#{$value}
+    left: -#{$value}px
 
 .fw-left-100-percent
   left: 100%
@@ -131,3 +133,69 @@
 
 .fw-opacity-4
   opacity: 0.4
+
+.verify-photo-popup
+  .verify-photo
+    &--refresh-btn
+      background: linear-gradient(180deg, #C1C1C1 0%, #A2A2A2 97.17%)
+    .get_in_top .selectbox .select
+      border-radius: 4px 0 0 4px
+    .error-alert
+      display: block
+      right: calc(100% + 10px)
+      &--arrow
+        &:before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          right: -10px
+          border: 6px solid transparent
+          border-left: 6px solid $colorWhite
+          z-index: 1
+        &:after
+          content: ''
+          position: absolute
+          right: -12px
+          top: 50%
+          transform: translateY(-50%)
+          border: 6px solid transparent
+          border-left: 6px solid $colorRed
+
+  &.send-success
+    .support-message
+      display: block
+    .skip-verify
+      display: none
+    .verify-photo
+      &--item4
+        .verify-photo--item-subtitle
+          display: block
+        .verify-photo--item-number
+          border-color: $colorRed
+          color: $colorRed
+      &--stage1
+        display: none
+      &--stage2
+        display: block
+      &--refresh-btn
+        background: linear-gradient(180deg, #CB83D2 0%, #8B5A8F 100%)
+  &.send-error
+    .support-message
+      display: block
+    .skip-verify
+      display: none
+    .verify-photo
+      &--stage1
+        display: block
+      .error-alert
+        display: block
+      .stage1-form
+        &--phone-input
+          border-color: $colorRed
+      &--stage2
+        display: none
+      .get_in_top .selectbox .select
+        border-top-color: $colorRed
+        border-left-color: $colorRed
+        border-bottom-color: $colorRed

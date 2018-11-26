@@ -1884,6 +1884,46 @@
   padding-right: 86px;
 }
 
+.fw-padding-90 {
+  padding: 90px;
+}
+
+.fw-pt-90 {
+  padding-top: 90px;
+}
+
+.fw-pb-90 {
+  padding-bottom: 90px;
+}
+
+.fw-pl-90 {
+  padding-left: 90px;
+}
+
+.fw-pr-90 {
+  padding-right: 90px;
+}
+
+.fw-padding-100 {
+  padding: 100px;
+}
+
+.fw-pt-100 {
+  padding-top: 100px;
+}
+
+.fw-pb-100 {
+  padding-bottom: 100px;
+}
+
+.fw-pl-100 {
+  padding-left: 100px;
+}
+
+.fw-pr-100 {
+  padding-right: 100px;
+}
+
 .fw-padding-200 {
   padding: 200px;
 }

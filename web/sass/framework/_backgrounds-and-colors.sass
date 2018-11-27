@@ -8,6 +8,11 @@
   .fw-color-#{$key}
     color: $value
 
+  .fw-hover-color-#{$key}
+    transition: all .3s ease
+    &:hover
+      color: #{$value}
+
 .fw-bg-cover
   background-size: cover
 

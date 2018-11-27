@@ -141,7 +141,6 @@
     .get_in_top .selectbox .select
       border-radius: 4px 0 0 4px
     .error-alert
-      display: block
       right: calc(100% + 10px)
       &--arrow
         &:before
@@ -164,7 +163,7 @@
 
   &.send-success
     .support-message
-      display: block
+      display: inline-block
     .skip-verify
       display: none
     .verify-photo
@@ -182,9 +181,9 @@
         background: linear-gradient(180deg, #CB83D2 0%, #8B5A8F 100%)
   &.send-error
     .support-message
-      display: block
-    .skip-verify
       display: none
+    .skip-verify
+      display: inline-block
     .verify-photo
       &--stage1
         display: block

@@ -38,18 +38,18 @@
   color: #FBF2FC;
 }
 
-.fw-bg-color-orange {
+.fw-bg-color-orange-light {
   background-color: #f9a000;
 }
 
-.fw-color-orange {
+.fw-color-orange-light {
   color: #f9a000;
 }
 
-.fw-hover-color-orange {
+.fw-hover-color-orange-light {
   transition: all 0.3s ease;
 }
-.fw-hover-color-orange:hover {
+.fw-hover-color-orange-light:hover {
   color: #f9a000;
 }
 
@@ -2595,7 +2595,7 @@
   border-color: #FBF2FC;
 }
 
-.fw-border-color-orange {
+.fw-border-color-orange-light {
   border-color: #f9a000;
 }
 

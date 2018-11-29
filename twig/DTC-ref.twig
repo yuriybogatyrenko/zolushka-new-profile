@@ -1,0 +1,94 @@
+{% extends 'layout/layout.twig' %}
+
+{% block content %}
+    <div class="content_wrap_shadow"><h1 class="page_title">Кошелек</h1>
+        <div class="page_inside_content">
+            <div class="clearfix">
+                <div class="l_bl wallet_menu trans_all">
+                    <!-- START new premuim plate -->
+                    <a href="/payment/club-card" class="wallet-menu__premium-present">
+                        {#<i class="icon-premium-present"></i>#}
+                        <img src="/web/images/DTC/DTC_icon.png" class="fw-mr-10" alt="">
+
+                        <div class="wallet-menu__premium-text ffr">
+                            <p class="ffm fw-text-600 fw-fz-14">Платите токенами DTC</p>
+                            <p class="fw-fz-14 fw-text-600">Выгода до 50%</p>
+                        </div>
+                    </a>
+                    <!-- // END new premuim plate -->
+
+                    <ul>
+                        <li class="fill_balance_li ffr active"><a href="/payment">Пополнить счёт</a></li>
+                        <li><a href="/payment/promo-code">Промокоды</a></li>
+                        <li class="ffr fw-flex fw-flex-middle fw-flex-space-between">
+                            <a href="/payment/promo-code" class="fw-text-600"><span>Промокоды</span></a>
+                            <span class="fw-pl-5 fw-pr-5 fw-border-radius-3 fw-border-style-solid fw-border-width-1 fw-border-color-red fw-color-red">+ 500 рублей</span>
+                        </li>
+                        <li class="ffr "><a href="/payment/premium">Купить премиум</a></li>
+                        <li class="ffr "><a href="/payment/club-card">Клубные карты</a></li>
+                        <li><a href="/payment/top-elevated">Поднятие анкеты в ТОП</a></li>
+                        <li><a href="/payment/minutes">Купить минуты</a></li>
+                        <li><a href="/payment/contacts">Купить контакты</a></li>
+                        <li><a href="/payment/photo-place">Место в фотоленте</a></li>
+                        <li><a href="/payment/online">Кто онлайн</a></li>
+                        <li><a href="/payment/invisible">Скрыть статус онлайн (инвизибл)</a></li>
+                        <li><a href="/payment/confirmed">Подтвержденные фото</a></li>
+                        <li><a href="/payment/top-fixed">Закрепление анкеты в ТОП</a></li>
+                        <li class="inactive "><a href="/payment/unblock">Разблокировать анкету</a></li>
+                    </ul>
+                </div>
+
+                <div class="wallet_content">
+                    <div id="wallet-add">
+                        <div class="fw-flex fw-flex-bottom fw-flex-space-between fw-width-1-1">
+                            <p class="fw-color-gray-text fw-fz-30 fw-text-300">Приведи друга и получи бонусы</p>
+                            <a href="#" class="fw-color-purple ffr fw-fz-14">Ваши друзья</a>
+                        </div>
+                        
+                        <div class="fw-max-width-610 fw-width-1-1 fw-grid fw-grid-center fw-grid-80 fw-pt-54">
+                            <div class="fw-flex fw-flex-center fw-flex-middle">
+                                <div class="fw-width-100 fw-relative">
+                                    <img src="/web/images/user-icon.png" class="fw-block fw-width-1-1" alt="">
+                                    <img src="/web/images/crd.png" class="fw-absolute fw-right-inverse-25 fw-bottom-5" alt="">
+                                </div>
+                                <div class="ffr fw-fz-18 fw-line-height-22 fw-text-center">
+                                    <p>Вам на счет:</p>
+                                    <p class="fw-color-purple fw-text-600">300 кредитов</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-flex fw-flex-center fw-flex-middle">
+                                <div class="fw-width-100 fw-relative">
+                                    <img src="/web/images/user-icon.png" class="fw-block fw-width-1-1" alt="">
+                                    <img src="/web/images/crown.png" class="fw-absolute fw-right-inverse-25 fw-bottom-inverse-10" alt="">
+                                </div>
+                                <div class="ffr fw-fz-18 fw-line-height-22 fw-text-center">
+                                    <p>Другу в подарок:</p>
+                                    <p class="fw-color-orange fw-text-600">Премиум</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fw-pt-40 fw-max-width-610">
+                            <p class="ffr fw-fz-14 fw-text-600 fw-line-height-19 fw-mb-15">Отправь специальную ссылку другу!</p>
+
+                            <div class="fw-width-1-1 fw-flex fw-flex-middle fw-flex-space-between fw-bg-color-purple-light fw-pl-20 fw-pr-20 fw-pt-15 fw-pb-15">
+                                <a href="#" class="fw-fz-14 fw-flex-grow-1 fw-block fw-overflow-hidden" style="text-overflow: ellipsis;">https://7vkrmv.axshare.com/#g=1&p=meare.com/#g=1&p=meare.com/#g=1&p=meare.com/#g=1&p=men</a>
+
+                                <button type="submit" class="fw-min-width-234 new-female-profile--button fw-ml-53 fw-min-height-40 fw-text-center fw-fz-14 fw-color-white fw-flex fw-flex-middle fw-flex-center fw-pl-38 fw-pr-38 fw-border-radius-5">
+                                    Скопировать ссылку
+                                </button>
+                            </div>
+
+                            <div class="fw-width-1-1 fw-flex fw-flex-left fw-flex-top fw-mt-20 fw-fz-12 fw-line-height-18 ffr fw-color-gray-text">
+                                <p>*</p>
+                                <p class="fw-ml-5">Ваш друг получит: 12 часов в подарок при покупке премиума на 3 дня, 24 часа в подарок - при покупке премиума на 2 недели, 3 дня в подарок при покупке премиума на месяц</p>
+                            </div>
+                        </div>
+                    </div>
+                    {# ________ #}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

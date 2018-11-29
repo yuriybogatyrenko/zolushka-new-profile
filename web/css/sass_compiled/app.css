@@ -23,6 +23,36 @@
   display: block;
 }
 
+.fw-bg-color-purple-light {
+  background-color: #FBF2FC;
+}
+
+.fw-color-purple-light {
+  color: #FBF2FC;
+}
+
+.fw-hover-color-purple-light {
+  transition: all 0.3s ease;
+}
+.fw-hover-color-purple-light:hover {
+  color: #FBF2FC;
+}
+
+.fw-bg-color-orange {
+  background-color: #f9a000;
+}
+
+.fw-color-orange {
+  color: #f9a000;
+}
+
+.fw-hover-color-orange {
+  transition: all 0.3s ease;
+}
+.fw-hover-color-orange:hover {
+  color: #f9a000;
+}
+
 .fw-bg-color-red {
   background-color: #FF0000;
 }
@@ -574,6 +604,18 @@
   max-width: 155px;
 }
 
+.fw-width-177 {
+  width: 177px;
+}
+
+.fw-min-width-177 {
+  min-width: 177px !important;
+}
+
+.fw-max-width-177 {
+  max-width: 177px;
+}
+
 .fw-width-182 {
   width: 182px;
 }
@@ -1071,6 +1113,18 @@
   box-sizing: border-box;
   padding-left: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fw-grid-80 {
+  margin-left: -80px;
+  margin-bottom: -80px;
+}
+.fw-grid-80 > * {
+  box-sizing: border-box;
+  padding-left: 80px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -2537,6 +2591,14 @@
   border-radius: 60px 0 0 60px;
 }
 
+.fw-border-color-purple-light {
+  border-color: #FBF2FC;
+}
+
+.fw-border-color-orange {
+  border-color: #f9a000;
+}
+
 .fw-border-color-red {
   border-color: #FF0000;
 }
@@ -2880,20 +2942,48 @@
   bottom: 0px;
 }
 
+.fw-bottom-inverse-0 {
+  bottom: -0px;
+}
+
 .fw-bottom-7 {
   bottom: 7px;
+}
+
+.fw-bottom-inverse-7 {
+  bottom: -7px;
+}
+
+.fw-bottom-5 {
+  bottom: 5px;
+}
+
+.fw-bottom-inverse-5 {
+  bottom: -5px;
 }
 
 .fw-bottom-10 {
   bottom: 10px;
 }
 
+.fw-bottom-inverse-10 {
+  bottom: -10px;
+}
+
 .fw-bottom-28 {
   bottom: 28px;
 }
 
+.fw-bottom-inverse-28 {
+  bottom: -28px;
+}
+
 .fw-bottom-70 {
   bottom: 70px;
+}
+
+.fw-bottom-inverse-70 {
+  bottom: -70px;
 }
 
 .fw-bottom-100-percent {
@@ -2932,28 +3022,64 @@
   right: 0px;
 }
 
+.fw-right-inverse-0 {
+  right: -0px;
+}
+
 .fw-right-7 {
   right: 7px;
+}
+
+.fw-right-inverse-7 {
+  right: -7px;
 }
 
 .fw-right-10 {
   right: 10px;
 }
 
+.fw-right-inverse-10 {
+  right: -10px;
+}
+
 .fw-right-13 {
   right: 13px;
+}
+
+.fw-right-inverse-13 {
+  right: -13px;
 }
 
 .fw-right-15 {
   right: 15px;
 }
 
+.fw-right-inverse-15 {
+  right: -15px;
+}
+
 .fw-right-18 {
   right: 18px;
 }
 
+.fw-right-inverse-18 {
+  right: -18px;
+}
+
+.fw-right-25 {
+  right: 25px;
+}
+
+.fw-right-inverse-25 {
+  right: -25px;
+}
+
 .fw-right-26 {
   right: 26px;
+}
+
+.fw-right-inverse-26 {
+  right: -26px;
 }
 
 .fw-right-100-percent {
